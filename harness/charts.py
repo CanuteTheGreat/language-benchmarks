@@ -83,7 +83,8 @@ def bar(rows, bench, metric, out, log, title=None, which="single"):
         ax.set_xscale("log")
     for y, v, e in zip(ys, vals, ends):
         ax.text(e * (1.1 if log else 1.0) + (0 if log else max(ends) * 0.015), y, fmt(v, metric), va="center", fontsize=10)
-    note = "median of 10 runs, whiskers min/max" if metric == "wall" else "median of 10 runs"
+    n = rs[0].get("runs", "10")
+    note = f"median of {n} runs, whiskers min/max" if metric == "wall" else f"median of {n} runs"
     ax.set_xlabel(xl + (", log scale" if log else "") + "\n" + note + ", lower is better", fontsize=10)
     ax.set_title(title or TITLES.get(bench, bench) + (" (multi-threaded)" if which == "mt" else ""), fontsize=13, loc="left")
     ax.set_xlim(right=max(ends) * (4 if log else 1.3))
