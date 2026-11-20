@@ -1,0 +1,17 @@
+gcc: gcc (GCC) 16.2.1 20260810
+clang: clang version 23.1.5
+rustc: rustc 1.100.0 (0ef1bc386 2026-11-09) (Arch Linux rust 1:1.100.0-1)
+cargo: cargo 1.100.0 (3acc79c0c 2026-11-05) (Arch Linux rust 1:1.100.0-1)
+zig: 0.17.1
+go: go version go1.27.4-X:nodwarf5 linux/amd64
+java: openjdk version "27.0.1.1" 2026-11-17
+javac: javac 27.0.1.1
+dotnet: 11.0.100
+dotnet-runtime: Microsoft.NETCore.App 11.0.0 [/opt/dotnet/shared/Microsoft.NETCore.App]
+node: v26.13.1
+python: Python 3.15.2
+pypy: [PyPy 8.0.1 with GCC 16.2.1 20260810]
+php: PHP 8.5.13 (cli) (built: Nov 19 2026 14:21:43) (NTS)
+hyperfine: hyperfine 2.0.0
+jackson: jackson-annotations-2.23.jar jackson-core-2.23.0.jar jackson-databind-2.23.0.jar 
+glibc: ldd (GNU libc) 2.44

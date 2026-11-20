@@ -8,6 +8,7 @@
   run.py buildtime BENCH [VARIANT...] [--runs 5]
   run.py sizes   BENCH [VARIANT...]       artifact size + lines of code
   run.py data                             generate the input files in data/
+  run.py cmd     BENCH [VARIANT...]       print VARIANT<TAB>shell command line (used by extras.sh)
 
 VARIANT = c-gcc, c-clang, cpp, rust, zig, go, java, csharp, js, python, pypy, php, php-jit,
 optionally with a -mt or -opt suffix (source directory bench/BENCH/<lang>-mt etc.).
@@ -322,6 +323,14 @@ def main():
             r = subprocess.run(run_cmd(a.bench, v) + args, stdin=open(stdin, "rb") if stdin else subprocess.DEVNULL,
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=900)
             print(f"time1 {a.bench}/{v} {time.time()-t:.2f}s rc={r.returncode} out={r.stdout[:80]!r}", flush=True)
+        return
+    if a.cmd == "cmd":  # print the shell command line that runs each (built) variant, one per line: VARIANT<TAB>CMD
+        for v in vs:
+            if not os.path.exists(out_dir(a.bench, v)):
+                build(a.bench, v, quiet=True)
+            args, stdin = args_for(a.bench, a.kind)
+            line = " ".join(shlex_quote(x) for x in run_cmd(a.bench, v) + args)
+            print(f"{v}\t{line}" + (f" < {shlex_quote(stdin)}" if stdin else ""))
         return
     if a.cmd == "buildtime":
         return buildtime(a.bench, vs, a.runs, a.tag)

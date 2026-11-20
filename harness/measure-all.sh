@@ -6,7 +6,7 @@
 set -u
 here=$(cd "$(dirname "$0")/.." && pwd)
 TAG=${1:?tag}; shift
-BENCHES=${*:-$(ls "$here/bench")}
+BENCHES=$(echo ${*:-$(ls "$here/bench")})   # echo flattens the newlines from ls (they broke the sizes/buildtime loops)
 SINGLE_CPUS=${SINGLE_CPUS:-0-3}
 MT_CPUS=${MT_CPUS:-0-$(($(nproc) - 1))}
 RUNS=${RUNS:-10}; WARMUP=${WARMUP:-1}

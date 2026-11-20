@@ -1,0 +1,15 @@
+cpu: 13th Gen Intel(R) Core(TM) i5-1335U
+logical_cpus: 12
+cpu_core: 0-3
+cpu_atom: 4-11
+max_mhz: 4600.0000
+base_mhz: 1300000
+ram_kb: 15866912
+kernel: 6.18.63-gentoo-dist-bin
+os: Horcrux 0.1 (GNOME)
+governor: performance
+no_turbo: 0
+scaling_min_max_khz: cpu0=2500000/2500000 cpu4=2500000/2500000 
+rapl_domains: core uncore package-0 psys 
+docker: Docker version 29.9.0, build f415da838bed6a0e12ca6cb86ba198fdac6beb9c
+ac_power: 1

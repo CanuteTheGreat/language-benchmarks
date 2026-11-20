@@ -1,0 +1,45 @@
+2026-11-19T18:10:51-08:00 start binarytrees
+collatz
+dijkstra
+factorial
+fannkuchredux
+fasta
+fib
+hashmap
+hello
+json
+knucleotide
+levenshtein
+mandelbrot
+matmul
+nbody
+pidigits
+quicksort
+regexredux
+revcomp
+sieve
+sortstd
+spectralnorm
+2026-11-19T18:10:51-08:00 bench binarytrees
+2026-11-19T18:26:19-08:00 bench collatz
+2026-11-19T18:31:10-08:00 bench dijkstra
+2026-11-19T18:41:03-08:00 bench factorial
+2026-11-19T18:48:31-08:00 bench fannkuchredux
+2026-11-19T19:18:37-08:00 bench fasta
+2026-11-19T19:30:39-08:00 bench fib
+2026-11-19T19:35:53-08:00 bench hashmap
+2026-11-19T19:40:41-08:00 bench hello
+2026-11-19T19:41:20-08:00 bench json
+2026-11-19T19:44:37-08:00 bench knucleotide
+2026-11-19T19:52:04-08:00 bench levenshtein
+2026-11-19T20:05:16-08:00 bench mandelbrot
+2026-11-19T20:20:32-08:00 bench matmul
+2026-11-19T20:30:03-08:00 bench nbody
+2026-11-19T20:50:01-08:00 bench pidigits
+2026-11-19T20:58:29-08:00 bench quicksort
+2026-11-19T21:07:27-08:00 bench regexredux
+2026-11-19T21:33:57-08:00 bench revcomp
+2026-11-19T21:38:02-08:00 bench sieve
+2026-11-19T21:40:24-08:00 bench sortstd
+2026-11-19T21:47:15-08:00 bench spectralnorm
+2026-11-19T22:01:25-08:00 done

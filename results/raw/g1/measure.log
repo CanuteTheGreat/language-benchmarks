@@ -1,0 +1,1994 @@
+measure binarytrees/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/binarytrees/c-gcc/main 19
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.828 s   ±   0.011 s      3.812 s   …   3.846 s
+  Memory        65.2 MiB ±     0.1 MiB     65.1 MiB …    65.3 MiB
+ 
+measure binarytrees/c-gcc-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/c-gcc-mt.measure.csv -t c-gcc-mt -- /tmp/lb-build/binarytrees/c-gcc-mt/main 19
+Benchmark 1: c-gcc-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.051 s   ±   0.008 s      1.040 s   …   1.064 s
+  Memory       241.4 MiB ±     0.1 MiB    241.2 MiB …   241.6 MiB
+ 
+measure binarytrees/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/c-clang.measure.csv -t c-clang -- /tmp/lb-build/binarytrees/c-clang/main 19
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.285 s   ±   0.018 s      4.257 s   …   4.307 s
+  Memory        65.2 MiB ±     0.1 MiB     65.1 MiB …    65.3 MiB
+ 
+measure binarytrees/c-clang-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/c-clang-mt.measure.csv -t c-clang-mt -- /tmp/lb-build/binarytrees/c-clang-mt/main 19
+Benchmark 1: c-clang-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.091 s   ±   0.019 s      1.069 s   …   1.138 s
+  Memory       241.8 MiB ±     0.1 MiB    241.7 MiB …   242.0 MiB
+ 
+measure binarytrees/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/cpp.measure.csv -t cpp -- /tmp/lb-build/binarytrees/cpp/main 19
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.446 s   ±   0.015 s      4.428 s   …   4.475 s
+  Memory        66.3 MiB ±     0.1 MiB     66.1 MiB …    66.3 MiB
+ 
+measure binarytrees/cpp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/cpp-mt.measure.csv -t cpp-mt -- /tmp/lb-build/binarytrees/cpp-mt/main 19
+Benchmark 1: cpp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.140 s   ±   0.074 s      1.016 s   …   1.262 s
+  Memory       252.6 MiB ±     5.2 MiB    241.7 MiB …   257.8 MiB
+ 
+measure binarytrees/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/rust.measure.csv -t rust -- /tmp/lb-build/binarytrees/rust/target/release/bench 19
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    5.440 s   ±   0.097 s      5.390 s   …   5.716 s
+  Memory        65.3 MiB ±     0.0 MiB     65.3 MiB …    65.4 MiB
+ 
+measure binarytrees/rust-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/rust-mt.measure.csv -t rust-mt -- /tmp/lb-build/binarytrees/rust-mt/target/release/bench 19
+Benchmark 1: rust-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.084 s   ±   0.009 s      1.073 s   …   1.102 s
+  Memory       223.2 MiB ±     1.8 MiB    219.4 MiB …   224.9 MiB
+ 
+measure binarytrees/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/zig.measure.csv -t zig -- /tmp/lb-build/binarytrees/zig/main 19
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.851 s   ±   0.026 s      3.824 s   …   3.920 s
+  Memory        32.6 MiB ±     0.0 MiB     32.6 MiB …    32.6 MiB
+ 
+measure binarytrees/zig-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/zig-mt.measure.csv -t zig-mt -- /tmp/lb-build/binarytrees/zig-mt/main 19
+Benchmark 1: zig-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    694.4 ms  ±    15.6 ms     674.0 ms  …   730.2 ms
+  Memory       114.1 MiB ±     2.8 MiB    109.2 MiB …   117.7 MiB
+ 
+measure binarytrees/go: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/go.measure.csv -t go -- /tmp/lb-build/binarytrees/go/main 19
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.819 s   ±   0.081 s      3.772 s   …   3.981 s
+  Memory        63.6 MiB ±     2.5 MiB     59.9 MiB …    69.8 MiB
+ 
+measure binarytrees/go-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/go-mt.measure.csv -t go-mt -- /tmp/lb-build/binarytrees/go-mt/main 19
+Benchmark 1: go-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    968.9 ms  ±    32.3 ms     948.8 ms  …  1046.4 ms
+  Memory       226.5 MiB ±    45.2 MiB    186.3 MiB …   295.7 MiB
+ 
+measure binarytrees/java: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/java.measure.csv -t java -- java -cp /tmp/lb-build/binarytrees/java:/opt/java-libs/* Main 19
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.053 s   ±   0.124 s      0.953 s   …   1.240 s
+  Memory       655.4 MiB ±   345.1 MiB    387.7 MiB …  1162.5 MiB
+ 
+measure binarytrees/java-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/java-mt.measure.csv -t java-mt -- java -cp /tmp/lb-build/binarytrees/java-mt:/opt/java-libs/* Main 19
+Benchmark 1: java-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    402.7 ms  ±    15.7 ms     384.0 ms  …   441.5 ms
+  Memory         1.1 GiB ±     0.0 GiB      1.1 GiB …     1.2 GiB
+ 
+measure binarytrees/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/csharp.measure.csv -t csharp -- /tmp/lb-build/binarytrees/csharp/Bench 19
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.990 s   ±   0.033 s      2.952 s   …   3.044 s
+  Memory       170.7 MiB ±    12.0 MiB    147.9 MiB …   176.6 MiB
+ 
+measure binarytrees/csharp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/csharp-mt.measure.csv -t csharp-mt -- /tmp/lb-build/binarytrees/csharp-mt/Bench 19
+Benchmark 1: csharp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.237 s   ±   0.102 s      4.094 s   …   4.411 s
+  Memory       996.1 MiB ±    42.0 MiB    913.4 MiB …  1028.8 MiB
+ 
+measure binarytrees/js: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/js.measure.csv -t js -- node /bench/bench/binarytrees/js/main.js 19
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.003 s   ±   0.021 s      1.987 s   …   2.060 s
+  Memory       222.1 MiB ±     0.2 MiB    221.8 MiB …   222.4 MiB
+ 
+measure binarytrees/js-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/js-mt.measure.csv -t js-mt -- node /bench/bench/binarytrees/js-mt/main.js 19
+Benchmark 1: js-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.143 s   ±   0.029 s      1.096 s   …   1.183 s
+  Memory      1007.8 MiB ±    49.4 MiB    947.4 MiB …  1090.3 MiB
+ 
+measure binarytrees/python: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/python.measure.csv -t python -- python3 /bench/bench/binarytrees/python/main.py 19
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   12.851 s   ±   0.018 s     12.820 s   …  12.884 s
+  Memory        72.8 MiB ±     0.1 MiB     72.7 MiB …    72.9 MiB
+ 
+measure binarytrees/python-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/python-mt.measure.csv -t python-mt -- python3 /bench/bench/binarytrees/python-mt/main.py 19
+Benchmark 1: python-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.488 s   ±   0.020 s      2.458 s   …   2.520 s
+  Memory        74.9 MiB ±     0.1 MiB     74.6 MiB …    75.1 MiB
+ 
+measure binarytrees/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/pypy.measure.csv -t pypy -- pypy3 /bench/bench/binarytrees/python/main.py 19
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.403 s   ±   0.009 s      1.388 s   …   1.414 s
+  Memory        88.1 MiB ±     0.1 MiB     88.0 MiB …    88.2 MiB
+ 
+measure binarytrees/pypy-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/binarytrees/pypy-mt.measure.csv -t pypy-mt -- pypy3 /bench/bench/binarytrees/python-mt/main.py 19
+Benchmark 1: pypy-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    716.2 ms  ±     5.6 ms     710.0 ms  …   727.0 ms
+  Memory        86.0 MiB ±     0.3 MiB     85.6 MiB …    86.4 MiB
+ 
+measure binarytrees/php: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/php.measure.csv -t php -- php /bench/bench/binarytrees/php/main.php 19
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   11.361 s   ±   0.027 s     11.325 s   …  11.403 s
+  Memory       237.3 MiB ±     0.1 MiB    237.1 MiB …   237.4 MiB
+ 
+measure binarytrees/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/binarytrees/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/binarytrees/php/main.php 19
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.414 s   ±   0.019 s      6.387 s   …   6.439 s
+  Memory       240.8 MiB ±     0.1 MiB    240.7 MiB …   241.0 MiB
+ 
+measure collatz/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/collatz/c-gcc/main 1000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    327.3 ms  ±     0.6 ms     326.2 ms  …   328.2 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure collatz/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/c-clang.measure.csv -t c-clang -- /tmp/lb-build/collatz/c-clang/main 1000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    224.4 ms  ±     0.6 ms     223.8 ms  …   225.7 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure collatz/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/cpp.measure.csv -t cpp -- /tmp/lb-build/collatz/cpp/main 1000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    318.0 ms  ±     0.5 ms     317.2 ms  …   318.9 ms
+  Memory         2.2 MiB ±     0.1 MiB      2.1 MiB …     2.3 MiB
+ 
+measure collatz/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/rust.measure.csv -t rust -- /tmp/lb-build/collatz/rust/target/release/bench 1000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    395.0 ms  ±     1.9 ms     393.5 ms  …   399.9 ms
+  Memory         2.0 MiB ±     0.0 MiB      2.0 MiB …     2.0 MiB
+ 
+measure collatz/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/zig.measure.csv -t zig -- /tmp/lb-build/collatz/zig/main 1000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    224.7 ms  ±     0.6 ms     223.8 ms  …   225.5 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure collatz/go: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/go.measure.csv -t go -- /tmp/lb-build/collatz/go/main 1000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    388.5 ms  ±     0.7 ms     387.5 ms  …   389.9 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure collatz/java: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/java.measure.csv -t java -- java -cp /tmp/lb-build/collatz/java:/opt/java-libs/* Main 1000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    393.8 ms  ±     1.6 ms     391.4 ms  …   396.6 ms
+  Memory        32.4 MiB ±     0.1 MiB     32.2 MiB …    32.6 MiB
+ 
+measure collatz/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/csharp.measure.csv -t csharp -- /tmp/lb-build/collatz/csharp/Bench 1000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    408.2 ms  ±     4.9 ms     404.8 ms  …   421.2 ms
+  Memory        24.1 MiB ±     0.1 MiB     24.0 MiB …    24.2 MiB
+ 
+measure collatz/js: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/js.measure.csv -t js -- node /bench/bench/collatz/js/main.js 1000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.006 s   ±   0.005 s      1.997 s   …   2.013 s
+  Memory        34.0 MiB ±     0.1 MiB     33.8 MiB …    34.1 MiB
+ 
+measure collatz/python: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/python.measure.csv -t python -- python3 /bench/bench/collatz/python/main.py 1000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   15.156 s   ±   0.886 s     14.321 s   …  17.087 s
+  Memory         8.6 MiB ±     0.0 MiB      8.5 MiB …     8.6 MiB
+ 
+measure collatz/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/pypy.measure.csv -t pypy -- pypy3 /bench/bench/collatz/python/main.py 1000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    602.6 ms  ±     3.5 ms     598.3 ms  …   607.5 ms
+  Memory        34.0 MiB ±     0.1 MiB     33.9 MiB …    34.1 MiB
+ 
+measure collatz/php: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/php.measure.csv -t php -- php /bench/bench/collatz/php/main.php 1000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.569 s   ±   0.004 s      2.565 s   …   2.578 s
+  Memory        14.8 MiB ±     0.1 MiB     14.7 MiB …    14.9 MiB
+ 
+measure collatz/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/collatz/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/collatz/php/main.php 1000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    792.9 ms  ±     4.2 ms     787.7 ms  …   802.0 ms
+  Memory        18.4 MiB ±     0.1 MiB     18.3 MiB …    18.5 MiB
+ 
+measure dijkstra/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/dijkstra/c-gcc/main 1000000 5000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.216 s   ±   0.002 s      1.213 s   …   1.219 s
+  Memory        84.3 MiB ±     0.1 MiB     84.1 MiB …    84.4 MiB
+ 
+measure dijkstra/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/c-clang.measure.csv -t c-clang -- /tmp/lb-build/dijkstra/c-clang/main 1000000 5000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.084 s   ±   0.005 s      1.076 s   …   1.092 s
+  Memory        84.3 MiB ±     0.1 MiB     84.2 MiB …    84.4 MiB
+ 
+measure dijkstra/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/cpp.measure.csv -t cpp -- /tmp/lb-build/dijkstra/cpp/main 1000000 5000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.241 s   ±   0.005 s      1.237 s   …   1.250 s
+  Memory       121.6 MiB ±     0.1 MiB    121.4 MiB …   121.7 MiB
+ 
+measure dijkstra/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/rust.measure.csv -t rust -- /tmp/lb-build/dijkstra/rust/target/release/bench 1000000 5000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.113 s   ±   0.008 s      1.103 s   …   1.128 s
+  Memory       117.6 MiB ±     0.1 MiB    117.5 MiB …   117.7 MiB
+ 
+measure dijkstra/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/zig.measure.csv -t zig -- /tmp/lb-build/dijkstra/zig/main 1000000 5000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    850.4 ms  ±     3.6 ms     842.8 ms  …   856.5 ms
+  Memory       284.2 MiB ±     0.1 MiB    284.2 MiB …   284.3 MiB
+ 
+measure dijkstra/go: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/go.measure.csv -t go -- /tmp/lb-build/dijkstra/go/main 1000000 5000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.474 s   ±   0.007 s      1.465 s   …   1.485 s
+  Memory       186.9 MiB ±     1.2 MiB    183.4 MiB …   187.6 MiB
+ 
+measure dijkstra/java: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/java.measure.csv -t java -- java -cp /tmp/lb-build/dijkstra/java:/opt/java-libs/* Main 1000000 5000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.278 s   ±   0.013 s      2.259 s   …   2.302 s
+  Memory       349.0 MiB ±     0.4 MiB    348.3 MiB …   349.7 MiB
+ 
+measure dijkstra/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/csharp.measure.csv -t csharp -- /tmp/lb-build/dijkstra/csharp/Bench 1000000 5000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.035 s   ±   0.007 s      2.023 s   …   2.048 s
+  Memory       212.2 MiB ±     1.1 MiB    211.6 MiB …   215.2 MiB
+ 
+measure dijkstra/js: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/js.measure.csv -t js -- node /bench/bench/dijkstra/js/main.js 1000000 5000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.466 s   ±   0.108 s      3.418 s   …   3.772 s
+  Memory       663.3 MiB ±     3.9 MiB    657.6 MiB …   669.9 MiB
+ 
+measure dijkstra/python: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/python.measure.csv -t python -- python3 /bench/bench/dijkstra/python/main.py 1000000 5000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   12.311 s   ±   0.084 s     12.206 s   …  12.492 s
+  Memory       644.5 MiB ±     0.1 MiB    644.3 MiB …   644.7 MiB
+ 
+measure dijkstra/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/pypy.measure.csv -t pypy -- pypy3 /bench/bench/dijkstra/python/main.py 1000000 5000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    5.819 s   ±   0.029 s      5.786 s   …   5.894 s
+  Memory       393.5 MiB ±     0.2 MiB    393.2 MiB …   393.7 MiB
+ 
+measure dijkstra/php: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/php.measure.csv -t php -- php /bench/bench/dijkstra/php/main.php 1000000 5000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    9.431 s   ±   0.015 s      9.409 s   …   9.452 s
+  Memory       527.9 MiB ±     0.1 MiB    527.8 MiB …   528.0 MiB
+ 
+measure dijkstra/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/dijkstra/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/dijkstra/php/main.php 1000000 5000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    8.641 s   ±   0.020 s      8.590 s   …   8.661 s
+  Memory       531.5 MiB ±     0.1 MiB    531.3 MiB …   531.6 MiB
+ 
+measure factorial/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/factorial/c-gcc/main 100000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.114 s   ±   0.008 s      1.107 s   …   1.133 s
+  Memory         3.0 MiB ±     0.1 MiB      2.9 MiB …     3.2 MiB
+ 
+measure factorial/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/c-clang.measure.csv -t c-clang -- /tmp/lb-build/factorial/c-clang/main 100000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.112 s   ±   0.016 s      1.105 s   …   1.157 s
+  Memory         3.0 MiB ±     0.1 MiB      2.9 MiB …     3.2 MiB
+ 
+measure factorial/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/cpp.measure.csv -t cpp -- /tmp/lb-build/factorial/cpp/main 100000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.113 s   ±   0.005 s      1.108 s   …   1.126 s
+  Memory         4.1 MiB ±     0.1 MiB      3.8 MiB …     4.2 MiB
+ 
+measure factorial/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/rust.measure.csv -t rust -- /tmp/lb-build/factorial/rust/target/release/bench 100000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.131 s   ±   0.003 s      1.128 s   …   1.139 s
+  Memory         4.1 MiB ±     0.0 MiB      4.0 MiB …     4.1 MiB
+ 
+measure factorial/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/zig.measure.csv -t zig -- /tmp/lb-build/factorial/zig/main 100000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   10.890 s   ±   0.007 s     10.876 s   …  10.900 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure factorial/go: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/go.measure.csv -t go -- /tmp/lb-build/factorial/go/main 100000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.180 s   ±   0.006 s      1.172 s   …   1.193 s
+  Memory         8.6 MiB ±     0.3 MiB      8.1 MiB …     9.1 MiB
+ 
+measure factorial/java: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/java.measure.csv -t java -- java -cp /tmp/lb-build/factorial/java:/opt/java-libs/* Main 100000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.833 s   ±   0.071 s      3.729 s   …   3.932 s
+  Memory       556.3 MiB ±   118.5 MiB    420.6 MiB …   752.8 MiB
+ 
+measure factorial/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/csharp.measure.csv -t csharp -- /tmp/lb-build/factorial/csharp/Bench 100000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.143 s   ±   0.037 s      4.108 s   …   4.199 s
+  Memory        36.6 MiB ±     0.9 MiB     35.9 MiB …    39.1 MiB
+ 
+measure factorial/js: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/js.measure.csv -t js -- node /bench/bench/factorial/js/main.js 100000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.718 s   ±   0.015 s      3.699 s   …   3.744 s
+  Memory       178.1 MiB ±     0.2 MiB    177.6 MiB …   178.3 MiB
+ 
+measure factorial/python: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/python.measure.csv -t python -- python3 /bench/bench/factorial/python/main.py 100000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.528 s   ±   0.028 s      3.499 s   …   3.595 s
+  Memory        12.6 MiB ±     0.1 MiB     12.4 MiB …    12.8 MiB
+ 
+measure factorial/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/pypy.measure.csv -t pypy -- pypy3 /bench/bench/factorial/python/main.py 100000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.086 s   ±   0.004 s      3.082 s   …   3.092 s
+  Memory        93.4 MiB ±     1.0 MiB     92.3 MiB …    94.7 MiB
+ 
+measure factorial/php: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/php.measure.csv -t php -- php /bench/bench/factorial/php/main.php 100000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.387 s   ±   0.004 s      1.382 s   …   1.393 s
+  Memory        16.8 MiB ±     0.1 MiB     16.6 MiB …    17.0 MiB
+ 
+measure factorial/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/factorial/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/factorial/php/main.php 100000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.388 s   ±   0.009 s      1.381 s   …   1.412 s
+  Memory        20.4 MiB ±     0.1 MiB     20.3 MiB …    20.5 MiB
+ 
+measure fannkuchredux/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/fannkuchredux/c-gcc/main 11
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.747 s   ±   0.003 s      2.744 s   …   2.754 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure fannkuchredux/c-gcc-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/c-gcc-mt.measure.csv -t c-gcc-mt -- /tmp/lb-build/fannkuchredux/c-gcc-mt/main 11
+Benchmark 1: c-gcc-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    301.3 ms  ±     7.5 ms     292.8 ms  …   311.4 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fannkuchredux/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/c-clang.measure.csv -t c-clang -- /tmp/lb-build/fannkuchredux/c-clang/main 11
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.875 s   ±   0.014 s      2.859 s   …   2.899 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure fannkuchredux/c-clang-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/c-clang-mt.measure.csv -t c-clang-mt -- /tmp/lb-build/fannkuchredux/c-clang-mt/main 11
+Benchmark 1: c-clang-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    315.8 ms  ±     6.2 ms     309.6 ms  …   325.1 ms
+  Memory         3.2 MiB ±     0.1 MiB      3.1 MiB …     3.4 MiB
+ 
+measure fannkuchredux/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/cpp.measure.csv -t cpp -- /tmp/lb-build/fannkuchredux/cpp/main 11
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.478 s   ±   0.032 s      2.465 s   …   2.569 s
+  Memory         2.3 MiB ±     0.1 MiB      2.2 MiB …     2.4 MiB
+ 
+measure fannkuchredux/cpp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/cpp-mt.measure.csv -t cpp-mt -- /tmp/lb-build/fannkuchredux/cpp-mt/main 11
+Benchmark 1: cpp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    284.7 ms  ±     2.7 ms     282.4 ms  …   289.6 ms
+  Memory         2.4 MiB ±     0.1 MiB      2.2 MiB …     2.4 MiB
+ 
+measure fannkuchredux/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/rust.measure.csv -t rust -- /tmp/lb-build/fannkuchredux/rust/target/release/bench 11
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.192 s   ±   0.014 s      3.177 s   …   3.212 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fannkuchredux/rust-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/rust-mt.measure.csv -t rust-mt -- /tmp/lb-build/fannkuchredux/rust-mt/target/release/bench 11
+Benchmark 1: rust-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    327.9 ms  ±    11.4 ms     317.4 ms  …   351.9 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fannkuchredux/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/zig.measure.csv -t zig -- /tmp/lb-build/fannkuchredux/zig/main 11
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.058 s   ±   0.403 s      3.862 s   …   5.201 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fannkuchredux/zig-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/zig-mt.measure.csv -t zig-mt -- /tmp/lb-build/fannkuchredux/zig-mt/main 11
+Benchmark 1: zig-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    398.9 ms  ±     3.9 ms     394.7 ms  …   409.0 ms
+  Memory         3.7 MiB ±     0.0 MiB      3.7 MiB …     3.7 MiB
+ 
+measure fannkuchredux/go: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/go.measure.csv -t go -- /tmp/lb-build/fannkuchredux/go/main 11
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.157 s   ±   0.012 s      3.144 s   …   3.175 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure fannkuchredux/go-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/go-mt.measure.csv -t go-mt -- /tmp/lb-build/fannkuchredux/go-mt/main 11
+Benchmark 1: go-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    340.6 ms  ±    11.8 ms     321.0 ms  …   358.5 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fannkuchredux/java: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/java.measure.csv -t java -- java -cp /tmp/lb-build/fannkuchredux/java:/opt/java-libs/* Main 11
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.966 s   ±   0.082 s      3.850 s   …   4.053 s
+  Memory        35.0 MiB ±     1.0 MiB     34.1 MiB …    36.2 MiB
+ 
+measure fannkuchredux/java-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/java-mt.measure.csv -t java-mt -- java -cp /tmp/lb-build/fannkuchredux/java-mt:/opt/java-libs/* Main 11
+Benchmark 1: java-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    599.3 ms  ±    33.1 ms     559.4 ms  …   649.7 ms
+  Memory        37.1 MiB ±     0.2 MiB     36.7 MiB …    37.4 MiB
+ 
+measure fannkuchredux/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/csharp.measure.csv -t csharp -- /tmp/lb-build/fannkuchredux/csharp/Bench 11
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.746 s   ±   0.012 s      3.731 s   …   3.778 s
+  Memory        23.0 MiB ±     0.1 MiB     22.8 MiB …    23.2 MiB
+ 
+measure fannkuchredux/csharp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/csharp-mt.measure.csv -t csharp-mt -- /tmp/lb-build/fannkuchredux/csharp-mt/Bench 11
+Benchmark 1: csharp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    604.3 ms  ±    72.0 ms     523.3 ms  …   723.4 ms
+  Memory        26.4 MiB ±     0.3 MiB     26.0 MiB …    26.7 MiB
+ 
+measure fannkuchredux/js: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/js.measure.csv -t js -- node /bench/bench/fannkuchredux/js/main.js 11
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.586 s   ±   0.005 s      4.576 s   …   4.593 s
+  Memory        34.2 MiB ±     0.1 MiB     34.0 MiB …    34.3 MiB
+ 
+measure fannkuchredux/js-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/js-mt.measure.csv -t js-mt -- node /bench/bench/fannkuchredux/js-mt/main.js 11
+Benchmark 1: js-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    615.1 ms  ±    13.5 ms     602.9 ms  …   650.4 ms
+  Memory       122.9 MiB ±     0.4 MiB    122.5 MiB …   123.6 MiB
+ 
+measure fannkuchredux/python: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/python.measure.csv -t python -- python3 /bench/bench/fannkuchredux/python/main.py 11
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   55.978 s   ±   0.184 s     55.698 s   …  56.260 s
+  Memory         8.8 MiB ±     0.1 MiB      8.8 MiB …     8.9 MiB
+ 
+measure fannkuchredux/python-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/python-mt.measure.csv -t python-mt -- python3 /bench/bench/fannkuchredux/python-mt/main.py 11
+Benchmark 1: python-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    9.229 s   ±   0.915 s      7.023 s   …   9.827 s
+  Memory        14.8 MiB ±     0.1 MiB     14.6 MiB …    15.1 MiB
+ 
+measure fannkuchredux/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/pypy.measure.csv -t pypy -- pypy3 /bench/bench/fannkuchredux/python/main.py 11
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   12.604 s   ±   0.080 s     12.548 s   …  12.822 s
+  Memory        35.8 MiB ±     0.1 MiB     35.7 MiB …    36.0 MiB
+ 
+measure fannkuchredux/pypy-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/fannkuchredux/pypy-mt.measure.csv -t pypy-mt -- pypy3 /bench/bench/fannkuchredux/python-mt/main.py 11
+Benchmark 1: pypy-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.835 s   ±   1.026 s      2.031 s   …   4.216 s
+  Memory        43.2 MiB ±     0.2 MiB     42.9 MiB …    43.3 MiB
+ 
+measure fannkuchredux/php: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/php.measure.csv -t php -- php /bench/bench/fannkuchredux/php/main.php 11
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   34.104 s   ±   0.122 s     34.039 s   …  34.451 s
+  Memory        14.8 MiB ±     0.1 MiB     14.7 MiB …    15.0 MiB
+ 
+measure fannkuchredux/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/fannkuchredux/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/fannkuchredux/php/main.php 11
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    9.699 s   ±   0.085 s      9.486 s   …   9.802 s
+  Memory        18.5 MiB ±     0.1 MiB     18.4 MiB …    18.5 MiB
+ 
+measure fasta/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/fasta/c-gcc/main 10000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.379 s   ±   0.003 s      1.373 s   …   1.383 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure fasta/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/c-clang.measure.csv -t c-clang -- /tmp/lb-build/fasta/c-clang/main 10000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.566 s   ±   0.003 s      1.560 s   …   1.570 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fasta/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/cpp.measure.csv -t cpp -- /tmp/lb-build/fasta/cpp/main 10000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.768 s   ±   0.002 s      1.765 s   …   1.775 s
+  Memory         2.5 MiB ±     0.0 MiB      2.4 MiB …     2.6 MiB
+ 
+measure fasta/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/rust.measure.csv -t rust -- /tmp/lb-build/fasta/rust/target/release/bench 10000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.570 s   ±   0.013 s      1.556 s   …   1.592 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fasta/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/zig.measure.csv -t zig -- /tmp/lb-build/fasta/zig/main 10000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.485 s   ±   0.005 s      1.478 s   …   1.493 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fasta/go: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/go.measure.csv -t go -- /tmp/lb-build/fasta/go/main 10000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.866 s   ±   0.003 s      1.861 s   …   1.871 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fasta/java: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/java.measure.csv -t java -- java -cp /tmp/lb-build/fasta/java:/opt/java-libs/* Main 10000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.079 s   ±   0.023 s      2.049 s   …   2.113 s
+  Memory        34.1 MiB ±     0.2 MiB     33.8 MiB …    34.4 MiB
+ 
+measure fasta/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/csharp.measure.csv -t csharp -- /tmp/lb-build/fasta/csharp/Bench 10000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.092 s   ±   0.004 s      2.086 s   …   2.099 s
+  Memory        23.2 MiB ±     0.1 MiB     23.1 MiB …    23.4 MiB
+ 
+measure fasta/js: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/js.measure.csv -t js -- node /bench/bench/fasta/js/main.js 10000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    9.950 s   ±   0.205 s      9.710 s   …  10.361 s
+  Memory         2.9 GiB ±     0.0 GiB      2.8 GiB …     2.9 GiB
+ 
+measure fasta/python: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/python.measure.csv -t python -- python3 /bench/bench/fasta/python/main.py 10000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   19.994 s   ±   0.107 s     19.897 s   …  20.254 s
+  Memory       395.4 MiB ±     0.2 MiB    395.1 MiB …   395.6 MiB
+ 
+measure fasta/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/pypy.measure.csv -t pypy -- pypy3 /bench/bench/fasta/python/main.py 10000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.321 s   ±   0.009 s      4.313 s   …   4.346 s
+  Memory       430.4 MiB ±     0.1 MiB    430.1 MiB …   430.5 MiB
+ 
+measure fasta/php: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/php.measure.csv -t php -- php /bench/bench/fasta/php/main.php 10000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   10.306 s   ±   0.014 s     10.285 s   …  10.324 s
+  Memory        15.0 MiB ±     0.1 MiB     14.9 MiB …    15.1 MiB
+ 
+measure fasta/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/fasta/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/fasta/php/main.php 10000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.612 s   ±   0.011 s      4.602 s   …   4.639 s
+  Memory        18.5 MiB ±     0.1 MiB     18.4 MiB …    18.6 MiB
+ 
+measure fib/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/fib/c-gcc/main 40
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    190.0 ms  ±     0.8 ms     189.1 ms  …   191.6 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure fib/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/c-clang.measure.csv -t c-clang -- /tmp/lb-build/fib/c-clang/main 40
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    399.7 ms  ±     1.6 ms     398.4 ms  …   403.4 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fib/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/cpp.measure.csv -t cpp -- /tmp/lb-build/fib/cpp/main 40
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    202.2 ms  ±     0.7 ms     201.4 ms  …   203.4 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.3 MiB
+ 
+measure fib/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/rust.measure.csv -t rust -- /tmp/lb-build/fib/rust/target/release/bench 40
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    367.3 ms  ±     7.8 ms     362.3 ms  …   385.6 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fib/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/zig.measure.csv -t zig -- /tmp/lb-build/fib/zig/main 40
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    383.1 ms  ±     2.1 ms     381.8 ms  …   388.8 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure fib/go: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/go.measure.csv -t go -- /tmp/lb-build/fib/go/main 40
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    658.8 ms  ±     3.4 ms     654.0 ms  …   665.7 ms
+  Memory         1.9 MiB ±     0.0 MiB      1.9 MiB …     1.9 MiB
+ 
+measure fib/java: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/java.measure.csv -t java -- java -cp /tmp/lb-build/fib/java:/opt/java-libs/* Main 40
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    605.7 ms  ±     1.3 ms     603.0 ms  …   607.6 ms
+  Memory        31.6 MiB ±     0.1 MiB     31.4 MiB …    31.8 MiB
+ 
+measure fib/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/csharp.measure.csv -t csharp -- /tmp/lb-build/fib/csharp/Bench 40
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    615.9 ms  ±     9.5 ms     601.9 ms  …   623.2 ms
+  Memory        21.6 MiB ±     0.1 MiB     21.5 MiB …    21.7 MiB
+ 
+measure fib/js: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/js.measure.csv -t js -- node /bench/bench/fib/js/main.js 40
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.208 s   ±   0.002 s      1.204 s   …   1.210 s
+  Memory        33.8 MiB ±     0.2 MiB     33.5 MiB …    34.1 MiB
+ 
+measure fib/python: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/python.measure.csv -t python -- python3 /bench/bench/fib/python/main.py 40
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   10.730 s   ±   0.020 s     10.702 s   …  10.779 s
+  Memory         8.6 MiB ±     0.1 MiB      8.4 MiB …     8.7 MiB
+ 
+measure fib/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/pypy.measure.csv -t pypy -- pypy3 /bench/bench/fib/python/main.py 40
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.872 s   ±   0.014 s      1.858 s   …   1.898 s
+  Memory        72.7 MiB ±     0.0 MiB     72.6 MiB …    72.7 MiB
+ 
+measure fib/php: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/php.measure.csv -t php -- php /bench/bench/fib/php/main.php 40
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.550 s   ±   0.005 s      6.544 s   …   6.559 s
+  Memory        14.8 MiB ±     0.1 MiB     14.6 MiB …    14.9 MiB
+ 
+measure fib/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/fib/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/fib/php/main.php 40
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.986 s   ±   0.032 s      1.944 s   …   2.051 s
+  Memory        18.4 MiB ±     0.1 MiB     18.3 MiB …    18.5 MiB
+ 
+measure hashmap/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/hashmap/c-gcc/main 5000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    467.4 ms  ±     2.0 ms     463.8 ms  …   471.8 ms
+  Memory       257.2 MiB ±     0.1 MiB    257.1 MiB …   257.3 MiB
+ 
+measure hashmap/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/c-clang.measure.csv -t c-clang -- /tmp/lb-build/hashmap/c-clang/main 5000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    468.5 ms  ±     1.0 ms     467.2 ms  …   470.4 ms
+  Memory       257.2 MiB ±     0.1 MiB    257.1 MiB …   257.2 MiB
+ 
+measure hashmap/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/cpp.measure.csv -t cpp -- /tmp/lb-build/hashmap/cpp/main 5000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.435 s   ±   0.009 s      2.426 s   …   2.452 s
+  Memory       200.2 MiB ±     0.1 MiB    200.0 MiB …   200.4 MiB
+ 
+measure hashmap/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/rust.measure.csv -t rust -- /tmp/lb-build/hashmap/rust/target/release/bench 5000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    801.6 ms  ±     5.7 ms     796.2 ms  …   812.2 ms
+  Memory       205.6 MiB ±     0.0 MiB    205.5 MiB …   205.6 MiB
+ 
+measure hashmap/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/zig.measure.csv -t zig -- /tmp/lb-build/hashmap/zig/main 5000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    847.4 ms  ±     7.5 ms     838.8 ms  …   867.0 ms
+  Memory       156.7 MiB ±     0.1 MiB    156.6 MiB …   156.7 MiB
+ 
+measure hashmap/go: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/go.measure.csv -t go -- /tmp/lb-build/hashmap/go/main 5000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.201 s   ±   0.004 s      1.195 s   …   1.209 s
+  Memory       187.4 MiB ±     2.8 MiB    181.4 MiB …   190.9 MiB
+ 
+measure hashmap/java: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/java.measure.csv -t java -- java -cp /tmp/lb-build/hashmap/java:/opt/java-libs/* Main 5000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.934 s   ±   0.033 s      1.882 s   …   1.996 s
+  Memory       526.1 MiB ±    10.4 MiB    506.6 MiB …   543.8 MiB
+ 
+measure hashmap/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/csharp.measure.csv -t csharp -- /tmp/lb-build/hashmap/csharp/Bench 5000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.084 s   ±   0.005 s      1.079 s   …   1.093 s
+  Memory       202.1 MiB ±     0.1 MiB    202.0 MiB …   202.2 MiB
+ 
+measure hashmap/js: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/js.measure.csv -t js -- node /bench/bench/hashmap/js/main.js 5000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.283 s   ±   0.004 s      2.274 s   …   2.287 s
+  Memory       435.5 MiB ±     0.1 MiB    435.4 MiB …   435.7 MiB
+ 
+measure hashmap/python: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/python.measure.csv -t python -- python3 /bench/bench/hashmap/python/main.py 5000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    7.076 s   ±   0.109 s      6.939 s   …   7.285 s
+  Memory       475.2 MiB ±     0.2 MiB    474.9 MiB …   475.5 MiB
+ 
+measure hashmap/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/pypy.measure.csv -t pypy -- pypy3 /bench/bench/hashmap/python/main.py 5000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.000 s   ±   0.006 s      1.992 s   …   2.011 s
+  Memory       351.5 MiB ±     0.1 MiB    351.4 MiB …   351.6 MiB
+ 
+measure hashmap/php: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/php.measure.csv -t php -- php /bench/bench/hashmap/php/main.php 5000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.557 s   ±   0.004 s      1.549 s   …   1.563 s
+  Memory       305.3 MiB ±     0.1 MiB    305.2 MiB …   305.4 MiB
+ 
+measure hashmap/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/hashmap/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/hashmap/php/main.php 5000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.218 s   ±   0.002 s      1.214 s   …   1.223 s
+  Memory       308.9 MiB ±     0.1 MiB    308.7 MiB …   309.1 MiB
+ 
+measure hello/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/hello/c-gcc/main
+Benchmark 1: c-gcc (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      1.9 ms  ±     0.1 ms       1.6 ms  …     2.2 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure hello/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/c-clang.measure.csv -t c-clang -- /tmp/lb-build/hello/c-clang/main
+Benchmark 1: c-clang (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      2.0 ms  ±     0.2 ms       1.8 ms  …     2.9 ms
+  Memory         2.2 MiB ±     0.1 MiB      2.1 MiB …     2.3 MiB
+ 
+measure hello/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/cpp.measure.csv -t cpp -- /tmp/lb-build/hello/cpp/main
+Benchmark 1: cpp (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      2.7 ms  ±     0.2 ms       2.4 ms  …     3.9 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.3 MiB
+ 
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (3.9 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+measure hello/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/rust.measure.csv -t rust -- /tmp/lb-build/hello/rust/target/release/bench
+Benchmark 1: rust (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      2.0 ms  ±     0.1 ms       1.8 ms  …     2.2 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure hello/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/zig.measure.csv -t zig -- /tmp/lb-build/hello/zig/main
+Benchmark 1: zig (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      1.9 ms  ±     0.1 ms       1.6 ms  …     2.2 ms
+  Memory         2.2 MiB ±     0.1 MiB      2.1 MiB …     2.2 MiB
+ 
+measure hello/go: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/go.measure.csv -t go -- /tmp/lb-build/hello/go/main
+Benchmark 1: go (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time      2.5 ms  ±     0.2 ms       2.0 ms  …     3.2 ms
+  Memory         2.2 MiB ±     0.1 MiB      2.2 MiB …     2.3 MiB
+ 
+measure hello/java: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/java.measure.csv -t java -- java -cp /tmp/lb-build/hello/java:/opt/java-libs/* Main
+Benchmark 1: java (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     22.5 ms  ±     1.3 ms      20.9 ms  …    27.7 ms
+  Memory        31.1 MiB ±     0.1 MiB     30.6 MiB …    31.5 MiB
+ 
+measure hello/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/csharp.measure.csv -t csharp -- /tmp/lb-build/hello/csharp/Bench
+Benchmark 1: csharp (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     24.3 ms  ±     1.3 ms      23.0 ms  …    30.0 ms
+  Memory        19.3 MiB ±     0.1 MiB     19.1 MiB …    19.5 MiB
+ 
+measure hello/js: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/js.measure.csv -t js -- node /bench/bench/hello/js/main.js
+Benchmark 1: js (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     37.5 ms  ±     2.1 ms      32.6 ms  …    43.2 ms
+  Memory        28.7 MiB ±     0.1 MiB     28.5 MiB …    28.9 MiB
+ 
+measure hello/python: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/python.measure.csv -t python -- python3 /bench/bench/hello/python/main.py
+Benchmark 1: python (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     14.5 ms  ±     0.3 ms      14.1 ms  …    15.3 ms
+  Memory         8.6 MiB ±     0.1 MiB      8.4 MiB …     8.7 MiB
+ 
+measure hello/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/pypy.measure.csv -t pypy -- pypy3 /bench/bench/hello/python/main.py
+Benchmark 1: pypy (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     24.0 ms  ±     0.5 ms      23.1 ms  …    25.4 ms
+  Memory        27.8 MiB ±     0.1 MiB     27.6 MiB …    28.0 MiB
+ 
+measure hello/php: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/php.measure.csv -t php -- php /bench/bench/hello/php/main.php
+Benchmark 1: php (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     15.5 ms  ±     0.3 ms      15.1 ms  …    16.2 ms
+  Memory        14.7 MiB ±     0.1 MiB     14.4 MiB …    14.9 MiB
+ 
+measure hello/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/hello/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/hello/php/main.php
+Benchmark 1: php-jit (50 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     18.3 ms  ±     0.4 ms      17.6 ms  …    19.3 ms
+  Memory        17.9 MiB ±     0.1 MiB     17.6 MiB …    18.1 MiB
+ 
+measure json/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/json/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/json/c-gcc/main /bench/data/records-200000.json
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    695.0 ms  ±     5.7 ms     687.2 ms  …   704.0 ms
+  Memory       426.6 MiB ±     0.1 MiB    426.4 MiB …   426.7 MiB
+ 
+measure json/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/json/c-clang.measure.csv -t c-clang -- /tmp/lb-build/json/c-clang/main /bench/data/records-200000.json
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    699.4 ms  ±    13.7 ms     689.7 ms  …   725.3 ms
+  Memory       426.6 MiB ±     0.1 MiB    426.4 MiB …   426.7 MiB
+ 
+measure json/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/json/cpp.measure.csv -t cpp -- /tmp/lb-build/json/cpp/main /bench/data/records-200000.json
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.192 s   ±   0.015 s      1.177 s   …   1.224 s
+  Memory       374.9 MiB ±     0.1 MiB    374.8 MiB …   375.1 MiB
+ 
+measure json/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/json/rust.measure.csv -t rust -- /tmp/lb-build/json/rust/target/release/bench /bench/data/records-200000.json
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    625.7 ms  ±     9.3 ms     617.4 ms  …   644.1 ms
+  Memory       480.4 MiB ±     0.1 MiB    480.2 MiB …   480.5 MiB
+ 
+measure json/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/json/zig.measure.csv -t zig -- /tmp/lb-build/json/zig/main /bench/data/records-200000.json
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    719.8 ms  ±    12.4 ms     703.9 ms  …   747.8 ms
+  Memory       416.2 MiB ±     0.1 MiB    416.2 MiB …   416.3 MiB
+ 
+measure json/go: taskset -c 0-3 measure -o /bench/results/raw/g1/json/go.measure.csv -t go -- /tmp/lb-build/json/go/main /bench/data/records-200000.json
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.915 s   ±   0.016 s      1.899 s   …   1.943 s
+  Memory       467.2 MiB ±     0.2 MiB    466.8 MiB …   467.5 MiB
+ 
+measure json/java: taskset -c 0-3 measure -o /bench/results/raw/g1/json/java.measure.csv -t java -- java -cp /tmp/lb-build/json/java:/opt/java-libs/* Main /bench/data/records-200000.json
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.469 s   ±   0.094 s      1.426 s   …   1.736 s
+  Memory       558.2 MiB ±     5.0 MiB    548.9 MiB …   563.5 MiB
+ 
+measure json/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/json/csharp.measure.csv -t csharp -- /tmp/lb-build/json/csharp/Bench /bench/data/records-200000.json
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.403 s   ±   0.041 s      2.358 s   …   2.495 s
+  Memory       702.0 MiB ±     0.5 MiB    701.4 MiB …   703.1 MiB
+ 
+measure json/js: taskset -c 0-3 measure -o /bench/results/raw/g1/json/js.measure.csv -t js -- node /bench/bench/json/js/main.js /bench/data/records-200000.json
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    624.0 ms  ±    20.2 ms     605.8 ms  …   665.4 ms
+  Memory       293.5 MiB ±     0.2 MiB    293.2 MiB …   293.8 MiB
+ 
+measure json/python: taskset -c 0-3 measure -o /bench/results/raw/g1/json/python.measure.csv -t python -- python3 /bench/bench/json/python/main.py /bench/data/records-200000.json
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    906.1 ms  ±     4.8 ms     902.1 ms  …   918.2 ms
+  Memory       311.6 MiB ±     0.1 MiB    311.4 MiB …   311.8 MiB
+ 
+measure json/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/json/pypy.measure.csv -t pypy -- pypy3 /bench/bench/json/python/main.py /bench/data/records-200000.json
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.194 s   ±   0.017 s      1.180 s   …   1.238 s
+  Memory       243.1 MiB ±     0.1 MiB    243.0 MiB …   243.2 MiB
+ 
+measure json/php: taskset -c 0-3 measure -o /bench/results/raw/g1/json/php.measure.csv -t php -- php /bench/bench/json/php/main.php /bench/data/records-200000.json
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    822.6 ms  ±     6.0 ms     812.6 ms  …   830.0 ms
+  Memory       409.4 MiB ±     0.1 MiB    409.2 MiB …   409.5 MiB
+ 
+measure json/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/json/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/json/php/main.php /bench/data/records-200000.json
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    823.1 ms  ±    15.8 ms     814.4 ms  …   863.5 ms
+  Memory       413.0 MiB ±     0.2 MiB    412.8 MiB …   413.2 MiB
+ 
+measure knucleotide/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/knucleotide/c-gcc/main
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.069 s   ±   0.006 s      1.062 s   …   1.079 s
+  Memory       419.8 MiB ±     0.1 MiB    419.5 MiB …   419.9 MiB
+ 
+measure knucleotide/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/c-clang.measure.csv -t c-clang -- /tmp/lb-build/knucleotide/c-clang/main
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    940.6 ms  ±    15.8 ms     923.4 ms  …   975.6 ms
+  Memory       419.8 MiB ±     0.1 MiB    419.7 MiB …   419.9 MiB
+ 
+measure knucleotide/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/cpp.measure.csv -t cpp -- /tmp/lb-build/knucleotide/cpp/main
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    986.6 ms  ±     4.7 ms     981.0 ms  …   994.6 ms
+  Memory        19.8 MiB ±     0.1 MiB     19.7 MiB …    19.9 MiB
+ 
+measure knucleotide/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/rust.measure.csv -t rust -- /tmp/lb-build/knucleotide/rust/target/release/bench
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.527 s   ±   0.013 s      1.512 s   …   1.554 s
+  Memory        46.2 MiB ±     0.1 MiB     46.0 MiB …    46.3 MiB
+ 
+measure knucleotide/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/zig.measure.csv -t zig -- /tmp/lb-build/knucleotide/zig/main
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.044 s   ±   0.012 s      1.037 s   …   1.067 s
+  Memory        41.9 MiB ±     0.0 MiB     41.8 MiB …    41.9 MiB
+ 
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (1.066 s). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+measure knucleotide/go: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/go.measure.csv -t go -- /tmp/lb-build/knucleotide/go/main
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.624 s   ±   0.016 s      1.601 s   …   1.645 s
+  Memory        93.7 MiB ±     2.1 MiB     92.5 MiB …    98.1 MiB
+ 
+measure knucleotide/java: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/java.measure.csv -t java -- java -cp /tmp/lb-build/knucleotide/java:/opt/java-libs/* Main
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.152 s   ±   0.039 s      2.099 s   …   2.214 s
+  Memory       328.4 MiB ±    91.5 MiB    213.3 MiB …   436.7 MiB
+ 
+measure knucleotide/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/csharp.measure.csv -t csharp -- /tmp/lb-build/knucleotide/csharp/Bench
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (1.814 s). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.729 s   ±   0.032 s      1.710 s   …   1.814 s
+  Memory        72.8 MiB ±     0.1 MiB     72.6 MiB …    73.0 MiB
+ 
+measure knucleotide/js: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/js.measure.csv -t js -- node /bench/bench/knucleotide/js/main.js
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    5.892 s   ±   0.033 s      5.857 s   …   5.979 s
+  Memory       385.6 MiB ±     1.9 MiB    383.2 MiB …   388.2 MiB
+ 
+measure knucleotide/python: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/python.measure.csv -t python -- python3 /bench/bench/knucleotide/python/main.py
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   12.845 s   ±   0.020 s     12.799 s   …  12.867 s
+  Memory        74.9 MiB ±     0.1 MiB     74.7 MiB …    74.9 MiB
+ 
+measure knucleotide/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/pypy.measure.csv -t pypy -- pypy3 /bench/bench/knucleotide/python/main.py
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.948 s   ±   0.019 s      1.928 s   …   1.981 s
+  Memory       153.3 MiB ±     0.1 MiB    153.1 MiB …   153.4 MiB
+ 
+measure knucleotide/php: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/php.measure.csv -t php -- php /bench/bench/knucleotide/php/main.php
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.074 s   ±   0.023 s      4.038 s   …   4.120 s
+  Memory        84.3 MiB ±     0.1 MiB     84.2 MiB …    84.4 MiB
+ 
+measure knucleotide/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/knucleotide/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/knucleotide/php/main.php
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.750 s   ±   0.014 s      1.741 s   …   1.788 s
+  Memory        87.6 MiB ±     0.1 MiB     87.6 MiB …    87.7 MiB
+ 
+measure levenshtein/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/levenshtein/c-gcc/main 15000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    275.5 ms  ±     0.9 ms     274.5 ms  …   277.6 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure levenshtein/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/c-clang.measure.csv -t c-clang -- /tmp/lb-build/levenshtein/c-clang/main 15000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    697.2 ms  ±     0.5 ms     696.2 ms  …   697.8 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure levenshtein/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/cpp.measure.csv -t cpp -- /tmp/lb-build/levenshtein/cpp/main 15000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    275.5 ms  ±     0.8 ms     274.6 ms  …   276.7 ms
+  Memory         2.5 MiB ±     0.1 MiB      2.4 MiB …     2.6 MiB
+ 
+measure levenshtein/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/rust.measure.csv -t rust -- /tmp/lb-build/levenshtein/rust/target/release/bench 15000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    366.4 ms  ±     2.1 ms     365.0 ms  …   372.2 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure levenshtein/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/zig.measure.csv -t zig -- /tmp/lb-build/levenshtein/zig/main 15000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.070 s   ±   0.027 s      1.060 s   …   1.148 s
+  Memory         2.0 MiB ±     0.0 MiB      2.0 MiB …     2.0 MiB
+ 
+measure levenshtein/go: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/go.measure.csv -t go -- /tmp/lb-build/levenshtein/go/main 15000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    748.5 ms  ±    12.5 ms     742.1 ms  …   782.9 ms
+  Memory         2.1 MiB ±     0.1 MiB      2.0 MiB …     2.2 MiB
+ 
+measure levenshtein/java: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/java.measure.csv -t java -- java -cp /tmp/lb-build/levenshtein/java:/opt/java-libs/* Main 15000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    947.1 ms  ±     2.3 ms     943.4 ms  …   949.9 ms
+  Memory        32.5 MiB ±     0.1 MiB     32.2 MiB …    32.6 MiB
+ 
+measure levenshtein/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/csharp.measure.csv -t csharp -- /tmp/lb-build/levenshtein/csharp/Bench 15000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.661 s   ±   0.003 s      1.657 s   …   1.669 s
+  Memory        23.0 MiB ±     0.1 MiB     22.8 MiB …    23.2 MiB
+ 
+measure levenshtein/js: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/js.measure.csv -t js -- node /bench/bench/levenshtein/js/main.js 15000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.254 s   ±   0.088 s      2.153 s   …   2.418 s
+  Memory        38.5 MiB ±     0.4 MiB     38.1 MiB …    39.1 MiB
+ 
+measure levenshtein/python: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/python.measure.csv -t python -- python3 /bench/bench/levenshtein/python/main.py 15000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   36.106 s   ±   0.137 s     35.821 s   …  36.254 s
+  Memory        10.0 MiB ±     0.1 MiB      9.9 MiB …    10.1 MiB
+ 
+measure levenshtein/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/pypy.measure.csv -t pypy -- pypy3 /bench/bench/levenshtein/python/main.py 15000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.450 s   ±   0.003 s      3.446 s   …   3.455 s
+  Memory        81.9 MiB ±     0.1 MiB     81.7 MiB …    82.0 MiB
+ 
+measure levenshtein/php: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/php.measure.csv -t php -- php /bench/bench/levenshtein/php/main.php 15000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   13.653 s   ±   0.033 s     13.616 s   …  13.726 s
+  Memory        15.4 MiB ±     0.1 MiB     15.2 MiB …    15.5 MiB
+ 
+measure levenshtein/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/levenshtein/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/levenshtein/php/main.php 15000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    7.678 s   ±   0.016 s      7.651 s   …   7.698 s
+  Memory        18.9 MiB ±     0.1 MiB     18.7 MiB …    19.1 MiB
+ 
+measure mandelbrot/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/mandelbrot/c-gcc/main 4000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.346 s   ±   0.001 s      1.345 s   …   1.347 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure mandelbrot/c-gcc-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/c-gcc-mt.measure.csv -t c-gcc-mt -- /tmp/lb-build/mandelbrot/c-gcc-mt/main 4000
+Benchmark 1: c-gcc-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    143.6 ms  ±     4.3 ms     140.2 ms  …   153.4 ms
+  Memory         2.8 MiB ±     0.0 MiB      2.7 MiB …     2.9 MiB
+ 
+measure mandelbrot/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/c-clang.measure.csv -t c-clang -- /tmp/lb-build/mandelbrot/c-clang/main 4000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.266 s   ±   0.001 s      1.262 s   …   1.267 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure mandelbrot/c-clang-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/c-clang-mt.measure.csv -t c-clang-mt -- /tmp/lb-build/mandelbrot/c-clang-mt/main 4000
+Benchmark 1: c-clang-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    160.0 ms  ±     4.9 ms     153.9 ms  …   166.0 ms
+  Memory         4.6 MiB ±     0.1 MiB      4.3 MiB …     4.9 MiB
+ 
+measure mandelbrot/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/cpp.measure.csv -t cpp -- /tmp/lb-build/mandelbrot/cpp/main 4000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.336 s   ±   0.001 s      1.335 s   …   1.339 s
+  Memory         2.3 MiB ±     0.1 MiB      2.2 MiB …     2.4 MiB
+ 
+measure mandelbrot/cpp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/cpp-mt.measure.csv -t cpp-mt -- /tmp/lb-build/mandelbrot/cpp-mt/main 4000
+Benchmark 1: cpp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    146.2 ms  ±     4.1 ms     142.9 ms  …   153.7 ms
+  Memory         4.1 MiB ±     0.0 MiB      4.1 MiB …     4.2 MiB
+ 
+measure mandelbrot/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/rust.measure.csv -t rust -- /tmp/lb-build/mandelbrot/rust/target/release/bench 4000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.388 s   ±   0.000 s      1.388 s   …   1.389 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure mandelbrot/rust-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/rust-mt.measure.csv -t rust-mt -- /tmp/lb-build/mandelbrot/rust-mt/target/release/bench 4000
+Benchmark 1: rust-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    148.4 ms  ±     4.5 ms     144.0 ms  …   157.2 ms
+  Memory         3.1 MiB ±     0.2 MiB      2.8 MiB …     3.4 MiB
+ 
+measure mandelbrot/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/zig.measure.csv -t zig -- /tmp/lb-build/mandelbrot/zig/main 4000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.349 s   ±   0.002 s      1.347 s   …   1.355 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure mandelbrot/zig-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/zig-mt.measure.csv -t zig-mt -- /tmp/lb-build/mandelbrot/zig-mt/main 4000
+Benchmark 1: zig-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    146.5 ms  ±     1.0 ms     145.7 ms  …   148.6 ms
+  Memory         5.7 MiB ±     0.0 MiB      5.7 MiB …     5.7 MiB
+ 
+measure mandelbrot/go: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/go.measure.csv -t go -- /tmp/lb-build/mandelbrot/go/main 4000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.285 s   ±   0.001 s      1.283 s   …   1.287 s
+  Memory         2.0 MiB ±     0.0 MiB      2.0 MiB …     2.0 MiB
+ 
+measure mandelbrot/go-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/go-mt.measure.csv -t go-mt -- /tmp/lb-build/mandelbrot/go-mt/main 4000
+Benchmark 1: go-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    146.5 ms  ±     4.8 ms     139.7 ms  …   152.5 ms
+  Memory         3.8 MiB ±     0.2 MiB      3.5 MiB …     4.0 MiB
+ 
+measure mandelbrot/java: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/java.measure.csv -t java -- java -cp /tmp/lb-build/mandelbrot/java:/opt/java-libs/* Main 4000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.362 s   ±   0.014 s      1.352 s   …   1.390 s
+  Memory        33.0 MiB ±     0.1 MiB     32.8 MiB …    33.2 MiB
+ 
+measure mandelbrot/java-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/java-mt.measure.csv -t java-mt -- java -cp /tmp/lb-build/mandelbrot/java-mt:/opt/java-libs/* Main 4000
+Benchmark 1: java-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    270.4 ms  ±    15.7 ms     249.8 ms  …   302.5 ms
+  Memory        36.8 MiB ±     0.2 MiB     36.6 MiB …    37.2 MiB
+ 
+measure mandelbrot/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/csharp.measure.csv -t csharp -- /tmp/lb-build/mandelbrot/csharp/Bench 4000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.403 s   ±   0.011 s      1.398 s   …   1.434 s
+  Memory        23.7 MiB ±     0.2 MiB     23.6 MiB …    24.0 MiB
+ 
+measure mandelbrot/csharp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/csharp-mt.measure.csv -t csharp-mt -- /tmp/lb-build/mandelbrot/csharp-mt/Bench 4000
+Benchmark 1: csharp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    216.0 ms  ±     8.7 ms     201.6 ms  …   234.4 ms
+  Memory        24.7 MiB ±     0.2 MiB     24.4 MiB …    24.9 MiB
+ 
+measure mandelbrot/js: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/js.measure.csv -t js -- node /bench/bench/mandelbrot/js/main.js 4000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.611 s   ±   0.004 s      1.607 s   …   1.618 s
+  Memory        39.4 MiB ±     0.1 MiB     39.3 MiB …    39.5 MiB
+ 
+measure mandelbrot/js-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/js-mt.measure.csv -t js-mt -- node /bench/bench/mandelbrot/js-mt/main.js 4000
+Benchmark 1: js-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    308.9 ms  ±    25.3 ms     267.8 ms  …   330.6 ms
+  Memory       141.6 MiB ±     1.3 MiB    138.2 MiB …   142.9 MiB
+ 
+measure mandelbrot/python: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/python.measure.csv -t python -- python3 /bench/bench/mandelbrot/python/main.py 4000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   33.984 s   ±   0.127 s     33.828 s   …  34.251 s
+  Memory         8.8 MiB ±     0.1 MiB      8.8 MiB …     8.9 MiB
+ 
+measure mandelbrot/python-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/python-mt.measure.csv -t python-mt -- python3 /bench/bench/mandelbrot/python-mt/main.py 4000
+Benchmark 1: python-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    5.608 s   ±   0.877 s      4.247 s   …   6.336 s
+  Memory        18.7 MiB ±     0.1 MiB     18.4 MiB …    18.8 MiB
+ 
+measure mandelbrot/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/pypy.measure.csv -t pypy -- pypy3 /bench/bench/mandelbrot/python/main.py 4000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.717 s   ±   0.001 s      1.715 s   …   1.718 s
+  Memory        35.0 MiB ±     0.1 MiB     35.0 MiB …    35.1 MiB
+ 
+measure mandelbrot/pypy-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/mandelbrot/pypy-mt.measure.csv -t pypy-mt -- pypy3 /bench/bench/mandelbrot/python-mt/main.py 4000
+Benchmark 1: pypy-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.001 s   ±   0.038 s      0.952 s   …   1.077 s
+  Memory        52.8 MiB ±     0.4 MiB     52.1 MiB …    53.5 MiB
+ 
+measure mandelbrot/php: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/php.measure.csv -t php -- php /bench/bench/mandelbrot/php/main.php 4000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   12.826 s   ±   0.011 s     12.812 s   …  12.846 s
+  Memory        14.8 MiB ±     0.1 MiB     14.7 MiB …    15.0 MiB
+ 
+measure mandelbrot/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/mandelbrot/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/mandelbrot/php/main.php 4000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    8.876 s   ±   0.065 s      8.808 s   …   8.970 s
+  Memory        18.4 MiB ±     0.1 MiB     18.3 MiB …    18.5 MiB
+ 
+measure matmul/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/matmul/c-gcc/main 700
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     85.7 ms  ±     1.8 ms      84.1 ms  …    89.8 ms
+  Memory        12.4 MiB ±     0.1 MiB     12.3 MiB …    12.5 MiB
+ 
+measure matmul/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/c-clang.measure.csv -t c-clang -- /tmp/lb-build/matmul/c-clang/main 700
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     95.0 ms  ±     1.7 ms      93.6 ms  …    98.5 ms
+  Memory        12.5 MiB ±     0.0 MiB     12.4 MiB …    12.5 MiB
+ 
+measure matmul/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/cpp.measure.csv -t cpp -- /tmp/lb-build/matmul/cpp/main 700
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time     92.8 ms  ±     2.4 ms      90.9 ms  …    98.7 ms
+  Memory        13.5 MiB ±     0.1 MiB     13.4 MiB …    13.6 MiB
+ 
+measure matmul/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/rust.measure.csv -t rust -- /tmp/lb-build/matmul/rust/target/release/bench 700
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    379.1 ms  ±     2.7 ms     377.3 ms  …   386.5 ms
+  Memory        12.7 MiB ±     0.0 MiB     12.6 MiB …    12.8 MiB
+ 
+measure matmul/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/zig.measure.csv -t zig -- /tmp/lb-build/matmul/zig/main 700
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    162.3 ms  ±     0.8 ms     161.3 ms  …   163.5 ms
+  Memory        11.8 MiB ±     0.0 MiB     11.8 MiB …    11.8 MiB
+ 
+measure matmul/go: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/go.measure.csv -t go -- /tmp/lb-build/matmul/go/main 700
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    494.2 ms  ±     4.1 ms     491.7 ms  …   505.9 ms
+  Memory        14.6 MiB ±     0.1 MiB     14.4 MiB …    14.7 MiB
+ 
+measure matmul/java: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/java.measure.csv -t java -- java -cp /tmp/lb-build/matmul/java:/opt/java-libs/* Main 700
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    255.2 ms  ±     5.5 ms     250.9 ms  …   267.8 ms
+  Memory        49.9 MiB ±     0.4 MiB     48.9 MiB …    50.3 MiB
+ 
+measure matmul/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/csharp.measure.csv -t csharp -- /tmp/lb-build/matmul/csharp/Bench 700
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    952.3 ms  ±     2.7 ms     949.7 ms  …   958.4 ms
+  Memory        34.0 MiB ±     0.1 MiB     33.8 MiB …    34.2 MiB
+ 
+measure matmul/js: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/js.measure.csv -t js -- node /bench/bench/matmul/js/main.js 700
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    530.9 ms  ±     4.0 ms     525.3 ms  …   537.0 ms
+  Memory        48.5 MiB ±     0.4 MiB     47.7 MiB …    49.0 MiB
+ 
+measure matmul/python: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/python.measure.csv -t python -- python3 /bench/bench/matmul/python/main.py 700
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   33.673 s   ±   1.865 s     31.070 s   …  37.850 s
+  Memory        65.9 MiB ±     0.2 MiB     65.6 MiB …    66.2 MiB
+ 
+measure matmul/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/pypy.measure.csv -t pypy -- pypy3 /bench/bench/matmul/python/main.py 700
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    575.9 ms  ±     2.6 ms     573.5 ms  …   581.6 ms
+  Memory        46.0 MiB ±     0.0 MiB     46.0 MiB …    46.1 MiB
+ 
+measure matmul/php: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/php.measure.csv -t php -- php /bench/bench/matmul/php/main.php 700
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    8.313 s   ±   0.033 s      8.294 s   …   8.406 s
+  Memory        41.7 MiB ±     1.7 MiB     40.6 MiB …    44.9 MiB
+ 
+measure matmul/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/matmul/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/matmul/php/main.php 700
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.470 s   ±   0.013 s      3.446 s   …   3.487 s
+  Memory        45.3 MiB ±     1.4 MiB     44.6 MiB …    49.2 MiB
+ 
+measure nbody/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/nbody/c-gcc/main 10000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    594.8 ms  ±     0.6 ms     593.8 ms  …   596.1 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure nbody/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/c-clang.measure.csv -t c-clang -- /tmp/lb-build/nbody/c-clang/main 10000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    482.2 ms  ±     1.2 ms     480.1 ms  …   483.9 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure nbody/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/cpp.measure.csv -t cpp -- /tmp/lb-build/nbody/cpp/main 10000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    595.3 ms  ±     2.4 ms     593.8 ms  …   602.1 ms
+  Memory         2.3 MiB ±     0.1 MiB      2.2 MiB …     2.4 MiB
+ 
+measure nbody/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/rust.measure.csv -t rust -- /tmp/lb-build/nbody/rust/target/release/bench 10000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    516.2 ms  ±     0.5 ms     515.5 ms  …   516.9 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure nbody/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/zig.measure.csv -t zig -- /tmp/lb-build/nbody/zig/main 10000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    487.6 ms  ±     0.4 ms     487.2 ms  …   488.2 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure nbody/go: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/go.measure.csv -t go -- /tmp/lb-build/nbody/go/main 10000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.029 s   ±   0.002 s      1.028 s   …   1.035 s
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure nbody/java: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/java.measure.csv -t java -- java -cp /tmp/lb-build/nbody/java:/opt/java-libs/* Main 10000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    808.0 ms  ±     7.2 ms     796.2 ms  …   823.0 ms
+  Memory        38.1 MiB ±     0.3 MiB     37.3 MiB …    38.4 MiB
+ 
+measure nbody/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/csharp.measure.csv -t csharp -- /tmp/lb-build/nbody/csharp/Bench 10000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    753.4 ms  ±     3.9 ms     750.6 ms  …   761.9 ms
+  Memory        23.3 MiB ±     0.1 MiB     23.0 MiB …    23.4 MiB
+ 
+measure nbody/js: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/js.measure.csv -t js -- node /bench/bench/nbody/js/main.js 10000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    979.7 ms  ±     2.8 ms     974.9 ms  …   984.0 ms
+  Memory        36.7 MiB ±     0.1 MiB     36.6 MiB …    36.9 MiB
+ 
+measure nbody/python: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/python.measure.csv -t python -- python3 /bench/bench/nbody/python/main.py 10000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   53.202 s   ±   0.257 s     53.009 s   …  53.725 s
+  Memory         9.0 MiB ±     0.1 MiB      9.0 MiB …     9.2 MiB
+ 
+measure nbody/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/pypy.measure.csv -t pypy -- pypy3 /bench/bench/nbody/python/main.py 10000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.356 s   ±   0.016 s      2.338 s   …   2.378 s
+  Memory        36.7 MiB ±     0.1 MiB     36.5 MiB …    36.9 MiB
+ 
+measure nbody/php: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/php.measure.csv -t php -- php /bench/bench/nbody/php/main.php 10000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   27.292 s   ±   0.123 s     27.129 s   …  27.475 s
+  Memory        14.9 MiB ±     0.1 MiB     14.8 MiB …    15.0 MiB
+ 
+measure nbody/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/nbody/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/nbody/php/main.php 10000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   16.984 s   ±   0.025 s     16.961 s   …  17.038 s
+  Memory        18.7 MiB ±     0.1 MiB     18.6 MiB …    18.8 MiB
+ 
+measure pidigits/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/pidigits/c-gcc/main 10000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    855.8 ms  ±     4.9 ms     851.7 ms  …   864.1 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure pidigits/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/c-clang.measure.csv -t c-clang -- /tmp/lb-build/pidigits/c-clang/main 10000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    854.8 ms  ±     3.7 ms     851.0 ms  …   860.4 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure pidigits/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/cpp.measure.csv -t cpp -- /tmp/lb-build/pidigits/cpp/main 10000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    926.4 ms  ±    32.1 ms     907.4 ms  …   993.5 ms
+  Memory         3.0 MiB ±     0.1 MiB      3.0 MiB …     3.1 MiB
+ 
+measure pidigits/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/rust.measure.csv -t rust -- /tmp/lb-build/pidigits/rust/target/release/bench 10000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    7.075 s   ±   0.011 s      7.066 s   …   7.098 s
+  Memory         2.6 MiB ±     0.1 MiB      2.5 MiB …     2.7 MiB
+ 
+measure pidigits/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/zig.measure.csv -t zig -- /tmp/lb-build/pidigits/zig/main 10000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.516 s   ±   0.008 s      4.505 s   …   4.528 s
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure pidigits/go: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/go.measure.csv -t go -- /tmp/lb-build/pidigits/go/main 10000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.706 s   ±   0.040 s      1.683 s   …   1.817 s
+  Memory        10.5 MiB ±     2.6 MiB      7.7 MiB …    16.0 MiB
+ 
+measure pidigits/java: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/java.measure.csv -t java -- java -cp /tmp/lb-build/pidigits/java:/opt/java-libs/* Main 10000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.735 s   ±   0.017 s      4.717 s   …   4.765 s
+  Memory       318.6 MiB ±    37.9 MiB    276.0 MiB …   376.3 MiB
+ 
+measure pidigits/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/csharp.measure.csv -t csharp -- /tmp/lb-build/pidigits/csharp/Bench 10000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.989 s   ±   0.006 s      3.984 s   …   4.002 s
+  Memory        40.6 MiB ±     0.2 MiB     40.3 MiB …    40.8 MiB
+ 
+measure pidigits/js: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/js.measure.csv -t js -- node /bench/bench/pidigits/js/main.js 10000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    8.508 s   ±   0.047 s      8.441 s   …   8.553 s
+  Memory       100.3 MiB ±     0.3 MiB     99.7 MiB …   100.6 MiB
+ 
+measure pidigits/python: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/python.measure.csv -t python -- python3 /bench/bench/pidigits/python/main.py 10000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.690 s   ±   0.006 s      4.682 s   …   4.704 s
+  Memory        10.1 MiB ±     0.3 MiB      9.9 MiB …    10.8 MiB
+ 
+measure pidigits/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/pypy.measure.csv -t pypy -- pypy3 /bench/bench/pidigits/python/main.py 10000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.355 s   ±   0.004 s      3.349 s   …   3.363 s
+  Memory        82.0 MiB ±     0.1 MiB     81.9 MiB …    82.1 MiB
+ 
+measure pidigits/php: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/php.measure.csv -t php -- php /bench/bench/pidigits/php/main.php 10000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    926.3 ms  ±     2.5 ms     922.9 ms  …   930.5 ms
+  Memory        15.7 MiB ±     0.1 MiB     15.6 MiB …    15.8 MiB
+ 
+measure pidigits/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/pidigits/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/pidigits/php/main.php 10000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    928.1 ms  ±     2.4 ms     925.1 ms  …   932.8 ms
+  Memory        19.4 MiB ±     0.1 MiB     19.3 MiB …    19.5 MiB
+ 
+measure quicksort/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/quicksort/c-gcc/main 10000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.413 s   ±   0.002 s      1.412 s   …   1.417 s
+  Memory        39.4 MiB ±     0.1 MiB     39.2 MiB …    39.5 MiB
+ 
+measure quicksort/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/c-clang.measure.csv -t c-clang -- /tmp/lb-build/quicksort/c-clang/main 10000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.112 s   ±   0.002 s      1.110 s   …   1.118 s
+  Memory        39.4 MiB ±     0.1 MiB     39.2 MiB …    39.5 MiB
+ 
+measure quicksort/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/cpp.measure.csv -t cpp -- /tmp/lb-build/quicksort/cpp/main 10000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.433 s   ±   0.001 s      1.432 s   …   1.436 s
+  Memory        40.2 MiB ±     0.1 MiB     40.1 MiB …    40.3 MiB
+ 
+measure quicksort/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/rust.measure.csv -t rust -- /tmp/lb-build/quicksort/rust/target/release/bench 10000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.274 s   ±   0.002 s      1.271 s   …   1.278 s
+  Memory        39.6 MiB ±     0.0 MiB     39.5 MiB …    39.6 MiB
+ 
+measure quicksort/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/zig.measure.csv -t zig -- /tmp/lb-build/quicksort/zig/main 10000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.115 s   ±   0.001 s      1.114 s   …   1.118 s
+  Memory        38.7 MiB ±     0.0 MiB     38.7 MiB …    38.7 MiB
+ 
+measure quicksort/go: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/go.measure.csv -t go -- /tmp/lb-build/quicksort/go/main 10000000
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (1.225 s). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.219 s   ±   0.002 s      1.217 s   …   1.225 s
+  Memory        40.2 MiB ±     0.0 MiB     40.2 MiB …    40.2 MiB
+ 
+measure quicksort/java: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/java.measure.csv -t java -- java -cp /tmp/lb-build/quicksort/java:/opt/java-libs/* Main 10000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.427 s   ±   0.024 s      1.380 s   …   1.443 s
+  Memory        75.7 MiB ±     0.6 MiB     74.5 MiB …    76.2 MiB
+ 
+measure quicksort/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/csharp.measure.csv -t csharp -- /tmp/lb-build/quicksort/csharp/Bench 10000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.446 s   ±   0.018 s      1.399 s   …   1.459 s
+  Memory        61.8 MiB ±     0.1 MiB     61.7 MiB …    62.0 MiB
+ 
+measure quicksort/js: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/js.measure.csv -t js -- node /bench/bench/quicksort/js/main.js 10000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.922 s   ±   0.007 s      1.914 s   …   1.932 s
+  Memory       192.4 MiB ±     2.9 MiB    189.5 MiB …   195.7 MiB
+ 
+measure quicksort/python: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/python.measure.csv -t python -- python3 /bench/bench/quicksort/python/main.py 10000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   21.446 s   ±   0.098 s     21.311 s   …  21.561 s
+  Memory       391.9 MiB ±     0.1 MiB    391.6 MiB …   392.1 MiB
+ 
+measure quicksort/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/pypy.measure.csv -t pypy -- pypy3 /bench/bench/quicksort/python/main.py 10000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.828 s   ±   0.008 s      2.816 s   …   2.845 s
+  Memory       115.1 MiB ±     0.2 MiB    114.9 MiB …   115.4 MiB
+ 
+measure quicksort/php: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/php.measure.csv -t php -- php /bench/bench/quicksort/php/main.php 10000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.452 s   ±   0.003 s      6.446 s   …   6.456 s
+  Memory       167.4 MiB ±     0.1 MiB    167.3 MiB …   167.6 MiB
+ 
+measure quicksort/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/quicksort/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/quicksort/php/main.php 10000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.970 s   ±   0.005 s      2.964 s   …   2.981 s
+  Memory       171.0 MiB ±     0.1 MiB    170.9 MiB …   171.2 MiB
+ 
+measure regexredux/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/regexredux/c-gcc/main
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.516 s   ±   0.023 s      3.484 s   …   3.560 s
+  Memory       100.2 MiB ±     0.1 MiB    100.0 MiB …   100.5 MiB
+ 
+measure regexredux/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/c-clang.measure.csv -t c-clang -- /tmp/lb-build/regexredux/c-clang/main
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.512 s   ±   0.022 s      3.483 s   …   3.553 s
+  Memory       100.3 MiB ±     0.1 MiB    100.1 MiB …   100.5 MiB
+ 
+measure regexredux/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/cpp.measure.csv -t cpp -- /tmp/lb-build/regexredux/cpp/main
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   42.091 s   ±   0.051 s     41.999 s   …  42.194 s
+  Memory       143.3 MiB ±     0.1 MiB    143.1 MiB …   143.4 MiB
+ 
+measure regexredux/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/rust.measure.csv -t rust -- /tmp/lb-build/regexredux/rust/target/release/bench
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.302 s   ±   0.018 s      1.284 s   …   1.337 s
+  Memory       101.7 MiB ±     0.1 MiB    101.5 MiB …   101.8 MiB
+ 
+measure regexredux/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/zig.measure.csv -t zig -- /tmp/lb-build/regexredux/zig/main
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.452 s   ±   0.022 s      3.433 s   …   3.504 s
+  Memory       100.8 MiB ±     0.1 MiB    100.7 MiB …   100.9 MiB
+ 
+measure regexredux/go: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/go.measure.csv -t go -- /tmp/lb-build/regexredux/go/main
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   39.912 s   ±   0.890 s     39.575 s   …  42.443 s
+  Memory       280.1 MiB ±     7.6 MiB    261.3 MiB …   283.9 MiB
+ 
+measure regexredux/java: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/java.measure.csv -t java -- java -cp /tmp/lb-build/regexredux/java:/opt/java-libs/* Main
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   14.539 s   ±   0.080 s     14.401 s   …  14.683 s
+  Memory         1.2 GiB ±     0.0 GiB      1.1 GiB …     1.2 GiB
+ 
+measure regexredux/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/csharp.measure.csv -t csharp -- /tmp/lb-build/regexredux/csharp/Bench
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.650 s   ±   0.042 s      1.621 s   …   1.753 s
+  Memory       574.3 MiB ±     0.2 MiB    573.8 MiB …   574.5 MiB
+ 
+measure regexredux/js: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/js.measure.csv -t js -- node /bench/bench/regexredux/js/main.js
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.102 s   ±   0.090 s      3.934 s   …   4.210 s
+  Memory       702.6 MiB ±    21.3 MiB    662.0 MiB …   713.8 MiB
+ 
+measure regexredux/python: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/python.measure.csv -t python -- python3 /bench/bench/regexredux/python/main.py
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   13.192 s   ±   0.036 s     13.153 s   …  13.254 s
+  Memory       370.4 MiB ±     0.1 MiB    370.2 MiB …   370.6 MiB
+ 
+measure regexredux/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/pypy.measure.csv -t pypy -- pypy3 /bench/bench/regexredux/python/main.py
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.310 s   ±   0.031 s      6.272 s   …   6.363 s
+  Memory       262.7 MiB ±     0.1 MiB    262.4 MiB …   262.8 MiB
+ 
+measure regexredux/php: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/php.measure.csv -t php -- php /bench/bench/regexredux/php/main.php
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.583 s   ±   0.019 s      3.553 s   …   3.620 s
+  Memory       145.0 MiB ±     0.1 MiB    144.8 MiB …   145.1 MiB
+ 
+measure regexredux/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/regexredux/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/regexredux/php/main.php
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.582 s   ±   0.017 s      3.563 s   …   3.619 s
+  Memory       148.4 MiB ±     0.1 MiB    148.3 MiB …   148.6 MiB
+ 
+measure revcomp/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/revcomp/c-gcc/main
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    805.4 ms  ±     8.8 ms     798.7 ms  …   828.6 ms
+  Memory       362.6 MiB ±     0.1 MiB    362.5 MiB …   362.8 MiB
+ 
+measure revcomp/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/c-clang.measure.csv -t c-clang -- /tmp/lb-build/revcomp/c-clang/main
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    756.9 ms  ±     7.9 ms     751.1 ms  …   777.8 ms
+  Memory       362.7 MiB ±     0.0 MiB    362.6 MiB …   362.7 MiB
+ 
+measure revcomp/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/cpp.measure.csv -t cpp -- /tmp/lb-build/revcomp/cpp/main
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.155 s   ±   0.002 s      1.152 s   …   1.159 s
+  Memory       122.3 MiB ±     0.1 MiB    122.2 MiB …   122.4 MiB
+ 
+measure revcomp/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/rust.measure.csv -t rust -- /tmp/lb-build/revcomp/rust/target/release/bench
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    743.3 ms  ±     3.7 ms     738.5 ms  …   752.5 ms
+  Memory       120.7 MiB ±     0.1 MiB    120.6 MiB …   120.9 MiB
+ 
+measure revcomp/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/zig.measure.csv -t zig -- /tmp/lb-build/revcomp/zig/main
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    725.7 ms  ±    20.5 ms     709.1 ms  …   765.1 ms
+  Memory       362.3 MiB ±     0.1 MiB    362.0 MiB …   362.5 MiB
+ 
+measure revcomp/go: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/go.measure.csv -t go -- /tmp/lb-build/revcomp/go/main
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.123 s   ±   0.025 s      1.094 s   …   1.178 s
+  Memory       329.5 MiB ±    45.1 MiB    295.2 MiB …   389.8 MiB
+ 
+measure revcomp/java: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/java.measure.csv -t java -- java -cp /tmp/lb-build/revcomp/java:/opt/java-libs/* Main
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.802 s   ±   0.051 s      1.736 s   …   1.885 s
+  Memory       486.1 MiB ±     0.3 MiB    485.7 MiB …   486.7 MiB
+ 
+measure revcomp/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/csharp.measure.csv -t csharp -- /tmp/lb-build/revcomp/csharp/Bench
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.260 s   ±   0.005 s      1.255 s   …   1.268 s
+  Memory       261.7 MiB ±     0.1 MiB    261.5 MiB …   261.8 MiB
+ 
+measure revcomp/js: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/js.measure.csv -t js -- node /bench/bench/revcomp/js/main.js
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.716 s   ±   0.007 s      1.706 s   …   1.728 s
+  Memory       641.1 MiB ±     0.3 MiB    640.6 MiB …   641.6 MiB
+ 
+measure revcomp/python: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/python.measure.csv -t python -- python3 /bench/bench/revcomp/python/main.py
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.613 s   ±   0.017 s      2.587 s   …   2.642 s
+  Memory       837.5 MiB ±     0.1 MiB    837.3 MiB …   837.8 MiB
+ 
+measure revcomp/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/pypy.measure.csv -t pypy -- pypy3 /bench/bench/revcomp/python/main.py
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.477 s   ±   0.010 s      3.465 s   …   3.495 s
+  Memory         1.2 GiB ±     0.0 GiB      1.2 GiB …     1.2 GiB
+ 
+measure revcomp/php: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/php.measure.csv -t php -- php /bench/bench/revcomp/php/main.php
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.720 s   ±   0.008 s      1.709 s   …   1.739 s
+  Memory       377.7 MiB ±     0.0 MiB    377.6 MiB …   377.8 MiB
+ 
+measure revcomp/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/revcomp/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/revcomp/php/main.php
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.573 s   ±   0.005 s      1.567 s   …   1.585 s
+  Memory       381.3 MiB ±     0.1 MiB    381.1 MiB …   381.4 MiB
+ 
+measure sieve/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/sieve/c-gcc/main 50000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    332.6 ms  ±    10.4 ms     314.1 ms  …   341.8 ms
+  Memory        48.9 MiB ±     0.1 MiB     48.8 MiB …    49.0 MiB
+ 
+measure sieve/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/c-clang.measure.csv -t c-clang -- /tmp/lb-build/sieve/c-clang/main 50000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    333.6 ms  ±     1.8 ms     331.4 ms  …   336.3 ms
+  Memory        48.9 MiB ±     0.1 MiB     48.8 MiB …    49.0 MiB
+ 
+measure sieve/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/cpp.measure.csv -t cpp -- /tmp/lb-build/sieve/cpp/main 50000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    223.7 ms  ±     1.0 ms     222.5 ms  …   225.2 ms
+  Memory         8.1 MiB ±     0.1 MiB      8.0 MiB …     8.2 MiB
+ 
+measure sieve/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/rust.measure.csv -t rust -- /tmp/lb-build/sieve/rust/target/release/bench 50000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    329.4 ms  ±     2.8 ms     325.5 ms  …   333.9 ms
+  Memory        49.1 MiB ±     0.1 MiB     49.0 MiB …    49.2 MiB
+ 
+measure sieve/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/zig.measure.csv -t zig -- /tmp/lb-build/sieve/zig/main 50000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    337.3 ms  ±     1.6 ms     335.3 ms  …   340.5 ms
+  Memory        48.3 MiB ±     0.0 MiB     48.3 MiB …    48.3 MiB
+ 
+measure sieve/go: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/go.measure.csv -t go -- /tmp/lb-build/sieve/go/main 50000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    346.9 ms  ±    11.1 ms     329.1 ms  …   362.2 ms
+  Memory        49.7 MiB ±     0.1 MiB     49.6 MiB …    49.8 MiB
+ 
+measure sieve/java: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/java.measure.csv -t java -- java -cp /tmp/lb-build/sieve/java:/opt/java-libs/* Main 50000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    415.7 ms  ±     1.8 ms     412.8 ms  …   418.8 ms
+  Memory        81.7 MiB ±     0.2 MiB     81.5 MiB …    82.1 MiB
+ 
+measure sieve/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/csharp.measure.csv -t csharp -- /tmp/lb-build/sieve/csharp/Bench 50000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    435.7 ms  ±     7.4 ms     421.8 ms  …   444.4 ms
+  Memory        70.4 MiB ±     0.1 MiB     70.2 MiB …    70.5 MiB
+ 
+measure sieve/js: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/js.measure.csv -t js -- node /bench/bench/sieve/js/main.js 50000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    469.2 ms  ±     4.8 ms     461.2 ms  …   475.9 ms
+  Memory        82.1 MiB ±     0.1 MiB     81.9 MiB …    82.3 MiB
+ 
+measure sieve/python: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/python.measure.csv -t python -- python3 /bench/bench/sieve/python/main.py 50000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    527.6 ms  ±     9.4 ms     516.6 ms  …   549.9 ms
+  Memory        88.2 MiB ±     0.1 MiB     88.1 MiB …    88.2 MiB
+ 
+measure sieve/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/pypy.measure.csv -t pypy -- pypy3 /bench/bench/sieve/python/main.py 50000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    486.7 ms  ±     1.4 ms     483.9 ms  …   489.0 ms
+  Memory       148.5 MiB ±     0.1 MiB    148.4 MiB …   148.6 MiB
+ 
+measure sieve/php: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/php.measure.csv -t php -- php /bench/bench/sieve/php/main.php 50000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.502 s   ±   0.120 s      3.435 s   …   3.747 s
+  Memory       777.7 MiB ±     0.2 MiB    777.4 MiB …   777.9 MiB
+ 
+measure sieve/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/sieve/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/sieve/php/main.php 50000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.381 s   ±   0.034 s      2.359 s   …   2.456 s
+  Memory       781.3 MiB ±     0.1 MiB    781.1 MiB …   781.4 MiB
+ 
+measure sortstd/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/sortstd/c-gcc/main 10000000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.149 s   ±   0.008 s      2.140 s   …   2.161 s
+  Memory        77.3 MiB ±     0.1 MiB     77.1 MiB …    77.5 MiB
+ 
+measure sortstd/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/c-clang.measure.csv -t c-clang -- /tmp/lb-build/sortstd/c-clang/main 10000000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.138 s   ±   0.004 s      2.133 s   …   2.146 s
+  Memory        77.4 MiB ±     0.1 MiB     77.2 MiB …    77.5 MiB
+ 
+measure sortstd/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/cpp.measure.csv -t cpp -- /tmp/lb-build/sortstd/cpp/main 10000000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.156 s   ±   0.003 s      1.153 s   …   1.161 s
+  Memory        40.2 MiB ±     0.1 MiB     40.2 MiB …    40.3 MiB
+ 
+measure sortstd/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/rust.measure.csv -t rust -- /tmp/lb-build/sortstd/rust/target/release/bench 10000000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    309.8 ms  ±     1.6 ms     308.0 ms  …   313.1 ms
+  Memory        39.6 MiB ±     0.1 MiB     39.5 MiB …    39.7 MiB
+ 
+measure sortstd/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/zig.measure.csv -t zig -- /tmp/lb-build/sortstd/zig/main 10000000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.661 s   ±   0.004 s      1.657 s   …   1.670 s
+  Memory        38.7 MiB ±     0.1 MiB     38.7 MiB …    38.8 MiB
+ 
+measure sortstd/go: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/go.measure.csv -t go -- /tmp/lb-build/sortstd/go/main 10000000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.365 s   ±   0.003 s      1.361 s   …   1.368 s
+  Memory        40.2 MiB ±     0.1 MiB     40.1 MiB …    40.4 MiB
+ 
+measure sortstd/java: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/java.measure.csv -t java -- java -cp /tmp/lb-build/sortstd/java:/opt/java-libs/* Main 10000000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    505.5 ms  ±     5.7 ms     496.8 ms  …   513.6 ms
+  Memory        77.7 MiB ±     0.1 MiB     77.4 MiB …    77.9 MiB
+ 
+measure sortstd/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/csharp.measure.csv -t csharp -- /tmp/lb-build/sortstd/csharp/Bench 10000000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.219 s   ±   0.003 s      1.212 s   …   1.223 s
+  Memory        62.2 MiB ±     0.1 MiB     62.1 MiB …    62.4 MiB
+ 
+measure sortstd/js: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/js.measure.csv -t js -- node /bench/bench/sortstd/js/main.js 10000000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.511 s   ±   0.021 s      6.487 s   …   6.558 s
+  Memory       560.7 MiB ±     0.1 MiB    560.5 MiB …   560.9 MiB
+ 
+measure sortstd/python: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/python.measure.csv -t python -- python3 /bench/bench/sortstd/python/main.py 10000000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    7.750 s   ±   0.111 s      7.596 s   …   7.968 s
+  Memory       429.7 MiB ±     0.2 MiB    429.3 MiB …   429.9 MiB
+ 
+measure sortstd/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/pypy.measure.csv -t pypy -- pypy3 /bench/bench/sortstd/python/main.py 10000000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.575 s   ±   0.002 s      2.572 s   …   2.579 s
+  Memory       187.2 MiB ±     0.1 MiB    187.0 MiB …   187.3 MiB
+ 
+measure sortstd/php: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/php.measure.csv -t php -- php /bench/bench/sortstd/php/main.php 10000000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.597 s   ±   0.011 s      3.582 s   …   3.623 s
+  Memory       704.0 MiB ±     0.1 MiB    703.9 MiB …   704.1 MiB
+ 
+measure sortstd/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/sortstd/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/sortstd/php/main.php 10000000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.476 s   ±   0.009 s      3.463 s   …   3.498 s
+  Memory       707.6 MiB ±     0.1 MiB    707.4 MiB …   707.7 MiB
+ 
+measure spectralnorm/c-gcc: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/c-gcc.measure.csv -t c-gcc -- /tmp/lb-build/spectralnorm/c-gcc/main 3000
+Benchmark 1: c-gcc (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    296.1 ms  ±     0.3 ms     295.8 ms  …   296.5 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure spectralnorm/c-gcc-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/c-gcc-mt.measure.csv -t c-gcc-mt -- /tmp/lb-build/spectralnorm/c-gcc-mt/main 3000
+Benchmark 1: c-gcc-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    109.3 ms  ±     4.2 ms     104.6 ms  …   115.5 ms
+  Memory         2.0 MiB ±     0.0 MiB      2.0 MiB …     2.0 MiB
+ 
+measure spectralnorm/c-clang: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/c-clang.measure.csv -t c-clang -- /tmp/lb-build/spectralnorm/c-clang/main 3000
+Benchmark 1: c-clang (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    581.9 ms  ±     1.0 ms     580.8 ms  …   584.6 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure spectralnorm/c-clang-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/c-clang-mt.measure.csv -t c-clang-mt -- /tmp/lb-build/spectralnorm/c-clang-mt/main 3000
+Benchmark 1: c-clang-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    108.4 ms  ±     5.2 ms     103.8 ms  …   120.1 ms
+  Memory         3.1 MiB ±     0.1 MiB      3.0 MiB …     3.3 MiB
+ 
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (120.1 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+measure spectralnorm/cpp: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/cpp.measure.csv -t cpp -- /tmp/lb-build/spectralnorm/cpp/main 3000
+Benchmark 1: cpp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    296.9 ms  ±     1.0 ms     296.0 ms  …   299.2 ms
+  Memory         2.4 MiB ±     0.1 MiB      2.3 MiB …     2.6 MiB
+ 
+measure spectralnorm/cpp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/cpp-mt.measure.csv -t cpp-mt -- /tmp/lb-build/spectralnorm/cpp-mt/main 3000
+Benchmark 1: cpp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    132.4 ms  ±    14.1 ms     113.0 ms  …   160.7 ms
+  Memory         2.3 MiB ±     0.1 MiB      2.1 MiB …     2.6 MiB
+ 
+measure spectralnorm/rust: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/rust.measure.csv -t rust -- /tmp/lb-build/spectralnorm/rust/target/release/bench 3000
+Benchmark 1: rust (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    581.9 ms  ±     0.4 ms     581.3 ms  …   582.6 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure spectralnorm/rust-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/rust-mt.measure.csv -t rust-mt -- /tmp/lb-build/spectralnorm/rust-mt/target/release/bench 3000
+Benchmark 1: rust-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    104.1 ms  ±     1.9 ms     102.8 ms  …   109.5 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (109.5 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+measure spectralnorm/zig: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/zig.measure.csv -t zig -- /tmp/lb-build/spectralnorm/zig/main 3000
+Benchmark 1: zig (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    581.7 ms  ±     1.0 ms     581.0 ms  …   584.4 ms
+  Memory         2.2 MiB ±     0.0 MiB      2.2 MiB …     2.2 MiB
+ 
+measure spectralnorm/zig-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/zig-mt.measure.csv -t zig-mt -- /tmp/lb-build/spectralnorm/zig-mt/main 3000
+Benchmark 1: zig-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    195.1 ms  ±    12.9 ms     173.0 ms  …   208.6 ms
+  Memory         3.6 MiB ±     0.0 MiB      3.5 MiB …     3.7 MiB
+ 
+measure spectralnorm/go: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/go.measure.csv -t go -- /tmp/lb-build/spectralnorm/go/main 3000
+Benchmark 1: go (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    584.4 ms  ±     5.7 ms     582.1 ms  …   600.7 ms
+  Memory         2.1 MiB ±     0.0 MiB      2.1 MiB …     2.1 MiB
+ 
+measure spectralnorm/go-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/go-mt.measure.csv -t go-mt -- /tmp/lb-build/spectralnorm/go-mt/main 3000
+Benchmark 1: go-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    242.3 ms  ±    35.8 ms     202.1 ms  …   284.5 ms
+  Memory         2.8 MiB ±     0.2 MiB      2.5 MiB …     3.2 MiB
+ 
+measure spectralnorm/java: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/java.measure.csv -t java -- java -cp /tmp/lb-build/spectralnorm/java:/opt/java-libs/* Main 3000
+Benchmark 1: java (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    652.8 ms  ±     5.3 ms     645.8 ms  …   659.7 ms
+  Memory        37.1 MiB ±     0.8 MiB     36.2 MiB …    38.3 MiB
+ 
+measure spectralnorm/java-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/java-mt.measure.csv -t java-mt -- java -cp /tmp/lb-build/spectralnorm/java-mt:/opt/java-libs/* Main 3000
+Benchmark 1: java-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    282.0 ms  ±     8.2 ms     266.0 ms  …   294.4 ms
+  Memory        38.5 MiB ±     0.6 MiB     37.6 MiB …    39.4 MiB
+ 
+measure spectralnorm/csharp: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/csharp.measure.csv -t csharp -- /tmp/lb-build/spectralnorm/csharp/Bench 3000
+Benchmark 1: csharp (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    619.4 ms  ±    10.6 ms     614.2 ms  …   649.0 ms
+  Memory        22.1 MiB ±     0.1 MiB     21.9 MiB …    22.2 MiB
+ 
+measure spectralnorm/csharp-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/csharp-mt.measure.csv -t csharp-mt -- /tmp/lb-build/spectralnorm/csharp-mt/Bench 3000
+Benchmark 1: csharp-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    278.7 ms  ±    12.4 ms     265.1 ms  …   300.2 ms
+  Memory        23.4 MiB ±     0.8 MiB     22.6 MiB …    24.6 MiB
+ 
+measure spectralnorm/js: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/js.measure.csv -t js -- node /bench/bench/spectralnorm/js/main.js 3000
+Benchmark 1: js (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    984.1 ms  ±     3.0 ms     979.5 ms  …   989.2 ms
+  Memory        36.2 MiB ±     0.3 MiB     35.6 MiB …    36.8 MiB
+ 
+measure spectralnorm/js-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/js-mt.measure.csv -t js-mt -- node /bench/bench/spectralnorm/js-mt/main.js 3000
+Benchmark 1: js-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    322.8 ms  ±     5.6 ms     316.0 ms  …   334.6 ms
+  Memory       145.2 MiB ±     0.6 MiB    144.5 MiB …   146.2 MiB
+ 
+measure spectralnorm/python: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/python.measure.csv -t python -- python3 /bench/bench/spectralnorm/python/main.py 3000
+Benchmark 1: python (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   36.658 s   ±   0.063 s     36.579 s   …  36.749 s
+  Memory         9.2 MiB ±     0.1 MiB      9.2 MiB …     9.3 MiB
+ 
+measure spectralnorm/python-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/python-mt.measure.csv -t python-mt -- python3 /bench/bench/spectralnorm/python-mt/main.py 3000
+Benchmark 1: python-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    6.905 s   ±   0.692 s      5.841 s   …   7.489 s
+  Memory        15.0 MiB ±     0.2 MiB     14.8 MiB …    15.3 MiB
+ 
+measure spectralnorm/pypy: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/pypy.measure.csv -t pypy -- pypy3 /bench/bench/spectralnorm/python/main.py 3000
+Benchmark 1: pypy (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.104 s   ±   0.002 s      1.102 s   …   1.110 s
+  Memory        34.9 MiB ±     0.1 MiB     34.8 MiB …    35.1 MiB
+ 
+measure spectralnorm/pypy-mt: taskset -c 0-11 measure -o /bench/results/raw/g1/spectralnorm/pypy-mt.measure.csv -t pypy-mt -- pypy3 /bench/bench/spectralnorm/python-mt/main.py 3000
+Benchmark 1: pypy-mt (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    486.8 ms  ±     9.3 ms     474.1 ms  …   499.0 ms
+  Memory        59.4 MiB ±     0.3 MiB     58.9 MiB …    60.0 MiB
+ 
+measure spectralnorm/php: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/php.measure.csv -t php -- php /bench/bench/spectralnorm/php/main.php 3000
+Benchmark 1: php (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time   15.948 s   ±   0.035 s     15.872 s   …  15.978 s
+  Memory        14.9 MiB ±     0.1 MiB     14.7 MiB …    15.0 MiB
+ 
+measure spectralnorm/php-jit: taskset -c 0-3 measure -o /bench/results/raw/g1/spectralnorm/php-jit.measure.csv -t php-jit -- php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/spectralnorm/php/main.php 3000
+Benchmark 1: php-jit (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.823 s   ±   0.011 s      3.811 s   …   3.840 s
+  Memory        18.6 MiB ±     0.1 MiB     18.3 MiB …    18.7 MiB
+ 
+sh: -c: line 2: syntax error near unexpected token `collatz'
+sh: -c: line 2: `collatz'
