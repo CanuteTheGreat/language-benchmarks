@@ -35,8 +35,18 @@ def load(tag):
     return list(csv.DictReader(open(os.path.join(ROOT, "results", f"{tag}-summary.csv"))))
 
 
-def fmt(x):
-    return f"{x:.3g}" if x < 10 else f"{x:.0f}"
+def fmt(x, metric="wall"):
+    if metric in ("wall", "cpu"):
+        if x < 0.01:
+            return f"{x * 1000:.1f} ms"
+        if x < 1:
+            return f"{x * 1000:.0f} ms"
+        return f"{x:.2f} s" if x < 100 else f"{x:.0f} s"
+    if metric == "rss":
+        return f"{x:.1f} MB" if x < 10 else f"{x:.0f} MB"
+    if metric == "energy":
+        return f"{x:.2g} J" if x < 10 else f"{x:.0f} J"
+    return f"{x:.3g}"
 
 
 def bar(rows, bench, metric, out, log, title=None, variants=None):
@@ -49,20 +59,22 @@ def bar(rows, bench, metric, out, log, title=None, variants=None):
     ys = range(len(rs))
     vals = [float(r[key]) for r in rs]
     ax.barh(list(ys), vals, color=[color(r["variant"]) for r in rs])
+    ends = list(vals)
     if metric == "wall":
         lo = [max(0, float(r["wall_median_s"]) - float(r["wall_min_s"])) for r in rs]
         hi = [max(0, float(r["wall_max_s"]) - float(r["wall_median_s"])) for r in rs]
         ax.errorbar(vals, list(ys), xerr=[lo, hi], fmt="none", ecolor="#dee2e6", elinewidth=0.8, capsize=2)
+        ends = [v + h for v, h in zip(vals, hi)]
     ax.set_yticks(list(ys))
     ax.set_yticklabels([label(r["variant"]) for r in rs], fontsize=11)
     ax.invert_yaxis()
     if log:
         ax.set_xscale("log")
-    for y, v in zip(ys, vals):
-        ax.text(v * (1.08 if log else 1.0) + (0 if log else max(vals) * 0.01), y, fmt(v), va="center", fontsize=10)
+    for y, v, e in zip(ys, vals, ends):
+        ax.text(e * (1.1 if log else 1.0) + (0 if log else max(ends) * 0.015), y, fmt(v, metric), va="center", fontsize=10)
     ax.set_xlabel(xl + (" (log scale)" if log else ""), fontsize=11)
     ax.set_title(title or bench, fontsize=13, loc="left")
-    ax.set_xlim(right=max(vals) * (3 if log else 1.15))
+    ax.set_xlim(right=max(ends) * (4 if log else 1.3))
     ax.grid(axis="x", alpha=0.2)
     fig.tight_layout()
     fig.savefig(out)
