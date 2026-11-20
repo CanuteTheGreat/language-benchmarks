@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/json/c-gcc/main /bench/data/records-200000.json
+c-clang	/tmp/lb-build/json/c-clang/main /bench/data/records-200000.json
+cpp	/tmp/lb-build/json/cpp/main /bench/data/records-200000.json
+rust	/tmp/lb-build/json/rust/target/release/bench /bench/data/records-200000.json
+zig	/tmp/lb-build/json/zig/main /bench/data/records-200000.json
+go	/tmp/lb-build/json/go/main /bench/data/records-200000.json
+java	java -cp '/tmp/lb-build/json/java:/opt/java-libs/*' Main /bench/data/records-200000.json
+csharp	/tmp/lb-build/json/csharp/Bench /bench/data/records-200000.json
+js	node /bench/bench/json/js/main.js /bench/data/records-200000.json
+python	python3 /bench/bench/json/python/main.py /bench/data/records-200000.json
+pypy	pypy3 /bench/bench/json/python/main.py /bench/data/records-200000.json
+php	php /bench/bench/json/php/main.php /bench/data/records-200000.json
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/json/php/main.php /bench/data/records-200000.json

@@ -1,0 +1,555 @@
+{'variant': 'c-gcc', 'artifact_bytes': 20312, 'stripped_bytes': 18592, 'loc': 37}
+{'variant': 'c-gcc-mt', 'artifact_bytes': 20584, 'stripped_bytes': 18624, 'loc': 38}
+{'variant': 'c-clang', 'artifact_bytes': 16224, 'stripped_bytes': 14512, 'loc': 37}
+{'variant': 'c-clang-mt', 'artifact_bytes': 16848, 'stripped_bytes': 14640, 'loc': 38}
+{'variant': 'cpp', 'artifact_bytes': 41240, 'stripped_bytes': 39176, 'loc': 27}
+{'variant': 'cpp-mt', 'artifact_bytes': 46768, 'stripped_bytes': 43392, 'loc': 40}
+{'variant': 'rust', 'artifact_bytes': 449936, 'stripped_bytes': 341872, 'loc': 33}
+{'variant': 'rust-mt', 'artifact_bytes': 608320, 'stripped_bytes': 446776, 'loc': 34}
+{'variant': 'zig', 'artifact_bytes': 4200576, 'stripped_bytes': 558584, 'loc': 56}
+{'variant': 'zig-mt', 'artifact_bytes': 4246248, 'stripped_bytes': 563416, 'loc': 65}
+{'variant': 'go', 'artifact_bytes': 2425461, 'stripped_bytes': 1523736, 'loc': 39}
+{'variant': 'go-mt', 'artifact_bytes': 2439500, 'stripped_bytes': 1531896, 'loc': 53}
+{'variant': 'java', 'artifact_bytes': 1920, 'stripped_bytes': 1920, 'loc': 27}
+{'variant': 'java-mt', 'artifact_bytes': 2735, 'stripped_bytes': 2735, 'loc': 29}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 23}
+{'variant': 'csharp-mt', 'artifact_bytes': 6656, 'stripped_bytes': 6656, 'loc': 26}
+{'variant': 'js', 'artifact_bytes': 943, 'stripped_bytes': 943, 'loc': 23}
+{'variant': 'js-mt', 'artifact_bytes': 1908, 'stripped_bytes': 1908, 'loc': 48}
+{'variant': 'python', 'artifact_bytes': 919, 'stripped_bytes': 919, 'loc': 26}
+{'variant': 'python-mt', 'artifact_bytes': 1356, 'stripped_bytes': 1356, 'loc': 38}
+{'variant': 'pypy', 'artifact_bytes': 919, 'stripped_bytes': 919, 'loc': 26}
+{'variant': 'pypy-mt', 'artifact_bytes': 1356, 'stripped_bytes': 1356, 'loc': 38}
+{'variant': 'php', 'artifact_bytes': 834, 'stripped_bytes': 834, 'loc': 23}
+{'variant': 'php-jit', 'artifact_bytes': 834, 'stripped_bytes': 834, 'loc': 23}
+{'variant': 'c-gcc', 'artifact_bytes': 16032, 'stripped_bytes': 14480, 'loc': 16}
+{'variant': 'c-clang', 'artifact_bytes': 16040, 'stripped_bytes': 14496, 'loc': 16}
+{'variant': 'cpp', 'artifact_bytes': 16400, 'stripped_bytes': 14504, 'loc': 16}
+{'variant': 'rust', 'artifact_bytes': 448744, 'stripped_bytes': 340968, 'loc': 16}
+{'variant': 'zig', 'artifact_bytes': 4181440, 'stripped_bytes': 555352, 'loc': 26}
+{'variant': 'go', 'artifact_bytes': 2409382, 'stripped_bytes': 1511448, 'loc': 28}
+{'variant': 'java', 'artifact_bytes': 1165, 'stripped_bytes': 1165, 'loc': 20}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 19}
+{'variant': 'js', 'artifact_bytes': 411, 'stripped_bytes': 411, 'loc': 14}
+{'variant': 'python', 'artifact_bytes': 361, 'stripped_bytes': 361, 'loc': 11}
+{'variant': 'pypy', 'artifact_bytes': 361, 'stripped_bytes': 361, 'loc': 11}
+{'variant': 'php', 'artifact_bytes': 414, 'stripped_bytes': 414, 'loc': 17}
+{'variant': 'php-jit', 'artifact_bytes': 414, 'stripped_bytes': 414, 'loc': 17}
+{'variant': 'c-gcc', 'artifact_bytes': 16184, 'stripped_bytes': 14496, 'loc': 71}
+{'variant': 'c-clang', 'artifact_bytes': 16192, 'stripped_bytes': 14512, 'loc': 71}
+{'variant': 'cpp', 'artifact_bytes': 16992, 'stripped_bytes': 14640, 'loc': 40}
+{'variant': 'rust', 'artifact_bytes': 453432, 'stripped_bytes': 344944, 'loc': 46}
+{'variant': 'zig', 'artifact_bytes': 4232240, 'stripped_bytes': 560680, 'loc': 57}
+{'variant': 'go', 'artifact_bytes': 2417454, 'stripped_bytes': 1519640, 'loc': 75}
+{'variant': 'java', 'artifact_bytes': 3992, 'stripped_bytes': 3992, 'loc': 46}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 41}
+{'variant': 'js', 'artifact_bytes': 1712, 'stripped_bytes': 1712, 'loc': 76}
+{'variant': 'python', 'artifact_bytes': 872, 'stripped_bytes': 872, 'loc': 36}
+{'variant': 'pypy', 'artifact_bytes': 872, 'stripped_bytes': 872, 'loc': 36}
+{'variant': 'php', 'artifact_bytes': 1126, 'stripped_bytes': 1126, 'loc': 43}
+{'variant': 'php-jit', 'artifact_bytes': 1126, 'stripped_bytes': 1126, 'loc': 43}
+{'variant': 'c-gcc', 'artifact_bytes': 16376, 'stripped_bytes': 14536, 'loc': 18}
+{'variant': 'c-clang', 'artifact_bytes': 16384, 'stripped_bytes': 14552, 'loc': 18}
+{'variant': 'cpp', 'artifact_bytes': 17216, 'stripped_bytes': 14680, 'loc': 13}
+{'variant': 'rust', 'artifact_bytes': 541880, 'stripped_bytes': 421296, 'loc': 11}
+{'variant': 'zig', 'artifact_bytes': 4296976, 'stripped_bytes': 575384, 'loc': 27}
+{'variant': 'go', 'artifact_bytes': 2658938, 'stripped_bytes': 1678776, 'loc': 23}
+{'variant': 'java', 'artifact_bytes': 1366, 'stripped_bytes': 1366, 'loc': 12}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 8}
+{'variant': 'js', 'artifact_bytes': 310, 'stripped_bytes': 310, 'loc': 7}
+{'variant': 'python', 'artifact_bytes': 230, 'stripped_bytes': 230, 'loc': 8}
+{'variant': 'pypy', 'artifact_bytes': 230, 'stripped_bytes': 230, 'loc': 8}
+{'variant': 'php', 'artifact_bytes': 308, 'stripped_bytes': 308, 'loc': 13}
+{'variant': 'php-jit', 'artifact_bytes': 308, 'stripped_bytes': 308, 'loc': 13}
+{'variant': 'c-gcc', 'artifact_bytes': 16160, 'stripped_bytes': 14488, 'loc': 58}
+{'variant': 'c-gcc-mt', 'artifact_bytes': 20696, 'stripped_bytes': 18640, 'loc': 72}
+{'variant': 'c-clang', 'artifact_bytes': 16280, 'stripped_bytes': 14528, 'loc': 58}
+{'variant': 'c-clang-mt', 'artifact_bytes': 16856, 'stripped_bytes': 14648, 'loc': 72}
+{'variant': 'cpp', 'artifact_bytes': 16120, 'stripped_bytes': 14488, 'loc': 54}
+{'variant': 'cpp-mt', 'artifact_bytes': 22080, 'stripped_bytes': 18816, 'loc': 84}
+{'variant': 'rust', 'artifact_bytes': 450808, 'stripped_bytes': 343032, 'loc': 62}
+{'variant': 'rust-mt', 'artifact_bytes': 609656, 'stripped_bytes': 448800, 'loc': 73}
+{'variant': 'zig', 'artifact_bytes': 4192096, 'stripped_bytes': 558008, 'loc': 65}
+{'variant': 'zig-mt', 'artifact_bytes': 4204256, 'stripped_bytes': 559624, 'loc': 105}
+{'variant': 'go', 'artifact_bytes': 2423843, 'stripped_bytes': 1523736, 'loc': 81}
+{'variant': 'go-mt', 'artifact_bytes': 2437634, 'stripped_bytes': 1531896, 'loc': 117}
+{'variant': 'java', 'artifact_bytes': 2018, 'stripped_bytes': 2018, 'loc': 52}
+{'variant': 'java-mt', 'artifact_bytes': 3386, 'stripped_bytes': 3386, 'loc': 79}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 56}
+{'variant': 'csharp-mt', 'artifact_bytes': 6656, 'stripped_bytes': 6656, 'loc': 68}
+{'variant': 'js', 'artifact_bytes': 1448, 'stripped_bytes': 1448, 'loc': 46}
+{'variant': 'js-mt', 'artifact_bytes': 2588, 'stripped_bytes': 2588, 'loc': 83}
+{'variant': 'python', 'artifact_bytes': 1444, 'stripped_bytes': 1444, 'loc': 49}
+{'variant': 'python-mt', 'artifact_bytes': 1888, 'stripped_bytes': 1888, 'loc': 61}
+{'variant': 'pypy', 'artifact_bytes': 1444, 'stripped_bytes': 1444, 'loc': 49}
+{'variant': 'pypy-mt', 'artifact_bytes': 1888, 'stripped_bytes': 1888, 'loc': 61}
+{'variant': 'php', 'artifact_bytes': 1602, 'stripped_bytes': 1602, 'loc': 57}
+{'variant': 'php-jit', 'artifact_bytes': 1602, 'stripped_bytes': 1602, 'loc': 57}
+{'variant': 'c-gcc', 'artifact_bytes': 16576, 'stripped_bytes': 14816, 'loc': 80}
+{'variant': 'c-clang', 'artifact_bytes': 16584, 'stripped_bytes': 14832, 'loc': 80}
+{'variant': 'cpp', 'artifact_bytes': 21560, 'stripped_bytes': 18792, 'loc': 83}
+{'variant': 'rust', 'artifact_bytes': 460496, 'stripped_bytes': 350016, 'loc': 88}
+{'variant': 'zig', 'artifact_bytes': 4181536, 'stripped_bytes': 556944, 'loc': 83}
+{'variant': 'go', 'artifact_bytes': 2146372, 'stripped_bytes': 1338680, 'loc': 95}
+{'variant': 'java', 'artifact_bytes': 4310, 'stripped_bytes': 4310, 'loc': 79}
+{'variant': 'csharp', 'artifact_bytes': 7168, 'stripped_bytes': 7168, 'loc': 82}
+{'variant': 'js', 'artifact_bytes': 1979, 'stripped_bytes': 1979, 'loc': 74}
+{'variant': 'python', 'artifact_bytes': 1978, 'stripped_bytes': 1978, 'loc': 65}
+{'variant': 'pypy', 'artifact_bytes': 1978, 'stripped_bytes': 1978, 'loc': 65}
+{'variant': 'php', 'artifact_bytes': 2162, 'stripped_bytes': 2162, 'loc': 81}
+{'variant': 'php-jit', 'artifact_bytes': 2162, 'stripped_bytes': 2162, 'loc': 81}
+{'variant': 'c-gcc', 'artifact_bytes': 16056, 'stripped_bytes': 14480, 'loc': 8}
+{'variant': 'c-clang', 'artifact_bytes': 16064, 'stripped_bytes': 14496, 'loc': 8}
+{'variant': 'cpp', 'artifact_bytes': 16440, 'stripped_bytes': 14504, 'loc': 8}
+{'variant': 'rust', 'artifact_bytes': 448520, 'stripped_bytes': 340696, 'loc': 7}
+{'variant': 'zig', 'artifact_bytes': 4177240, 'stripped_bytes': 554600, 'loc': 14}
+{'variant': 'go', 'artifact_bytes': 2404935, 'stripped_bytes': 1511448, 'loc': 19}
+{'variant': 'java', 'artifact_bytes': 614, 'stripped_bytes': 614, 'loc': 9}
+{'variant': 'csharp', 'artifact_bytes': 4608, 'stripped_bytes': 4608, 'loc': 3}
+{'variant': 'js', 'artifact_bytes': 215, 'stripped_bytes': 215, 'loc': 5}
+{'variant': 'python', 'artifact_bytes': 184, 'stripped_bytes': 184, 'loc': 5}
+{'variant': 'pypy', 'artifact_bytes': 184, 'stripped_bytes': 184, 'loc': 5}
+{'variant': 'php', 'artifact_bytes': 192, 'stripped_bytes': 192, 'loc': 6}
+{'variant': 'php-jit', 'artifact_bytes': 192, 'stripped_bytes': 192, 'loc': 6}
+{'variant': 'c-gcc', 'artifact_bytes': 16160, 'stripped_bytes': 14496, 'loc': 38}
+{'variant': 'c-clang', 'artifact_bytes': 16168, 'stripped_bytes': 14512, 'loc': 38}
+{'variant': 'cpp', 'artifact_bytes': 17240, 'stripped_bytes': 14664, 'loc': 22}
+{'variant': 'rust', 'artifact_bytes': 465856, 'stripped_bytes': 354512, 'loc': 21}
+{'variant': 'zig', 'artifact_bytes': 4212208, 'stripped_bytes': 557864, 'loc': 31}
+{'variant': 'go', 'artifact_bytes': 2413682, 'stripped_bytes': 1515544, 'loc': 29}
+{'variant': 'java', 'artifact_bytes': 1492, 'stripped_bytes': 1492, 'loc': 23}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 20}
+{'variant': 'js', 'artifact_bytes': 471, 'stripped_bytes': 471, 'loc': 19}
+{'variant': 'python', 'artifact_bytes': 372, 'stripped_bytes': 372, 'loc': 17}
+{'variant': 'pypy', 'artifact_bytes': 372, 'stripped_bytes': 372, 'loc': 17}
+{'variant': 'php', 'artifact_bytes': 448, 'stripped_bytes': 448, 'loc': 20}
+{'variant': 'php-jit', 'artifact_bytes': 448, 'stripped_bytes': 448, 'loc': 20}
+{'variant': 'c-gcc', 'artifact_bytes': 15968, 'stripped_bytes': 14472, 'loc': 5}
+{'variant': 'c-clang', 'artifact_bytes': 15984, 'stripped_bytes': 14488, 'loc': 5}
+{'variant': 'cpp', 'artifact_bytes': 16160, 'stripped_bytes': 14472, 'loc': 4}
+{'variant': 'rust', 'artifact_bytes': 444488, 'stripped_bytes': 337792, 'loc': 3}
+{'variant': 'zig', 'artifact_bytes': 4168440, 'stripped_bytes': 553656, 'loc': 9}
+{'variant': 'go', 'artifact_bytes': 2397750, 'stripped_bytes': 1507288, 'loc': 5}
+{'variant': 'java', 'artifact_bytes': 415, 'stripped_bytes': 415, 'loc': 5}
+{'variant': 'csharp', 'artifact_bytes': 4608, 'stripped_bytes': 4608, 'loc': 1}
+{'variant': 'js', 'artifact_bytes': 30, 'stripped_bytes': 30, 'loc': 1}
+{'variant': 'python', 'artifact_bytes': 23, 'stripped_bytes': 23, 'loc': 1}
+{'variant': 'pypy', 'artifact_bytes': 23, 'stripped_bytes': 23, 'loc': 1}
+{'variant': 'php', 'artifact_bytes': 30, 'stripped_bytes': 30, 'loc': 2}
+{'variant': 'php-jit', 'artifact_bytes': 30, 'stripped_bytes': 30, 'loc': 2}
+{'variant': 'c-gcc', 'artifact_bytes': 16576, 'stripped_bytes': 14568, 'loc': 30}
+{'variant': 'c-clang', 'artifact_bytes': 16592, 'stripped_bytes': 14584, 'loc': 30}
+{'variant': 'cpp', 'artifact_bytes': 186400, 'stripped_bytes': 154264, 'loc': 18}
+{'variant': 'rust', 'artifact_bytes': 540248, 'stripped_bytes': 415376, 'loc': 18}
+{'variant': 'zig', 'artifact_bytes': 4564832, 'stripped_bytes': 643448, 'loc': 30}
+{'variant': 'go', 'artifact_bytes': 4026049, 'stripped_bytes': 2571256, 'loc': 33}
+{'variant': 'java', 'artifact_bytes': 1851, 'stripped_bytes': 1851, 'loc': 18}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 12}
+{'variant': 'js', 'artifact_bytes': 416, 'stripped_bytes': 416, 'loc': 12}
+{'variant': 'python', 'artifact_bytes': 465, 'stripped_bytes': 465, 'loc': 16}
+{'variant': 'pypy', 'artifact_bytes': 465, 'stripped_bytes': 465, 'loc': 16}
+{'variant': 'php', 'artifact_bytes': 412, 'stripped_bytes': 412, 'loc': 15}
+{'variant': 'php-jit', 'artifact_bytes': 412, 'stripped_bytes': 412, 'loc': 15}
+{'variant': 'c-gcc', 'artifact_bytes': 16848, 'stripped_bytes': 14576, 'loc': 124}
+{'variant': 'c-clang', 'artifact_bytes': 16848, 'stripped_bytes': 14584, 'loc': 124}
+{'variant': 'cpp', 'artifact_bytes': 23968, 'stripped_bytes': 18928, 'loc': 64}
+{'variant': 'rust', 'artifact_bytes': 510576, 'stripped_bytes': 392656, 'loc': 61}
+{'variant': 'zig', 'artifact_bytes': 4439024, 'stripped_bytes': 609160, 'loc': 82}
+{'variant': 'go', 'artifact_bytes': 2467513, 'stripped_bytes': 1552344, 'loc': 93}
+{'variant': 'java', 'artifact_bytes': 4899, 'stripped_bytes': 4899, 'loc': 60}
+{'variant': 'csharp', 'artifact_bytes': 7168, 'stripped_bytes': 7168, 'loc': 57}
+{'variant': 'js', 'artifact_bytes': 1679, 'stripped_bytes': 1679, 'loc': 53}
+{'variant': 'python', 'artifact_bytes': 1349, 'stripped_bytes': 1349, 'loc': 41}
+{'variant': 'pypy', 'artifact_bytes': 1349, 'stripped_bytes': 1349, 'loc': 41}
+{'variant': 'php', 'artifact_bytes': 1746, 'stripped_bytes': 1746, 'loc': 58}
+{'variant': 'php-jit', 'artifact_bytes': 1746, 'stripped_bytes': 1746, 'loc': 58}
+{'variant': 'c-gcc', 'artifact_bytes': 16200, 'stripped_bytes': 14504, 'loc': 36}
+{'variant': 'c-clang', 'artifact_bytes': 16176, 'stripped_bytes': 14520, 'loc': 36}
+{'variant': 'cpp', 'artifact_bytes': 16736, 'stripped_bytes': 14624, 'loc': 31}
+{'variant': 'rust', 'artifact_bytes': 449696, 'stripped_bytes': 342096, 'loc': 27}
+{'variant': 'zig', 'artifact_bytes': 4216192, 'stripped_bytes': 559264, 'loc': 39}
+{'variant': 'go', 'artifact_bytes': 2414309, 'stripped_bytes': 1515544, 'loc': 43}
+{'variant': 'java', 'artifact_bytes': 1240, 'stripped_bytes': 1240, 'loc': 29}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 29}
+{'variant': 'js', 'artifact_bytes': 724, 'stripped_bytes': 724, 'loc': 24}
+{'variant': 'python', 'artifact_bytes': 663, 'stripped_bytes': 663, 'loc': 22}
+{'variant': 'pypy', 'artifact_bytes': 663, 'stripped_bytes': 663, 'loc': 22}
+{'variant': 'php', 'artifact_bytes': 640, 'stripped_bytes': 640, 'loc': 24}
+{'variant': 'php-jit', 'artifact_bytes': 640, 'stripped_bytes': 640, 'loc': 24}
+{'variant': 'c-gcc', 'artifact_bytes': 16272, 'stripped_bytes': 14512, 'loc': 27}
+{'variant': 'c-gcc-mt', 'artifact_bytes': 16592, 'stripped_bytes': 14544, 'loc': 27}
+{'variant': 'c-clang', 'artifact_bytes': 16280, 'stripped_bytes': 14528, 'loc': 27}
+{'variant': 'c-clang-mt', 'artifact_bytes': 16656, 'stripped_bytes': 14640, 'loc': 27}
+{'variant': 'cpp', 'artifact_bytes': 16640, 'stripped_bytes': 14616, 'loc': 29}
+{'variant': 'cpp-mt', 'artifact_bytes': 18056, 'stripped_bytes': 14736, 'loc': 35}
+{'variant': 'rust', 'artifact_bytes': 457536, 'stripped_bytes': 347480, 'loc': 28}
+{'variant': 'rust-mt', 'artifact_bytes': 607432, 'stripped_bytes': 446104, 'loc': 29}
+{'variant': 'zig', 'artifact_bytes': 4184120, 'stripped_bytes': 556024, 'loc': 38}
+{'variant': 'zig-mt', 'artifact_bytes': 4195664, 'stripped_bytes': 557288, 'loc': 53}
+{'variant': 'go', 'artifact_bytes': 2424659, 'stripped_bytes': 1523736, 'loc': 39}
+{'variant': 'go-mt', 'artifact_bytes': 2436594, 'stripped_bytes': 1531896, 'loc': 54}
+{'variant': 'java', 'artifact_bytes': 1772, 'stripped_bytes': 1772, 'loc': 30}
+{'variant': 'java-mt', 'artifact_bytes': 2395, 'stripped_bytes': 2395, 'loc': 28}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 24}
+{'variant': 'csharp-mt', 'artifact_bytes': 6144, 'stripped_bytes': 6144, 'loc': 24}
+{'variant': 'js', 'artifact_bytes': 842, 'stripped_bytes': 842, 'loc': 27}
+{'variant': 'js-mt', 'artifact_bytes': 1716, 'stripped_bytes': 1716, 'loc': 47}
+{'variant': 'python', 'artifact_bytes': 707, 'stripped_bytes': 707, 'loc': 25}
+{'variant': 'python-mt', 'artifact_bytes': 979, 'stripped_bytes': 979, 'loc': 31}
+{'variant': 'pypy', 'artifact_bytes': 707, 'stripped_bytes': 707, 'loc': 25}
+{'variant': 'pypy-mt', 'artifact_bytes': 979, 'stripped_bytes': 979, 'loc': 31}
+{'variant': 'php', 'artifact_bytes': 710, 'stripped_bytes': 710, 'loc': 23}
+{'variant': 'php-jit', 'artifact_bytes': 710, 'stripped_bytes': 710, 'loc': 23}
+{'variant': 'c-gcc', 'artifact_bytes': 16176, 'stripped_bytes': 14504, 'loc': 21}
+{'variant': 'c-clang', 'artifact_bytes': 16184, 'stripped_bytes': 14520, 'loc': 21}
+{'variant': 'cpp', 'artifact_bytes': 21192, 'stripped_bytes': 18728, 'loc': 19}
+{'variant': 'rust', 'artifact_bytes': 453376, 'stripped_bytes': 345040, 'loc': 22}
+{'variant': 'zig', 'artifact_bytes': 4211912, 'stripped_bytes': 559016, 'loc': 33}
+{'variant': 'go', 'artifact_bytes': 2411610, 'stripped_bytes': 1515544, 'loc': 40}
+{'variant': 'java', 'artifact_bytes': 973, 'stripped_bytes': 973, 'loc': 19}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 16}
+{'variant': 'js', 'artifact_bytes': 599, 'stripped_bytes': 599, 'loc': 17}
+{'variant': 'python', 'artifact_bytes': 481, 'stripped_bytes': 481, 'loc': 14}
+{'variant': 'pypy', 'artifact_bytes': 481, 'stripped_bytes': 481, 'loc': 14}
+{'variant': 'php', 'artifact_bytes': 616, 'stripped_bytes': 616, 'loc': 23}
+{'variant': 'php-jit', 'artifact_bytes': 616, 'stripped_bytes': 616, 'loc': 23}
+{'variant': 'c-gcc', 'artifact_bytes': 16400, 'stripped_bytes': 14792, 'loc': 77}
+{'variant': 'c-clang', 'artifact_bytes': 20472, 'stripped_bytes': 18872, 'loc': 77}
+{'variant': 'cpp', 'artifact_bytes': 16416, 'stripped_bytes': 14792, 'loc': 78}
+{'variant': 'rust', 'artifact_bytes': 478744, 'stripped_bytes': 368944, 'loc': 89}
+{'variant': 'zig', 'artifact_bytes': 4226576, 'stripped_bytes': 575000, 'loc': 80}
+{'variant': 'go', 'artifact_bytes': 2424939, 'stripped_bytes': 1524088, 'loc': 79}
+{'variant': 'java', 'artifact_bytes': 3462, 'stripped_bytes': 3462, 'loc': 76}
+{'variant': 'csharp', 'artifact_bytes': 6656, 'stripped_bytes': 6656, 'loc': 77}
+{'variant': 'js', 'artifact_bytes': 2612, 'stripped_bytes': 2612, 'loc': 65}
+{'variant': 'python', 'artifact_bytes': 2630, 'stripped_bytes': 2630, 'loc': 64}
+{'variant': 'pypy', 'artifact_bytes': 2630, 'stripped_bytes': 2630, 'loc': 64}
+{'variant': 'php', 'artifact_bytes': 3144, 'stripped_bytes': 3144, 'loc': 72}
+{'variant': 'php-jit', 'artifact_bytes': 3144, 'stripped_bytes': 3144, 'loc': 72}
+{'variant': 'c-gcc', 'artifact_bytes': 16632, 'stripped_bytes': 14552, 'loc': 46}
+{'variant': 'c-clang', 'artifact_bytes': 16640, 'stripped_bytes': 14568, 'loc': 46}
+{'variant': 'cpp', 'artifact_bytes': 17272, 'stripped_bytes': 14672, 'loc': 36}
+{'variant': 'rust', 'artifact_bytes': 532920, 'stripped_bytes': 412784, 'loc': 50}
+{'variant': 'zig', 'artifact_bytes': 4381160, 'stripped_bytes': 588680, 'loc': 74}
+{'variant': 'go', 'artifact_bytes': 2616904, 'stripped_bytes': 1650072, 'loc': 64}
+{'variant': 'java', 'artifact_bytes': 1958, 'stripped_bytes': 1958, 'loc': 36}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 25}
+{'variant': 'js', 'artifact_bytes': 669, 'stripped_bytes': 669, 'loc': 22}
+{'variant': 'python', 'artifact_bytes': 658, 'stripped_bytes': 658, 'loc': 26}
+{'variant': 'pypy', 'artifact_bytes': 658, 'stripped_bytes': 658, 'loc': 26}
+{'variant': 'php', 'artifact_bytes': 854, 'stripped_bytes': 854, 'loc': 25}
+{'variant': 'php-jit', 'artifact_bytes': 854, 'stripped_bytes': 854, 'loc': 25}
+{'variant': 'c-gcc', 'artifact_bytes': 16160, 'stripped_bytes': 14496, 'loc': 46}
+{'variant': 'c-clang', 'artifact_bytes': 16168, 'stripped_bytes': 14512, 'loc': 46}
+{'variant': 'cpp', 'artifact_bytes': 21048, 'stripped_bytes': 18728, 'loc': 45}
+{'variant': 'rust', 'artifact_bytes': 450504, 'stripped_bytes': 342552, 'loc': 64}
+{'variant': 'zig', 'artifact_bytes': 4225376, 'stripped_bytes': 560520, 'loc': 59}
+{'variant': 'go', 'artifact_bytes': 2414060, 'stripped_bytes': 1515544, 'loc': 82}
+{'variant': 'java', 'artifact_bytes': 1737, 'stripped_bytes': 1737, 'loc': 42}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 47}
+{'variant': 'js', 'artifact_bytes': 1130, 'stripped_bytes': 1130, 'loc': 36}
+{'variant': 'python', 'artifact_bytes': 1215, 'stripped_bytes': 1215, 'loc': 45}
+{'variant': 'pypy', 'artifact_bytes': 1215, 'stripped_bytes': 1215, 'loc': 45}
+{'variant': 'php', 'artifact_bytes': 1455, 'stripped_bytes': 1455, 'loc': 50}
+{'variant': 'php-jit', 'artifact_bytes': 1455, 'stripped_bytes': 1455, 'loc': 50}
+{'variant': 'c-gcc', 'artifact_bytes': 17176, 'stripped_bytes': 14672, 'loc': 101}
+{'variant': 'c-clang', 'artifact_bytes': 17120, 'stripped_bytes': 14696, 'loc': 101}
+{'variant': 'cpp', 'artifact_bytes': 188672, 'stripped_bytes': 154232, 'loc': 44}
+{'variant': 'rust', 'artifact_bytes': 2809968, 'stripped_bytes': 2118080, 'loc': 39}
+{'variant': 'zig', 'artifact_bytes': 3954368, 'stripped_bytes': 514296, 'loc': 98}
+{'variant': 'go', 'artifact_bytes': 2862851, 'stripped_bytes': 1835448, 'loc': 41}
+{'variant': 'java', 'artifact_bytes': 2307, 'stripped_bytes': 2307, 'loc': 44}
+{'variant': 'csharp', 'artifact_bytes': 6144, 'stripped_bytes': 6144, 'loc': 29}
+{'variant': 'js', 'artifact_bytes': 920, 'stripped_bytes': 920, 'loc': 29}
+{'variant': 'python', 'artifact_bytes': 969, 'stripped_bytes': 969, 'loc': 36}
+{'variant': 'pypy', 'artifact_bytes': 969, 'stripped_bytes': 969, 'loc': 36}
+{'variant': 'php', 'artifact_bytes': 910, 'stripped_bytes': 910, 'loc': 32}
+{'variant': 'php-jit', 'artifact_bytes': 910, 'stripped_bytes': 910, 'loc': 32}
+{'variant': 'c-gcc', 'artifact_bytes': 16448, 'stripped_bytes': 14528, 'loc': 49}
+{'variant': 'c-clang', 'artifact_bytes': 16464, 'stripped_bytes': 14544, 'loc': 49}
+{'variant': 'cpp', 'artifact_bytes': 17536, 'stripped_bytes': 14656, 'loc': 37}
+{'variant': 'rust', 'artifact_bytes': 459568, 'stripped_bytes': 349120, 'loc': 45}
+{'variant': 'zig', 'artifact_bytes': 4227192, 'stripped_bytes': 561384, 'loc': 48}
+{'variant': 'go', 'artifact_bytes': 2138045, 'stripped_bytes': 1330840, 'loc': 52}
+{'variant': 'java', 'artifact_bytes': 1988, 'stripped_bytes': 1988, 'loc': 42}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 40}
+{'variant': 'js', 'artifact_bytes': 1151, 'stripped_bytes': 1151, 'loc': 41}
+{'variant': 'python', 'artifact_bytes': 599, 'stripped_bytes': 599, 'loc': 19}
+{'variant': 'pypy', 'artifact_bytes': 599, 'stripped_bytes': 599, 'loc': 19}
+{'variant': 'php', 'artifact_bytes': 498, 'stripped_bytes': 498, 'loc': 20}
+{'variant': 'php-jit', 'artifact_bytes': 498, 'stripped_bytes': 498, 'loc': 20}
+{'variant': 'c-gcc', 'artifact_bytes': 16128, 'stripped_bytes': 14496, 'loc': 14}
+{'variant': 'c-clang', 'artifact_bytes': 16136, 'stripped_bytes': 14512, 'loc': 14}
+{'variant': 'cpp', 'artifact_bytes': 16728, 'stripped_bytes': 14608, 'loc': 13}
+{'variant': 'rust', 'artifact_bytes': 449400, 'stripped_bytes': 341568, 'loc': 17}
+{'variant': 'zig', 'artifact_bytes': 4209320, 'stripped_bytes': 558152, 'loc': 26}
+{'variant': 'go', 'artifact_bytes': 2411826, 'stripped_bytes': 1515544, 'loc': 27}
+{'variant': 'java', 'artifact_bytes': 667, 'stripped_bytes': 667, 'loc': 16}
+{'variant': 'csharp', 'artifact_bytes': 4608, 'stripped_bytes': 4608, 'loc': 15}
+{'variant': 'js', 'artifact_bytes': 383, 'stripped_bytes': 383, 'loc': 12}
+{'variant': 'python', 'artifact_bytes': 295, 'stripped_bytes': 295, 'loc': 10}
+{'variant': 'pypy', 'artifact_bytes': 295, 'stripped_bytes': 295, 'loc': 10}
+{'variant': 'php', 'artifact_bytes': 396, 'stripped_bytes': 396, 'loc': 15}
+{'variant': 'php-jit', 'artifact_bytes': 396, 'stripped_bytes': 396, 'loc': 15}
+{'variant': 'c-gcc', 'artifact_bytes': 16208, 'stripped_bytes': 14504, 'loc': 22}
+{'variant': 'c-clang', 'artifact_bytes': 16216, 'stripped_bytes': 14520, 'loc': 22}
+{'variant': 'cpp', 'artifact_bytes': 17208, 'stripped_bytes': 14640, 'loc': 18}
+{'variant': 'rust', 'artifact_bytes': 454128, 'stripped_bytes': 345656, 'loc': 14}
+{'variant': 'zig', 'artifact_bytes': 4374672, 'stripped_bytes': 592824, 'loc': 21}
+{'variant': 'go', 'artifact_bytes': 2429147, 'stripped_bytes': 1523736, 'loc': 26}
+{'variant': 'java', 'artifact_bytes': 1238, 'stripped_bytes': 1238, 'loc': 17}
+{'variant': 'csharp', 'artifact_bytes': 5120, 'stripped_bytes': 5120, 'loc': 13}
+{'variant': 'js', 'artifact_bytes': 432, 'stripped_bytes': 432, 'loc': 10}
+{'variant': 'python', 'artifact_bytes': 317, 'stripped_bytes': 317, 'loc': 12}
+{'variant': 'pypy', 'artifact_bytes': 317, 'stripped_bytes': 317, 'loc': 12}
+{'variant': 'php', 'artifact_bytes': 365, 'stripped_bytes': 365, 'loc': 13}
+{'variant': 'php-jit', 'artifact_bytes': 365, 'stripped_bytes': 365, 'loc': 13}
+{'variant': 'c-gcc', 'artifact_bytes': 16176, 'stripped_bytes': 14504, 'loc': 39}
+{'variant': 'c-gcc-mt', 'artifact_bytes': 16496, 'stripped_bytes': 14536, 'loc': 41}
+{'variant': 'c-clang', 'artifact_bytes': 16184, 'stripped_bytes': 14520, 'loc': 39}
+{'variant': 'c-clang-mt', 'artifact_bytes': 20744, 'stripped_bytes': 18736, 'loc': 41}
+{'variant': 'cpp', 'artifact_bytes': 20688, 'stripped_bytes': 18712, 'loc': 39}
+{'variant': 'cpp-mt', 'artifact_bytes': 28576, 'stripped_bytes': 22952, 'loc': 53}
+{'variant': 'rust', 'artifact_bytes': 477424, 'stripped_bytes': 367680, 'loc': 30}
+{'variant': 'rust-mt', 'artifact_bytes': 645760, 'stripped_bytes': 478120, 'loc': 31}
+{'variant': 'zig', 'artifact_bytes': 4229144, 'stripped_bytes': 573432, 'loc': 47}
+{'variant': 'zig-mt', 'artifact_bytes': 4252688, 'stripped_bytes': 577240, 'loc': 61}
+{'variant': 'go', 'artifact_bytes': 2427900, 'stripped_bytes': 1523736, 'loc': 52}
+{'variant': 'go-mt', 'artifact_bytes': 2435971, 'stripped_bytes': 1531896, 'loc': 72}
+{'variant': 'java', 'artifact_bytes': 1573, 'stripped_bytes': 1573, 'loc': 38}
+{'variant': 'java-mt', 'artifact_bytes': 2434, 'stripped_bytes': 2434, 'loc': 39}
+{'variant': 'csharp', 'artifact_bytes': 5632, 'stripped_bytes': 5632, 'loc': 42}
+{'variant': 'csharp-mt', 'artifact_bytes': 6144, 'stripped_bytes': 6144, 'loc': 42}
+{'variant': 'js', 'artifact_bytes': 943, 'stripped_bytes': 943, 'loc': 37}
+{'variant': 'js-mt', 'artifact_bytes': 2155, 'stripped_bytes': 2155, 'loc': 56}
+{'variant': 'python', 'artifact_bytes': 813, 'stripped_bytes': 813, 'loc': 31}
+{'variant': 'python-mt', 'artifact_bytes': 1319, 'stripped_bytes': 1319, 'loc': 44}
+{'variant': 'pypy', 'artifact_bytes': 813, 'stripped_bytes': 813, 'loc': 31}
+{'variant': 'pypy-mt', 'artifact_bytes': 1319, 'stripped_bytes': 1319, 'loc': 44}
+{'variant': 'php', 'artifact_bytes': 1051, 'stripped_bytes': 1051, 'loc': 43}
+{'variant': 'php-jit', 'artifact_bytes': 1051, 'stripped_bytes': 1051, 'loc': 43}
+buildtime hello/c-gcc: median 0.05s
+buildtime hello/c-clang: median 0.06s
+buildtime hello/cpp: median 0.92s
+buildtime hello/rust: median 0.16s
+buildtime hello/zig: median 21.34s
+buildtime hello/go: median 0.13s
+buildtime hello/java: median 0.45s
+buildtime hello/csharp: median 0.40s
+buildtime json/c-gcc: median 0.08s
+buildtime json/c-clang: median 0.08s
+buildtime json/cpp: median 5.67s
+buildtime json/rust: median 3.83s
+buildtime json/zig: median 24.01s
+buildtime json/go: median 0.16s
+buildtime json/java: median 0.52s
+buildtime json/csharp: median 0.41s
+container cgroup: docker/266b729b339991eeec6179249c5f41cd16d0225e66c85f05c2de2616c37b1df1
+perf version 6.19.12
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Warning:
+Kernel address maps (/proc/{kallsyms,modules}) were restricted.
+
+Check /proc/sys/kernel/kptr_restrict before running 'perf record'.
+
+As no suitable kallsyms nor vmlinux was found, kernel samples
+can't be resolved.
+
+Samples in kernel modules can't be resolved as well.
+
+Benchmark 1: mt-workstation (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    4.292 s   ±   0.103 s      4.175 s   …   4.493 s
+  Memory       979.3 MiB ±    56.5 MiB    891.2 MiB …  1043.1 MiB
+ 
+Benchmark 2: mt-server (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.205 s   ±   0.069 s      1.147 s   …   1.335 s            -71.9%  (3.6x faster)
+  Memory       505.2 MiB ±    52.0 MiB    418.9 MiB …   569.1 MiB          -48.4%  (1.9x less)
+ 
+Benchmark 3: mt-workstation-nonconcurrent (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    1.922 s   ±   0.091 s      1.748 s   …   2.048 s            -55.2%  (2.2x faster)
+  Memory       444.9 MiB ±    68.9 MiB    344.1 MiB …   516.3 MiB          -54.6%  (2.2x less)
+ 
+Benchmark 4: single-workstation (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    3.008 s   ±   0.040 s      2.961 s   …   3.076 s            -29.9%
+  Memory       173.6 MiB ±     9.0 MiB    148.0 MiB …   176.6 MiB          -82.3%  (5.6x less)
+ 
+Benchmark 5: single-server (10 runs)
+                mean     ±       σ          min     …     max
+  Wall Time    2.142 s   ±   0.109 s      1.961 s   …   2.271 s            -50.1%  (2.0x faster)
+  Memory       292.6 MiB ±    36.6 MiB    247.1 MiB …   327.0 MiB          -70.1%  (3.3x less)
+ 

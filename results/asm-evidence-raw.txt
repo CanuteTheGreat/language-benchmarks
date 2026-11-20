@@ -1,0 +1,49 @@
+## fib: call instructions to fib in the generated assembly (whole file)
+gcc: calls=2 lines=383
+clang: calls=2 lines=83
+
+## collatz: conditional moves and conditional jumps in main
+gcc: cmov=2 jcc=7
+clang: cmov=9 jcc=10
+
+## mandelbrot: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=0 packed_pd=4 scalar_sd=22 fma=0 vpcmp/vpmin/vpminud=0
+clang: ymm_insns=0 packed_pd=12 scalar_sd=42 fma=0 vpcmp/vpmin/vpminud=0
+
+## spectralnorm: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=118 packed_pd=102 scalar_sd=94 fma=14 vpcmp/vpmin/vpminud=8
+clang: ymm_insns=7 packed_pd=12 scalar_sd=41 fma=38 vpcmp/vpmin/vpminud=0
+
+## nbody: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=0 packed_pd=102 scalar_sd=94 fma=49 vpcmp/vpmin/vpminud=0
+clang: ymm_insns=5 packed_pd=253 scalar_sd=215 fma=111 vpcmp/vpmin/vpminud=0
+
+## matmul: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=49 packed_pd=25 scalar_sd=21 fma=9 vpcmp/vpmin/vpminud=0
+clang: ymm_insns=31 packed_pd=10 scalar_sd=16 fma=6 vpcmp/vpmin/vpminud=0
+
+## levenshtein: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=4 packed_pd=0 scalar_sd=0 fma=0 vpcmp/vpmin/vpminud=0
+clang: ymm_insns=13 packed_pd=0 scalar_sd=0 fma=0 vpcmp/vpmin/vpminud=0
+
+## sieve: vector instructions (ymm = 256-bit AVX, xmm packed = 128-bit) vs scalar double ops
+gcc: ymm_insns=36 packed_pd=0 scalar_sd=0 fma=0 vpcmp/vpmin/vpminud=3
+clang: ymm_insns=22 packed_pd=0 scalar_sd=0 fma=0 vpcmp/vpmin/vpminud=5
+
+zig matmul: ymm_insns=0 packed_pd=243 scalar_sd=43 fma=0
+zig levenshtein: ymm_insns=0 packed_pd=226 scalar_sd=0 fma=0
+zig mandelbrot: ymm_insns=0 packed_pd=263 scalar_sd=50 fma=0
+zig nbody: ymm_insns=0 packed_pd=603 scalar_sd=143 fma=0
+zig spectralnorm: ymm_insns=0 packed_pd=295 scalar_sd=135 fma=0
+
+## C mandelbrot / nbody / spectralnorm flags files
+mandelbrot c/flags: -ffp-contract=off | cpp/flags: -ffp-contract=off
+nbody c/flags:  | cpp/flags: 
+spectralnorm c/flags:  | cpp/flags: 
+matmul c/flags:  | cpp/flags: 
+ls: cannot access '/tmp/asm/rust-matmul/release/deps/': No such file or directory
+rust matmul (opt-level 3): ymm=20 bounds_check_calls=1 scalar_mul_add_sd=11 packed_mul_add_pd=0
+rust levenshtein (opt-level 3): ymm=18 bounds_check_calls=2 scalar_mul_add_sd=0 packed_mul_add_pd=0
+gcc matmul: packed_mul_add_pd=6 scalar=11
+gcc: cmov=2 cond_jumps=12 vpminsd=0 lines=203
+clang: cmov=6 cond_jumps=29 vpminsd=0 lines=509

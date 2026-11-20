@@ -1,0 +1,29 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 2K of event 'cpu_core/cycles/'
+# Event count (approx.): 5324137538
+#
+# Overhead  Shared Object         Symbol                  IPC   [IPC Coverage]
+# ........  ....................  ......................  ....................
+#
+    37.93%  main                  [.] cmp                 -      -            
+    14.50%  libc.so.6             [.] 0x0000000000043609  -      -            
+    13.01%  libc.so.6             [.] 0x00000000000435da  -      -            
+     4.66%  libc.so.6             [.] 0x00000000000435d8  -      -            
+     4.57%  libc.so.6             [.] 0x00000000000435f8  -      -            
+     4.42%  libc.so.6             [.] 0x0000000000043605  -      -            
+     2.94%  main                  [.] main                -      -            
+     1.77%  libc.so.6             [.] 0x00000000000435f4  -      -            
+     1.35%  libc.so.6             [.] 0x0000000000043584  -      -            
+     1.25%  libc.so.6             [.] 0x000000000004360d  -      -            
+     1.07%  libc.so.6             [.] 0x00000000000435e9  -      -            
+     1.07%  libc.so.6             [.] 0x00000000000435fb  -      -            
+     1.03%  libc.so.6             [.] 0x00000000000435de  -      -            
+
+
+#
+# (Tip: Show estimate cycles per function and IPC in annotate use perf record -b ... ; perf report --total-cycles)
+#

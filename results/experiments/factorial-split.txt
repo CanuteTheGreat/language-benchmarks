@@ -1,0 +1,7 @@
+# harness/factorial-split.sh, 2026-11-19, on an Intel Xeon 6975P-C build host (2 vCPUs, not pinned, not the benchmark laptop)
+Benchmark 1: c-gmp (5 runs)
+  Wall Time    791.2 ms  ±    10.7 ms     773.9 ms  …   801.2 ms
+Benchmark 2: zig-full (5 runs)
+  Wall Time   7945.9 ms  ±   212.3 ms    7571.0 ms  …  8091.3 ms          +904.3%  (10.0x slower)
+Benchmark 3: zig-multiply-only (5 runs)
+  Wall Time   3927.1 ms  ±   236.6 ms    3620.2 ms  …  4201.7 ms          +396.3%  (5.0x slower)

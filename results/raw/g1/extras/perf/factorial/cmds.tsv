@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/factorial/c-gcc/main 100000
+c-clang	/tmp/lb-build/factorial/c-clang/main 100000
+cpp	/tmp/lb-build/factorial/cpp/main 100000
+rust	/tmp/lb-build/factorial/rust/target/release/bench 100000
+zig	/tmp/lb-build/factorial/zig/main 100000
+go	/tmp/lb-build/factorial/go/main 100000
+java	java -cp '/tmp/lb-build/factorial/java:/opt/java-libs/*' Main 100000
+csharp	/tmp/lb-build/factorial/csharp/Bench 100000
+js	node /bench/bench/factorial/js/main.js 100000
+python	python3 /bench/bench/factorial/python/main.py 100000
+pypy	pypy3 /bench/bench/factorial/python/main.py 100000
+php	php /bench/bench/factorial/php/main.php 100000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/factorial/php/main.php 100000

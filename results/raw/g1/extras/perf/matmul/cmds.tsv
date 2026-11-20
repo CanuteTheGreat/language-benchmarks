@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/matmul/c-gcc/main 700
+c-clang	/tmp/lb-build/matmul/c-clang/main 700
+cpp	/tmp/lb-build/matmul/cpp/main 700
+rust	/tmp/lb-build/matmul/rust/target/release/bench 700
+zig	/tmp/lb-build/matmul/zig/main 700
+go	/tmp/lb-build/matmul/go/main 700
+java	java -cp '/tmp/lb-build/matmul/java:/opt/java-libs/*' Main 700
+csharp	/tmp/lb-build/matmul/csharp/Bench 700
+js	node /bench/bench/matmul/js/main.js 700
+python	python3 /bench/bench/matmul/python/main.py 700
+pypy	pypy3 /bench/bench/matmul/python/main.py 700
+php	php /bench/bench/matmul/php/main.php 700
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/matmul/php/main.php 700

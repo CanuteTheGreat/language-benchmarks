@@ -1,0 +1,18 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cpu_core/cycles/'
+# Event count (approx.): 2884517740
+#
+# Overhead  Shared Object         Symbol                                                                                                                                                                                                                                                                                                                                IPC   [IPC Coverage]
+# ........  ....................  ....................................................................................................................................................................................................................................................................................................................................  ....................
+#
+    82.41%  main                  [.] void std::__introsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, long, std::less<void> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, long, std::less<void>) [clone .isra.0]  -      -            
+    15.29%  main                  [.] main                                                                                                                                                                                                                                                                                                                              -      -            
+
+
+#
+# (Tip: Compare performance results with: perf diff [<old file> <new file>])
+#

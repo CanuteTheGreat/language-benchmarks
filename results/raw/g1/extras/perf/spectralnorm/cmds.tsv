@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/spectralnorm/c-gcc/main 3000
+c-clang	/tmp/lb-build/spectralnorm/c-clang/main 3000
+cpp	/tmp/lb-build/spectralnorm/cpp/main 3000
+rust	/tmp/lb-build/spectralnorm/rust/target/release/bench 3000
+zig	/tmp/lb-build/spectralnorm/zig/main 3000
+go	/tmp/lb-build/spectralnorm/go/main 3000
+java	java -cp '/tmp/lb-build/spectralnorm/java:/opt/java-libs/*' Main 3000
+csharp	/tmp/lb-build/spectralnorm/csharp/Bench 3000
+js	node /bench/bench/spectralnorm/js/main.js 3000
+python	python3 /bench/bench/spectralnorm/python/main.py 3000
+pypy	pypy3 /bench/bench/spectralnorm/python/main.py 3000
+php	php /bench/bench/spectralnorm/php/main.php 3000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/spectralnorm/php/main.php 3000

@@ -1,0 +1,40 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 867  of event 'cpu_core/cycles/'
+# Event count (approx.): 2121213234
+#
+# Overhead  Shared Object     Symbol                  IPC   [IPC Coverage]
+# ........  ................  ......................  ....................
+#
+     7.14%  libgmp.so.10.5.0  [.] 0x00000000000737fe  -      -            
+     7.01%  libgmp.so.10.5.0  [.] 0x0000000000073832  -      -            
+     5.96%  libgmp.so.10.5.0  [.] 0x0000000000073849  -      -            
+     5.32%  libgmp.so.10.5.0  [.] 0x00000000000737f4  -      -            
+     5.24%  libgmp.so.10.5.0  [.] 0x000000000007380f  -      -            
+     5.18%  libgmp.so.10.5.0  [.] 0x000000000007381f  -      -            
+     4.90%  libgmp.so.10.5.0  [.] 0x0000000000073825  -      -            
+     4.28%  libgmp.so.10.5.0  [.] 0x0000000000073812  -      -            
+     3.48%  libgmp.so.10.5.0  [.] 0x000000000007383e  -      -            
+     2.92%  libgmp.so.10.5.0  [.] 0x0000000000073822  -      -            
+     2.50%  libgmp.so.10.5.0  [.] 0x00000000000737f7  -      -            
+     2.48%  libgmp.so.10.5.0  [.] 0x000000000007380c  -      -            
+     2.27%  libgmp.so.10.5.0  [.] 0x000000000007384c  -      -            
+     2.20%  libgmp.so.10.5.0  [.] 0x000000000007381a  -      -            
+     1.88%  libgmp.so.10.5.0  [.] 0x0000000000073843  -      -            
+     1.64%  libgmp.so.10.5.0  [.] 0x0000000000073807  -      -            
+     1.64%  libgmp.so.10.5.0  [.] 0x0000000000072333  -      -            
+     1.29%  libgmp.so.10.5.0  [.] 0x000000000007382d  -      -            
+     1.28%  libgmp.so.10.5.0  [.] 0x0000000000072dcf  -      -            
+     1.28%  libgmp.so.10.5.0  [.] 0x0000000000072ddd  -      -            
+     1.17%  libgmp.so.10.5.0  [.] 0x0000000000072dd5  -      -            
+     1.17%  libgmp.so.10.5.0  [.] 0x000000000007382a  -      -            
+     1.17%  libgmp.so.10.5.0  [.] 0x000000000007233b  -      -            
+     1.05%  libgmp.so.10.5.0  [.] 0x0000000000072355  -      -            
+
+
+#
+# (Tip: To only collect call graph on one event use perf record -e cpu/cpu-cycles,callgraph=1/,branches ; perf report --show-ref-call-graph)
+#

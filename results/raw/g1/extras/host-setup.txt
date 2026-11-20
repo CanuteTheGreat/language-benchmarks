@@ -1,0 +1,2 @@
+governor=performance no_turbo=0 freq_khz=2500000 min/max cpu0=2500000/2500000
+restored governor=powersave no_turbo=0

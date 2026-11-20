@@ -1,0 +1,22 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 40K of event 'cpu_core/cycles/'
+# Event count (approx.): 100308695334
+#
+# Overhead  Shared Object     Symbol                                     IPC   [IPC Coverage]
+# ........  ................  .........................................  ....................
+#
+    43.99%  main              [.] regexp.(*machine).add                  -      -            
+    31.73%  main              [.] regexp.(*machine).step                 -      -            
+     8.13%  main              [.] regexp.(*machine).match                -      -            
+     7.30%  main              [.] runtime.memmove                        -      -            
+     2.73%  main              [.] regexp.(*inputBytes).step              -      -            
+     2.72%  main              [.] regexp/syntax.(*Inst).MatchRunePos     -      -            
+
+
+#
+# (Tip: For memory address profiling, try: perf mem record / perf mem report)
+#

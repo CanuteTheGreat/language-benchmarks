@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/hashmap/c-gcc/main 5000000
+c-clang	/tmp/lb-build/hashmap/c-clang/main 5000000
+cpp	/tmp/lb-build/hashmap/cpp/main 5000000
+rust	/tmp/lb-build/hashmap/rust/target/release/bench 5000000
+zig	/tmp/lb-build/hashmap/zig/main 5000000
+go	/tmp/lb-build/hashmap/go/main 5000000
+java	java -cp '/tmp/lb-build/hashmap/java:/opt/java-libs/*' Main 5000000
+csharp	/tmp/lb-build/hashmap/csharp/Bench 5000000
+js	node /bench/bench/hashmap/js/main.js 5000000
+python	python3 /bench/bench/hashmap/python/main.py 5000000
+pypy	pypy3 /bench/bench/hashmap/python/main.py 5000000
+php	php /bench/bench/hashmap/php/main.php 5000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/hashmap/php/main.php 5000000

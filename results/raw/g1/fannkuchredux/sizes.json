@@ -1,0 +1,146 @@
+[
+ {
+  "variant": "c-gcc",
+  "artifact_bytes": 16160,
+  "stripped_bytes": 14488,
+  "loc": 58
+ },
+ {
+  "variant": "c-gcc-mt",
+  "artifact_bytes": 20696,
+  "stripped_bytes": 18640,
+  "loc": 72
+ },
+ {
+  "variant": "c-clang",
+  "artifact_bytes": 16280,
+  "stripped_bytes": 14528,
+  "loc": 58
+ },
+ {
+  "variant": "c-clang-mt",
+  "artifact_bytes": 16856,
+  "stripped_bytes": 14648,
+  "loc": 72
+ },
+ {
+  "variant": "cpp",
+  "artifact_bytes": 16120,
+  "stripped_bytes": 14488,
+  "loc": 54
+ },
+ {
+  "variant": "cpp-mt",
+  "artifact_bytes": 22080,
+  "stripped_bytes": 18816,
+  "loc": 84
+ },
+ {
+  "variant": "rust",
+  "artifact_bytes": 450808,
+  "stripped_bytes": 343032,
+  "loc": 62
+ },
+ {
+  "variant": "rust-mt",
+  "artifact_bytes": 609656,
+  "stripped_bytes": 448800,
+  "loc": 73
+ },
+ {
+  "variant": "zig",
+  "artifact_bytes": 4192096,
+  "stripped_bytes": 558008,
+  "loc": 65
+ },
+ {
+  "variant": "zig-mt",
+  "artifact_bytes": 4204256,
+  "stripped_bytes": 559624,
+  "loc": 105
+ },
+ {
+  "variant": "go",
+  "artifact_bytes": 2423843,
+  "stripped_bytes": 1523736,
+  "loc": 81
+ },
+ {
+  "variant": "go-mt",
+  "artifact_bytes": 2437634,
+  "stripped_bytes": 1531896,
+  "loc": 117
+ },
+ {
+  "variant": "java",
+  "artifact_bytes": 2018,
+  "stripped_bytes": 2018,
+  "loc": 52
+ },
+ {
+  "variant": "java-mt",
+  "artifact_bytes": 3386,
+  "stripped_bytes": 3386,
+  "loc": 79
+ },
+ {
+  "variant": "csharp",
+  "artifact_bytes": 5632,
+  "stripped_bytes": 5632,
+  "loc": 56
+ },
+ {
+  "variant": "csharp-mt",
+  "artifact_bytes": 6656,
+  "stripped_bytes": 6656,
+  "loc": 68
+ },
+ {
+  "variant": "js",
+  "artifact_bytes": 1448,
+  "stripped_bytes": 1448,
+  "loc": 46
+ },
+ {
+  "variant": "js-mt",
+  "artifact_bytes": 2588,
+  "stripped_bytes": 2588,
+  "loc": 83
+ },
+ {
+  "variant": "python",
+  "artifact_bytes": 1444,
+  "stripped_bytes": 1444,
+  "loc": 49
+ },
+ {
+  "variant": "python-mt",
+  "artifact_bytes": 1888,
+  "stripped_bytes": 1888,
+  "loc": 61
+ },
+ {
+  "variant": "pypy",
+  "artifact_bytes": 1444,
+  "stripped_bytes": 1444,
+  "loc": 49
+ },
+ {
+  "variant": "pypy-mt",
+  "artifact_bytes": 1888,
+  "stripped_bytes": 1888,
+  "loc": 61
+ },
+ {
+  "variant": "php",
+  "artifact_bytes": 1602,
+  "stripped_bytes": 1602,
+  "loc": 57
+ },
+ {
+  "variant": "php-jit",
+  "artifact_bytes": 1602,
+  "stripped_bytes": 1602,
+  "loc": 57
+ }
+]

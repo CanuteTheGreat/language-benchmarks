@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/fannkuchredux/c-gcc/main 11
+c-clang	/tmp/lb-build/fannkuchredux/c-clang/main 11
+cpp	/tmp/lb-build/fannkuchredux/cpp/main 11
+rust	/tmp/lb-build/fannkuchredux/rust/target/release/bench 11
+zig	/tmp/lb-build/fannkuchredux/zig/main 11
+go	/tmp/lb-build/fannkuchredux/go/main 11
+java	java -cp '/tmp/lb-build/fannkuchredux/java:/opt/java-libs/*' Main 11
+csharp	/tmp/lb-build/fannkuchredux/csharp/Bench 11
+js	node /bench/bench/fannkuchredux/js/main.js 11
+python	python3 /bench/bench/fannkuchredux/python/main.py 11
+pypy	pypy3 /bench/bench/fannkuchredux/python/main.py 11
+php	php /bench/bench/fannkuchredux/php/main.php 11
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/fannkuchredux/php/main.php 11

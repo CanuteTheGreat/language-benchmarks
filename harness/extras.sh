@@ -20,11 +20,13 @@ if ! mkdir "$lock" 2>/dev/null; then echo "another measurement is running ($lock
 C="langbench-extras-$$"
 
 sh "$here/harness/host-setup.sh" prepare > "$ex/host-setup.txt"
+sh "$here/harness/throttle-counters.sh" before > "$ex/throttle.txt"
 sh "$here/harness/thermal-log.sh" "$ex/thermal.csv" & tpid=$!
 cleanup() {
     rmdir "$lock" 2>/dev/null
     kill $tpid 2>/dev/null
     docker rm -f "$C" >/dev/null 2>&1
+    sh "$here/harness/throttle-counters.sh" after >> "$ex/throttle.txt"
     sh "$here/harness/host-setup.sh" restore >> "$ex/host-setup.txt"
 }
 trap cleanup EXIT

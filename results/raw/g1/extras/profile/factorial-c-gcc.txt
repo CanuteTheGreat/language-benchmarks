@@ -1,0 +1,35 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cpu_core/cycles/'
+# Event count (approx.): 2758779595
+#
+# Overhead  Shared Object         Symbol                  IPC   [IPC Coverage]
+# ........  ....................  ......................  ....................
+#
+     9.52%  libgmp.so.10.5.0      [.] 0x0000000000073832  -      -            
+     8.99%  libgmp.so.10.5.0      [.] 0x000000000007381f  -      -            
+     7.81%  libgmp.so.10.5.0      [.] 0x00000000000737fe  -      -            
+     7.62%  libgmp.so.10.5.0      [.] 0x00000000000737f4  -      -            
+     7.52%  libgmp.so.10.5.0      [.] 0x0000000000073812  -      -            
+     6.99%  libgmp.so.10.5.0      [.] 0x000000000007380f  -      -            
+     6.60%  libgmp.so.10.5.0      [.] 0x0000000000073825  -      -            
+     6.04%  libgmp.so.10.5.0      [.] 0x0000000000073849  -      -            
+     5.60%  libgmp.so.10.5.0      [.] 0x000000000007384c  -      -            
+     4.52%  libgmp.so.10.5.0      [.] 0x000000000007380c  -      -            
+     3.90%  libgmp.so.10.5.0      [.] 0x0000000000073843  -      -            
+     3.84%  libgmp.so.10.5.0      [.] 0x0000000000073807  -      -            
+     3.53%  libgmp.so.10.5.0      [.] 0x000000000007381a  -      -            
+     3.45%  libgmp.so.10.5.0      [.] 0x00000000000737f7  -      -            
+     3.30%  libgmp.so.10.5.0      [.] 0x000000000007383e  -      -            
+     2.33%  libgmp.so.10.5.0      [.] 0x0000000000073822  -      -            
+     1.26%  libgmp.so.10.5.0      [.] 0x000000000007383b  -      -            
+     1.18%  libgmp.so.10.5.0      [.] 0x000000000007382a  -      -            
+     1.08%  libgmp.so.10.5.0      [.] 0x000000000007382d  -      -            
+
+
+#
+# (Tip: To see how parallelism changes over time, try: perf report -F time,latency,parallelism --time-quantum=1s)
+#

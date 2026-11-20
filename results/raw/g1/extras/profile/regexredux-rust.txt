@@ -1,0 +1,29 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cpu_core/cycles/'
+# Event count (approx.): 3378854393
+#
+# Overhead  Shared Object         Symbol                                                                                                                                        IPC   [IPC Coverage]
+# ........  ....................  ............................................................................................................................................  ....................
+#
+    24.64%  bench                 [.] regex_automata::hybrid::search::find_rev                                                                                                  -      -            
+    14.01%  bench                 [.] regex_automata::hybrid::search::find_fwd                                                                                                  -      -            
+    10.33%  bench                 [.] <aho_corasick::packed::teddy::builder::x86_64::SlimAVX2<4> as aho_corasick::packed::teddy::builder::SearcherT>::find                      -      -            
+     7.97%  bench                 [.] <core::iter::adapters::enumerate::Enumerate<regex::regex::string::Matches> as core::iter::traits::iterator::Iterator>::next               -      -            
+     7.46%  bench                 [.] <aho_corasick::packed::teddy::builder::x86_64::SlimAVX2<2> as aho_corasick::packed::teddy::builder::SearcherT>::find                      -      -            
+     3.98%  bench                 [.] <regex_automata::meta::strategy::Core as regex_automata::meta::strategy::Strategy>::search                                                -      -            
+     2.88%  bench                 [.] <regex_automata::hybrid::regex::Regex>::try_search                                                                                        -      -            
+     2.58%  bench                 [.] <regex_automata::util::prefilter::teddy::Teddy as regex_automata::util::prefilter::PrefilterI>::find                                      -      -            
+     2.28%  [unknown]             [k] 0xffffffffa6401280                                                                                                                        -      -            
+     2.21%  bench                 [.] memchr::arch::x86_64::memchr::memchr_raw::find_avx2                                                                                       -      -            
+     1.77%  bench                 [.] <regex::regex::string::Regex>::replacen::<&str>                                                                                           -      -            
+     1.25%  bench                 [.] <regex_automata::meta::strategy::Pre<regex_automata::util::prefilter::teddy::Teddy> as regex_automata::meta::strategy::Strategy>::search  -      -            
+     1.18%  bench                 [.] <regex_automata::util::prefilter::memchr::Memchr as regex_automata::util::prefilter::PrefilterI>::find                                    -      -            
+
+
+#
+# (Tip: To not record events from perf itself add --exclude-perf)
+#

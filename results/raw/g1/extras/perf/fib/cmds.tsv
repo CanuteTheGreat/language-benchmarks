@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/fib/c-gcc/main 40
+c-clang	/tmp/lb-build/fib/c-clang/main 40
+cpp	/tmp/lb-build/fib/cpp/main 40
+rust	/tmp/lb-build/fib/rust/target/release/bench 40
+zig	/tmp/lb-build/fib/zig/main 40
+go	/tmp/lb-build/fib/go/main 40
+java	java -cp '/tmp/lb-build/fib/java:/opt/java-libs/*' Main 40
+csharp	/tmp/lb-build/fib/csharp/Bench 40
+js	node /bench/bench/fib/js/main.js 40
+python	python3 /bench/bench/fib/python/main.py 40
+pypy	pypy3 /bench/bench/fib/python/main.py 40
+php	php /bench/bench/fib/php/main.php 40
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/fib/php/main.php 40

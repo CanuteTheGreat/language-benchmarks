@@ -18,11 +18,13 @@ IMG=${IMG:-langbench:dev}
 sh "$here/harness/host-setup.sh" prepare > "$out/host-setup.txt"
 sh "$here/harness/host-setup.sh" info > "$out/host-info.txt"
 docker run --rm "$IMG" versions.sh > "$out/versions.txt" 2>&1
+sh "$here/harness/throttle-counters.sh" before > "$out/throttle.txt"
 sh "$here/harness/thermal-log.sh" "$out/thermal.csv" & tpid=$!
 cleanup() {
     rmdir "$lock" 2>/dev/null
     kill $tpid 2>/dev/null
     docker kill "langbench-$$" >/dev/null 2>&1
+    sh "$here/harness/throttle-counters.sh" after >> "$out/throttle.txt"
     sh "$here/harness/host-setup.sh" restore >> "$out/host-setup.txt"
 }
 trap cleanup EXIT

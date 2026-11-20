@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/collatz/c-gcc/main 1000000
+c-clang	/tmp/lb-build/collatz/c-clang/main 1000000
+cpp	/tmp/lb-build/collatz/cpp/main 1000000
+rust	/tmp/lb-build/collatz/rust/target/release/bench 1000000
+zig	/tmp/lb-build/collatz/zig/main 1000000
+go	/tmp/lb-build/collatz/go/main 1000000
+java	java -cp '/tmp/lb-build/collatz/java:/opt/java-libs/*' Main 1000000
+csharp	/tmp/lb-build/collatz/csharp/Bench 1000000
+js	node /bench/bench/collatz/js/main.js 1000000
+python	python3 /bench/bench/collatz/python/main.py 1000000
+pypy	pypy3 /bench/bench/collatz/python/main.py 1000000
+php	php /bench/bench/collatz/php/main.php 1000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/collatz/php/main.php 1000000

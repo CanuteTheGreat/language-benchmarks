@@ -1,0 +1,30 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 7K of event 'cpu_core/cycles/'
+# Event count (approx.): 17657820876
+#
+# Overhead  Shared Object         Symbol                                                                                           IPC   [IPC Coverage]
+# ........  ....................  ...............................................................................................  ....................
+#
+    21.23%  bench                 [.] <num_bigint::big_digit::BigDigits>::normalize                                                -      -            
+    14.59%  libc.so.6             [.] 0x0000000000176a87                                                                           -      -            
+     8.14%  [unknown]             [k] 0xffffffffa6401280                                                                           -      -            
+     7.85%  bench                 [.] num_bigint::biguint::multiplication::scalar_mul                                              -      -            
+     4.04%  bench                 [.] <num_bigint::big_digit::BigDigits>::resize                                                   -      -            
+     3.24%  bench                 [.] <num_bigint::biguint::BigUint as core::ops::arith::Sub<&num_bigint::biguint::BigUint>>::sub  -      -            
+     2.80%  bench                 [.] <num_bigint::biguint::BigUint as core::ops::arith::Add<&num_bigint::biguint::BigUint>>::add  -      -            
+     2.04%  bench                 [.] num_bigint::biguint::shift::biguint_shl2                                                     -      -            
+     1.86%  bench                 [.] num_bigint::biguint::division::div_rem_burnikel_ziegler::div_three_halves_by_two             -      -            
+     1.65%  libc.so.6             [.] cfree                                                                                        -      -            
+     1.59%  bench                 [.] num_bigint::biguint::division::div_rem_burnikel_ziegler::concat_biguint                      -      -            
+     1.39%  bench                 [.] num_bigint::biguint::division::div_rem_burnikel_ziegler::div_two_digit_by_one_normalized     -      -            
+     1.35%  bench                 [.] num_bigint::biguint::division::div_rem_burnikel_ziegler::divide_biguint                      -      -            
+     1.21%  libc.so.6             [.] malloc                                                                                       -      -            
+
+
+#
+# (Tip: If call chains don't work try perf record --call-graph dwarf or --call-graph lbr)
+#

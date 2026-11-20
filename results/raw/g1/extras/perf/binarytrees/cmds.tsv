@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/binarytrees/c-gcc/main 19
+c-clang	/tmp/lb-build/binarytrees/c-clang/main 19
+cpp	/tmp/lb-build/binarytrees/cpp/main 19
+rust	/tmp/lb-build/binarytrees/rust/target/release/bench 19
+zig	/tmp/lb-build/binarytrees/zig/main 19
+go	/tmp/lb-build/binarytrees/go/main 19
+java	java -cp '/tmp/lb-build/binarytrees/java:/opt/java-libs/*' Main 19
+csharp	/tmp/lb-build/binarytrees/csharp/Bench 19
+js	node /bench/bench/binarytrees/js/main.js 19
+python	python3 /bench/bench/binarytrees/python/main.py 19
+pypy	pypy3 /bench/bench/binarytrees/python/main.py 19
+php	php /bench/bench/binarytrees/php/main.php 19
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/binarytrees/php/main.php 19

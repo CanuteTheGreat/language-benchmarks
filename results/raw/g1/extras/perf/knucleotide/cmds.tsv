@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/knucleotide/c-gcc/main < /bench/data/fasta-2500000.txt
+c-clang	/tmp/lb-build/knucleotide/c-clang/main < /bench/data/fasta-2500000.txt
+cpp	/tmp/lb-build/knucleotide/cpp/main < /bench/data/fasta-2500000.txt
+rust	/tmp/lb-build/knucleotide/rust/target/release/bench < /bench/data/fasta-2500000.txt
+zig	/tmp/lb-build/knucleotide/zig/main < /bench/data/fasta-2500000.txt
+go	/tmp/lb-build/knucleotide/go/main < /bench/data/fasta-2500000.txt
+java	java -cp '/tmp/lb-build/knucleotide/java:/opt/java-libs/*' Main < /bench/data/fasta-2500000.txt
+csharp	/tmp/lb-build/knucleotide/csharp/Bench < /bench/data/fasta-2500000.txt
+js	node /bench/bench/knucleotide/js/main.js < /bench/data/fasta-2500000.txt
+python	python3 /bench/bench/knucleotide/python/main.py < /bench/data/fasta-2500000.txt
+pypy	pypy3 /bench/bench/knucleotide/python/main.py < /bench/data/fasta-2500000.txt
+php	php /bench/bench/knucleotide/php/main.php < /bench/data/fasta-2500000.txt
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/knucleotide/php/main.php < /bench/data/fasta-2500000.txt

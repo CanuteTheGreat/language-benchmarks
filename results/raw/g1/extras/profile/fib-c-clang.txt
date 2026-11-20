@@ -1,0 +1,17 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 409  of event 'cpu_core/cycles/'
+# Event count (approx.): 990562289
+#
+# Overhead  Shared Object     Symbol                  IPC   [IPC Coverage]
+# ........  ................  ......................  ....................
+#
+    99.90%  main              [.] fib                 -      -            
+
+
+#
+# (Tip: To compare hot regions in two workloads use perf record -b -o file ... ; perf diff --stream file1 file2)
+#

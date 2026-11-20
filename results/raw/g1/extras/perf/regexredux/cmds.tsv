@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/regexredux/c-gcc/main < /bench/data/fasta-5000000.txt
+c-clang	/tmp/lb-build/regexredux/c-clang/main < /bench/data/fasta-5000000.txt
+cpp	/tmp/lb-build/regexredux/cpp/main < /bench/data/fasta-5000000.txt
+rust	/tmp/lb-build/regexredux/rust/target/release/bench < /bench/data/fasta-5000000.txt
+zig	/tmp/lb-build/regexredux/zig/main < /bench/data/fasta-5000000.txt
+go	/tmp/lb-build/regexredux/go/main < /bench/data/fasta-5000000.txt
+java	java -cp '/tmp/lb-build/regexredux/java:/opt/java-libs/*' Main < /bench/data/fasta-5000000.txt
+csharp	/tmp/lb-build/regexredux/csharp/Bench < /bench/data/fasta-5000000.txt
+js	node /bench/bench/regexredux/js/main.js < /bench/data/fasta-5000000.txt
+python	python3 /bench/bench/regexredux/python/main.py < /bench/data/fasta-5000000.txt
+pypy	pypy3 /bench/bench/regexredux/python/main.py < /bench/data/fasta-5000000.txt
+php	php /bench/bench/regexredux/php/main.php < /bench/data/fasta-5000000.txt
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/regexredux/php/main.php < /bench/data/fasta-5000000.txt

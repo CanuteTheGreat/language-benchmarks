@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/sieve/c-gcc/main 50000000
+c-clang	/tmp/lb-build/sieve/c-clang/main 50000000
+cpp	/tmp/lb-build/sieve/cpp/main 50000000
+rust	/tmp/lb-build/sieve/rust/target/release/bench 50000000
+zig	/tmp/lb-build/sieve/zig/main 50000000
+go	/tmp/lb-build/sieve/go/main 50000000
+java	java -cp '/tmp/lb-build/sieve/java:/opt/java-libs/*' Main 50000000
+csharp	/tmp/lb-build/sieve/csharp/Bench 50000000
+js	node /bench/bench/sieve/js/main.js 50000000
+python	python3 /bench/bench/sieve/python/main.py 50000000
+pypy	pypy3 /bench/bench/sieve/python/main.py 50000000
+php	php /bench/bench/sieve/php/main.php 50000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/sieve/php/main.php 50000000

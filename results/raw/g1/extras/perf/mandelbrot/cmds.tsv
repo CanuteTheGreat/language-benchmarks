@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/mandelbrot/c-gcc/main 4000
+c-clang	/tmp/lb-build/mandelbrot/c-clang/main 4000
+cpp	/tmp/lb-build/mandelbrot/cpp/main 4000
+rust	/tmp/lb-build/mandelbrot/rust/target/release/bench 4000
+zig	/tmp/lb-build/mandelbrot/zig/main 4000
+go	/tmp/lb-build/mandelbrot/go/main 4000
+java	java -cp '/tmp/lb-build/mandelbrot/java:/opt/java-libs/*' Main 4000
+csharp	/tmp/lb-build/mandelbrot/csharp/Bench 4000
+js	node /bench/bench/mandelbrot/js/main.js 4000
+python	python3 /bench/bench/mandelbrot/python/main.py 4000
+pypy	pypy3 /bench/bench/mandelbrot/python/main.py 4000
+php	php /bench/bench/mandelbrot/php/main.php 4000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/mandelbrot/php/main.php 4000

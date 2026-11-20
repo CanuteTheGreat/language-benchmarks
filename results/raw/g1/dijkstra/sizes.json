@@ -1,0 +1,80 @@
+[
+ {
+  "variant": "c-gcc",
+  "artifact_bytes": 16184,
+  "stripped_bytes": 14496,
+  "loc": 71
+ },
+ {
+  "variant": "c-clang",
+  "artifact_bytes": 16192,
+  "stripped_bytes": 14512,
+  "loc": 71
+ },
+ {
+  "variant": "cpp",
+  "artifact_bytes": 16992,
+  "stripped_bytes": 14640,
+  "loc": 40
+ },
+ {
+  "variant": "rust",
+  "artifact_bytes": 453432,
+  "stripped_bytes": 344944,
+  "loc": 46
+ },
+ {
+  "variant": "zig",
+  "artifact_bytes": 4232240,
+  "stripped_bytes": 560680,
+  "loc": 57
+ },
+ {
+  "variant": "go",
+  "artifact_bytes": 2417454,
+  "stripped_bytes": 1519640,
+  "loc": 75
+ },
+ {
+  "variant": "java",
+  "artifact_bytes": 3992,
+  "stripped_bytes": 3992,
+  "loc": 46
+ },
+ {
+  "variant": "csharp",
+  "artifact_bytes": 5632,
+  "stripped_bytes": 5632,
+  "loc": 41
+ },
+ {
+  "variant": "js",
+  "artifact_bytes": 1712,
+  "stripped_bytes": 1712,
+  "loc": 76
+ },
+ {
+  "variant": "python",
+  "artifact_bytes": 872,
+  "stripped_bytes": 872,
+  "loc": 36
+ },
+ {
+  "variant": "pypy",
+  "artifact_bytes": 872,
+  "stripped_bytes": 872,
+  "loc": 36
+ },
+ {
+  "variant": "php",
+  "artifact_bytes": 1126,
+  "stripped_bytes": 1126,
+  "loc": 43
+ },
+ {
+  "variant": "php-jit",
+  "artifact_bytes": 1126,
+  "stripped_bytes": 1126,
+  "loc": 43
+ }
+]

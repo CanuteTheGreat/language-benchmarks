@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/pidigits/c-gcc/main 10000
+c-clang	/tmp/lb-build/pidigits/c-clang/main 10000
+cpp	/tmp/lb-build/pidigits/cpp/main 10000
+rust	/tmp/lb-build/pidigits/rust/target/release/bench 10000
+zig	/tmp/lb-build/pidigits/zig/main 10000
+go	/tmp/lb-build/pidigits/go/main 10000
+java	java -cp '/tmp/lb-build/pidigits/java:/opt/java-libs/*' Main 10000
+csharp	/tmp/lb-build/pidigits/csharp/Bench 10000
+js	node /bench/bench/pidigits/js/main.js 10000
+python	python3 /bench/bench/pidigits/python/main.py 10000
+pypy	pypy3 /bench/bench/pidigits/python/main.py 10000
+php	php /bench/bench/pidigits/php/main.php 10000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/pidigits/php/main.php 10000

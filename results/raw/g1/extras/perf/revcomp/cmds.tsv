@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/revcomp/c-gcc/main < /bench/data/fasta-25000000.txt
+c-clang	/tmp/lb-build/revcomp/c-clang/main < /bench/data/fasta-25000000.txt
+cpp	/tmp/lb-build/revcomp/cpp/main < /bench/data/fasta-25000000.txt
+rust	/tmp/lb-build/revcomp/rust/target/release/bench < /bench/data/fasta-25000000.txt
+zig	/tmp/lb-build/revcomp/zig/main < /bench/data/fasta-25000000.txt
+go	/tmp/lb-build/revcomp/go/main < /bench/data/fasta-25000000.txt
+java	java -cp '/tmp/lb-build/revcomp/java:/opt/java-libs/*' Main < /bench/data/fasta-25000000.txt
+csharp	/tmp/lb-build/revcomp/csharp/Bench < /bench/data/fasta-25000000.txt
+js	node /bench/bench/revcomp/js/main.js < /bench/data/fasta-25000000.txt
+python	python3 /bench/bench/revcomp/python/main.py < /bench/data/fasta-25000000.txt
+pypy	pypy3 /bench/bench/revcomp/python/main.py < /bench/data/fasta-25000000.txt
+php	php /bench/bench/revcomp/php/main.php < /bench/data/fasta-25000000.txt
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/revcomp/php/main.php < /bench/data/fasta-25000000.txt

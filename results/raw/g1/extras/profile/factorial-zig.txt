@@ -1,0 +1,21 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 10K of event 'cpu_core/cycles/'
+# Event count (approx.): 27175991568
+#
+# Overhead  Shared Object     Symbol                               IPC   [IPC Coverage]
+# ........  ................  ...................................  ....................
+#
+    53.47%  main              [.] start.posixCallMainAndExit       -      -            
+    14.40%  main              [.] math.big.int.llmulacc__func_671  -      -            
+     7.66%  main              [.] compiler_rt.memcpy.memcpyFast    -      -            
+     6.12%  [unknown]         [k] 0xffffffffa6401280               -      -            
+     1.76%  main              [.] compiler_rt.fastMemset           -      -            
+
+
+#
+# (Tip: To only collect call graph on one event use perf record -e cpu/cpu-cycles,callgraph=1/,branches ; perf report --show-ref-call-graph)
+#

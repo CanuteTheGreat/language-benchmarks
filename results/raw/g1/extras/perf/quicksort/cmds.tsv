@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/quicksort/c-gcc/main 10000000
+c-clang	/tmp/lb-build/quicksort/c-clang/main 10000000
+cpp	/tmp/lb-build/quicksort/cpp/main 10000000
+rust	/tmp/lb-build/quicksort/rust/target/release/bench 10000000
+zig	/tmp/lb-build/quicksort/zig/main 10000000
+go	/tmp/lb-build/quicksort/go/main 10000000
+java	java -cp '/tmp/lb-build/quicksort/java:/opt/java-libs/*' Main 10000000
+csharp	/tmp/lb-build/quicksort/csharp/Bench 10000000
+js	node /bench/bench/quicksort/js/main.js 10000000
+python	python3 /bench/bench/quicksort/python/main.py 10000000
+pypy	pypy3 /bench/bench/quicksort/python/main.py 10000000
+php	php /bench/bench/quicksort/php/main.php 10000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/quicksort/php/main.php 10000000

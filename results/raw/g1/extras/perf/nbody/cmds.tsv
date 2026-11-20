@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/nbody/c-gcc/main 10000000
+c-clang	/tmp/lb-build/nbody/c-clang/main 10000000
+cpp	/tmp/lb-build/nbody/cpp/main 10000000
+rust	/tmp/lb-build/nbody/rust/target/release/bench 10000000
+zig	/tmp/lb-build/nbody/zig/main 10000000
+go	/tmp/lb-build/nbody/go/main 10000000
+java	java -cp '/tmp/lb-build/nbody/java:/opt/java-libs/*' Main 10000000
+csharp	/tmp/lb-build/nbody/csharp/Bench 10000000
+js	node /bench/bench/nbody/js/main.js 10000000
+python	python3 /bench/bench/nbody/python/main.py 10000000
+pypy	pypy3 /bench/bench/nbody/python/main.py 10000000
+php	php /bench/bench/nbody/php/main.php 10000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/nbody/php/main.php 10000000

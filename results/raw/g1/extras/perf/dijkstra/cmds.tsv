@@ -1,0 +1,13 @@
+c-gcc	/tmp/lb-build/dijkstra/c-gcc/main 1000000 5000000
+c-clang	/tmp/lb-build/dijkstra/c-clang/main 1000000 5000000
+cpp	/tmp/lb-build/dijkstra/cpp/main 1000000 5000000
+rust	/tmp/lb-build/dijkstra/rust/target/release/bench 1000000 5000000
+zig	/tmp/lb-build/dijkstra/zig/main 1000000 5000000
+go	/tmp/lb-build/dijkstra/go/main 1000000 5000000
+java	java -cp '/tmp/lb-build/dijkstra/java:/opt/java-libs/*' Main 1000000 5000000
+csharp	/tmp/lb-build/dijkstra/csharp/Bench 1000000 5000000
+js	node /bench/bench/dijkstra/js/main.js 1000000 5000000
+python	python3 /bench/bench/dijkstra/python/main.py 1000000 5000000
+pypy	pypy3 /bench/bench/dijkstra/python/main.py 1000000 5000000
+php	php /bench/bench/dijkstra/php/main.php 1000000 5000000
+php-jit	php -d opcache.enable_cli=1 -d opcache.jit=tracing -d opcache.jit_buffer_size=128M /bench/bench/dijkstra/php/main.php 1000000 5000000
