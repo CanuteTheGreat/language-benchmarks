@@ -1,0 +1,12 @@
+# image langbench:dev d5b5f92aefb2, bytes (du -sb)
+java: JDK (as installed)	631563090
+dotnet: shared runtime only (Microsoft.NETCore.App)	83771841
+dotnet: SDK + runtime	550520792
+node: binary	65803232
+python: CPython install	108108408
+pypy: install	98487871
+php: binary	30167848
+php: extensions dir	3445141
+libc.so.6	2215072
+libstdc++.so.6	2939928
+libm.so.6	1268336
