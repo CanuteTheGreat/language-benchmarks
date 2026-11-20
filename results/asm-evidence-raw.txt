@@ -47,3 +47,5 @@ rust levenshtein (opt-level 3): ymm=18 bounds_check_calls=2 scalar_mul_add_sd=0 
 gcc matmul: packed_mul_add_pd=6 scalar=11
 gcc: cmov=2 cond_jumps=12 vpminsd=0 lines=203
 clang: cmov=6 cond_jumps=29 vpminsd=0 lines=509
+gcc: fib_lines=293 calls_in_fib=1
+clang: fib_lines=34 calls_in_fib=1
