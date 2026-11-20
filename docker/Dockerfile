@@ -62,7 +62,7 @@ ENV GOFLAGS=-mod=mod GOAMD64=v3 GOTOOLCHAIN=local GOCACHE=/tmp/gocache
 COPY measure.c /opt/measure.c
 RUN gcc -O2 -o /usr/local/bin/measure /opt/measure.c
 
-RUN pacman -S --noconfirm --needed tokei && pacman -Scc --noconfirm
+RUN pacman -S --noconfirm --needed tokei openmp && pacman -Scc --noconfirm
 
 COPY versions.sh /usr/local/bin/versions.sh
 RUN chmod +x /usr/local/bin/versions.sh && versions.sh

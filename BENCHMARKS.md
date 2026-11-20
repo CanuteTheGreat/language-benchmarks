@@ -91,8 +91,10 @@ array with a comparator), Python `list.sort()`, PHP `sort()`). Same verification
 
 ### hashmap `N`
 Standard hash map from integer key to integer value. Generator `g1 = minstd(seed 42)`:
-for `i` in `0..N-1`: `map[g1.next()] = i` (overwrite existing). Then `g2 = minstd(seed 4242)`:
-for `j` in `0..N-1`: `k = g2.next()`; if `k` is in the map: `hits++`, `sum += map[k]`.
+for `i` in `0..N-1`: `map[g1.next()] = i` (overwrite existing). Then `g2 = minstd(seed 42)`:
+for `j` in `0..2N-1`: `k = g2.next()`; if `k` is in the map: `hits++`, `sum += map[k]`.
+(`minstd` never repeats within these sizes, so the first `N` lookups hit and the next `N` miss:
+the benchmark times `N` inserts, `N` successful and `N` failed lookups.)
 Print `size hits sum`. Map types: C hand-written open addressing (no stdlib map), C++
 `std::unordered_map`, Rust `std::collections::HashMap` (default hasher), Zig
 `std.AutoHashMap`, Go `map`, Java `HashMap<Integer,Integer>`, C# `Dictionary<int,int>`, JS

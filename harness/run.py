@@ -66,7 +66,7 @@ def build_cmd(bench, variant):
     fl = flags(s)
     if base in ("c-gcc", "c-clang"):
         cc = "gcc" if base == "c-gcc" else "clang"
-        extra = ["-fopenmp"] if variant.endswith("-mt") and cc == "gcc" else (["-fopenmp=libgomp"] if variant.endswith("-mt") else [])
+        extra = ["-fopenmp"] if variant.endswith("-mt") else []
         return [[cc, "-O3", NATIVE, *extra, "-o", f"{o}/main", "main.c", "-lm", *fl]], s
     if base == "cpp":
         return [["g++", "-O3", NATIVE, "-std=c++23", "-o", f"{o}/main", "main.cpp", "-pthread", *fl]], s
@@ -169,7 +169,7 @@ def check(bench, variants):
     return ok
 
 
-def measure(bench, variants, runs, warmup, cpus, tag, kind="run"):
+def measure(bench, variants, runs, warmup, cpus, tag, kind="run", mt_cpus=None):
     outd = os.path.join(RESULTS, tag, bench)
     os.makedirs(outd, exist_ok=True)
     for v in variants:
@@ -183,7 +183,8 @@ def measure(bench, variants, runs, warmup, cpus, tag, kind="run"):
             continue
         if os.path.exists(csv):
             os.remove(csv)
-        cmd = ["taskset", "-c", cpus, "measure", "-o", csv, "-t", v, "--"] + run_cmd(bench, v) + a
+        use = mt_cpus if (mt_cpus and v.endswith("-mt")) else cpus
+        cmd = ["taskset", "-c", use, "measure", "-o", csv, "-t", v, "--"] + run_cmd(bench, v) + a
         hf = ["hyperfine", "-N", "--style", "basic", "--warmup", str(warmup), "--runs", str(runs),
               "--export-json", js + ".tmp", "--output", "null" if bench != "hello" else "pipe"]
         if stdin:
@@ -294,7 +295,8 @@ def main():
     ap.add_argument("variants", nargs="*")
     ap.add_argument("--runs", type=int, default=10)
     ap.add_argument("--warmup", type=int, default=1)
-    ap.add_argument("--cpus", default="2,6")
+    ap.add_argument("--cpus", default="0-3")
+    ap.add_argument("--mt-cpus", default=None)
     ap.add_argument("--tag", default="dev")
     ap.add_argument("--kind", default="run")
     a = ap.parse_args()
@@ -310,7 +312,7 @@ def main():
     if a.cmd == "check":
         sys.exit(0 if check(a.bench, vs) else 1)
     if a.cmd == "measure":
-        return measure(a.bench, vs, a.runs, a.warmup, a.cpus, a.tag, a.kind)
+        return measure(a.bench, vs, a.runs, a.warmup, a.cpus, a.tag, a.kind, a.mt_cpus)
     if a.cmd == "time1":  # one untimed-harness run at the given size, for calibrating sizes
         for v in vs:
             if not build(a.bench, v, quiet=True):
