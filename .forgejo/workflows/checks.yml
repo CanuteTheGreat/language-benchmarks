@@ -1,0 +1,27 @@
+name: Checks
+
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch: {}
+
+concurrency:
+  group: "latest:${{ github.workflow }}@${{ github.ref }}"
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  public-leak-guard:
+    name: Public leak guard
+    runs-on: linux-any
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+      - run: python3 ci/check-public-leaks.py
+      - name: Harness scripts parse
+        run: |
+          for f in harness/*.py data/*.py; do python3 -m py_compile "$f"; done
+          for f in harness/*.sh docker/*.sh; do sh -n "$f"; done
+          python3 -c "import json; json.load(open('harness/params.json'))"
