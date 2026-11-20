@@ -11,18 +11,28 @@ SINGLE_CPUS=${SINGLE_CPUS:-0-3}
 MT_CPUS=${MT_CPUS:-0-$(($(nproc) - 1))}
 RUNS=${RUNS:-10}; WARMUP=${WARMUP:-1}
 out="$here/results/raw/$TAG"; mkdir -p "$out"
+lock="$here/results/raw/.measure.lock"
+if ! mkdir "$lock" 2>/dev/null; then echo "another measure-all is running ($lock)"; exit 1; fi
 IMG=${IMG:-langbench:dev}
 
 sh "$here/harness/host-setup.sh" prepare > "$out/host-setup.txt"
 sh "$here/harness/host-setup.sh" info > "$out/host-info.txt"
 docker run --rm "$IMG" versions.sh > "$out/versions.txt" 2>&1
 sh "$here/harness/thermal-log.sh" "$out/thermal.csv" & tpid=$!
-trap 'kill $tpid 2>/dev/null; sh "$here/harness/host-setup.sh" restore >> "$out/host-setup.txt"' EXIT INT TERM
+cleanup() {
+    rmdir "$lock" 2>/dev/null
+    kill $tpid 2>/dev/null
+    docker kill "langbench-$$" >/dev/null 2>&1
+    sh "$here/harness/host-setup.sh" restore >> "$out/host-setup.txt"
+}
+trap cleanup EXIT
+trap 'exit 130' INT TERM HUP
 
 run_in() {
     # (re)build the measure wrapper from this checkout so the image and the repo can't disagree
-    docker run --rm --privileged --network none -v "$here:/bench" -e LB_RESULTS=/bench/results/raw "$IMG" \
-        sh -c "gcc -O2 -o /usr/local/bin/measure /bench/docker/measure.c && $1"
+    docker run --rm --name "langbench-$$" --privileged --network none -v "$here:/bench" -e LB_RESULTS=/bench/results/raw "$IMG" \
+        sh -c "gcc -O2 -o /usr/local/bin/measure /bench/docker/measure.c && $1" &
+    wait $!   # waiting in the background keeps the shell responsive to signals (trap -> cleanup)
 }
 sh "$here/harness/container-overhead.sh" "$out" > "$out/container-overhead.txt" 2>&1
 # idle power baseline: 3 x 20 s of sleep through the same wrapper
