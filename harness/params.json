@@ -7,8 +7,8 @@
  "spectralnorm": {"check": [100], "run": [3000]},
  "mandelbrot":   {"check": [200], "run": [4000]},
  "fannkuchredux":{"check": [7], "run": [11]},
- "binarytrees":  {"check": [10], "run": [17]},
- "fasta":        {"check": [1000], "run": [2500000]},
+ "binarytrees":  {"check": [10], "run": [19]},
+ "fasta":        {"check": [1000], "run": [10000000]},
  "knucleotide":  {"check": [], "check_stdin": "fasta-1000.txt", "run": [], "run_stdin": "fasta-2500000.txt"},
  "revcomp":      {"check": [], "check_stdin": "fasta-1000.txt", "run": [], "run_stdin": "fasta-25000000.txt"},
  "regexredux":   {"check": [], "check_stdin": "fasta-1000.txt", "run": [], "run_stdin": "fasta-5000000.txt"},
@@ -18,7 +18,7 @@
  "sortstd":      {"check": [10000], "run": [10000000]},
  "hashmap":      {"check": [10000], "run": [5000000]},
  "dijkstra":     {"check": [1000, 5000], "run": [1000000, 5000000]},
- "levenshtein":  {"check": [300], "run": [5000]},
+ "levenshtein":  {"check": [300], "run": [15000]},
  "json":         {"check": ["data:records-2000.json"], "run": ["data:records-200000.json"]},
  "factorial":    {"check": [100], "run": [100000]}
 }
