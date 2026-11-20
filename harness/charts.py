@@ -16,6 +16,12 @@ LABEL = {"c-gcc": "C (GCC)", "c-clang": "C (Clang)", "cpp": "C++", "rust": "Rust
 COLOR = {"c-gcc": "#5c7cfa", "c-clang": "#748ffc", "cpp": "#4dabf7", "rust": "#ff922b", "zig": "#fcc419",
          "go": "#3bc9db", "java": "#e64980", "csharp": "#9775fa", "js": "#94d82d", "python": "#69db7c",
          "pypy": "#a9e34b", "php": "#b197fc", "php-jit": "#d0bfff"}
+TITLES = {"binarytrees": "binary-trees", "fannkuchredux": "fannkuch-redux", "spectralnorm": "spectral-norm",
+          "knucleotide": "k-nucleotide", "revcomp": "reverse-complement", "regexredux": "regex-redux",
+          "nbody": "n-body", "sortstd": "standard library sort", "fib": "recursive Fibonacci", "matmul": "matrix multiply",
+          "hello": "hello world", "collatz": "Collatz", "dijkstra": "Dijkstra", "levenshtein": "Levenshtein", "json": "JSON",
+          "hashmap": "hash map", "quicksort": "quicksort", "sieve": "sieve of Eratosthenes", "factorial": "100,000!",
+          "pidigits": "pidigits", "mandelbrot": "mandelbrot", "fasta": "fasta"}
 METRIC = {"wall": ("wall_median_s", "Median wall time (s)"), "cpu": ("cpu_median_s", "Median CPU time (s)"),
           "rss": ("maxrss_median_mb", "Peak memory (MB, RSS)"), "energy": ("energy_median_j", "Package energy (J)")}
 
@@ -49,9 +55,14 @@ def fmt(x, metric="wall"):
     return f"{x:.3g}"
 
 
-def bar(rows, bench, metric, out, log, title=None, variants=None):
+def pick(v, which):
+    mt = v.endswith("-mt")
+    return which == "all" or (which == "mt" and mt) or (which == "single" and not mt and not v.endswith("-opt"))
+
+
+def bar(rows, bench, metric, out, log, title=None, which="single"):
     key, xl = METRIC[metric]
-    rs = [r for r in rows if r["bench"] == bench and r[key] not in ("", "None") and (variants is None or r["variant"] in variants)]
+    rs = [r for r in rows if r["bench"] == bench and r[key] not in ("", "None") and pick(r["variant"], which)]
     rs.sort(key=lambda r: float(r[key]))
     plt.style.use("dark_background")
     h = 1.2 + 0.42 * len(rs)
@@ -72,8 +83,9 @@ def bar(rows, bench, metric, out, log, title=None, variants=None):
         ax.set_xscale("log")
     for y, v, e in zip(ys, vals, ends):
         ax.text(e * (1.1 if log else 1.0) + (0 if log else max(ends) * 0.015), y, fmt(v, metric), va="center", fontsize=10)
-    ax.set_xlabel(xl + (" (log scale)" if log else ""), fontsize=11)
-    ax.set_title(title or bench, fontsize=13, loc="left")
+    note = "median of 10 runs, whiskers min/max" if metric == "wall" else "median of 10 runs"
+    ax.set_xlabel(xl + (", log scale" if log else "") + "\n" + note + ", lower is better", fontsize=10)
+    ax.set_title(title or TITLES.get(bench, bench) + (" (multi-threaded)" if which == "mt" else ""), fontsize=13, loc="left")
     ax.set_xlim(right=max(ends) * (4 if log else 1.3))
     ax.grid(axis="x", alpha=0.2)
     fig.tight_layout()
@@ -111,6 +123,29 @@ def relative(rows, benches, out, title):
     return data
 
 
+def speedup(rows, bench, out, title=None):
+    """single-thread median wall / multi-thread median wall, per language."""
+    by = {r["variant"]: float(r["wall_median_s"]) for r in rows if r["bench"] == bench}
+    data = sorted(((v[:-3], by[v[:-3]] / by[v]) for v in by if v.endswith("-mt") and v[:-3] in by), key=lambda t: -t[1])
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(7.2, 1.2 + 0.42 * len(data)), dpi=150)
+    ax.barh(range(len(data)), [d[1] for d in data], color=[color(d[0]) for d in data])
+    ax.set_yticks(range(len(data)))
+    ax.set_yticklabels([label(d[0]) for d in data], fontsize=11)
+    ax.invert_yaxis()
+    for y, d in enumerate(data):
+        ax.text(d[1] + 0.05, y, f"{d[1]:.1f}x", va="center", fontsize=10)
+    ax.axvline(1.0, color="#868e96", lw=0.8)
+    ax.set_xlim(0, max(d[1] for d in data) * 1.2)
+    ax.set_xlabel("Speed-up of the multi-threaded version over single-threaded (wall time)", fontsize=10)
+    ax.set_title(title or f"{bench}: multi-thread speed-up", fontsize=13, loc="left")
+    ax.grid(axis="x", alpha=0.2)
+    fig.tight_layout()
+    fig.savefig(out)
+    plt.close(fig)
+    print("wrote", out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("tag")
@@ -120,7 +155,8 @@ def main():
     ap.add_argument("--log", action="store_true")
     ap.add_argument("--relative", action="store_true")
     ap.add_argument("--title")
-    ap.add_argument("--mt", action="store_true", help="only -mt variants plus their single-thread counterparts")
+    ap.add_argument("--which", default="single", choices=["single", "mt", "all"], help="variants to include")
+    ap.add_argument("--speedup", action="store_true", help="multi-thread speed-up chart")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     rows = load(a.tag)
@@ -128,7 +164,11 @@ def main():
         relative(rows, a.benches, os.path.join(a.out, "relative-" + "-".join(a.benches)[:60] + ".png"), a.title or "Relative speed")
         return
     for b in a.benches:
-        bar(rows, b, a.metric, os.path.join(a.out, f"{b}-{a.metric}{'-log' if a.log else ''}.png"), a.log, a.title)
+        if a.speedup:
+            speedup(rows, b, os.path.join(a.out, f"{b}-speedup.png"), a.title)
+            continue
+        suffix = "" if a.which == "single" else "-" + a.which
+        bar(rows, b, a.metric, os.path.join(a.out, f"{b}-{a.metric}{suffix}{'-log' if a.log else ''}.png"), a.log, a.title, a.which)
 
 
 if __name__ == "__main__":
