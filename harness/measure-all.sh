@@ -22,6 +22,7 @@ trap 'kill $tpid 2>/dev/null; sh "$here/harness/host-setup.sh" restore >> "$out/
 run_in() {
     docker run --rm --privileged --network none -v "$here:/bench" -e LB_RESULTS=/bench/results/raw "$IMG" sh -c "$1"
 }
+sh "$here/harness/container-overhead.sh" "$out" > "$out/container-overhead.txt" 2>&1
 # idle power baseline: 3 x 20 s of sleep through the same wrapper
 run_in "for i in 1 2 3; do taskset -c $SINGLE_CPUS measure -o results/raw/$TAG/idle.measure.csv -t idle -- sleep 20; done"
 echo "$(date -Is) start $BENCHES" >> "$out/progress.log"
