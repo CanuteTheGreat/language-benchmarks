@@ -1,0 +1,20 @@
+#!/bin/sh
+# Print the exact toolchain versions in this image (one "name: version" per line).
+v() { printf '%s: %s\n' "$1" "$(sh -c "$2" 2>&1 | head -1)"; }
+v gcc 'gcc --version'
+v clang 'clang --version'
+v rustc 'rustc --version'
+v cargo 'cargo --version'
+v zig 'zig version'
+v go 'go version'
+v java 'java -version 2>&1 | head -1'
+v javac 'javac -version'
+v dotnet 'dotnet --version'
+v dotnet-runtime 'dotnet --list-runtimes | grep NETCore.App'
+v node 'node --version'
+v python 'python3 --version'
+v pypy 'pypy3 --version 2>&1 | tail -1'
+v php 'php --version'
+v hyperfine 'hyperfine --version'
+v jackson 'ls /opt/java-libs | tr "\n" " "'
+v glibc 'ldd --version'
