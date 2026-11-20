@@ -49,6 +49,7 @@ def main():
             cpu = [float(r[2]) + float(r[3]) for r in m]
             rss = [int(r[4]) / 1024 for r in m]
             joules = [float(r[5]) for r in m if float(r[5]) >= 0]
+            psys = [float(r[7]) for r in m if len(r) > 7 and float(r[7]) >= 0]
             bad = [r for r in m if r[6] != "0"]
             s = sizes.get(v, {})
             rows.append({
@@ -57,7 +58,7 @@ def main():
                 "wall_min_s": h["min"], "wall_max_s": h["max"],
                 "inner_wall_median_s": med(wall_inner),
                 "cpu_median_s": med(cpu), "maxrss_median_mb": med(rss),
-                "energy_median_j": med(joules),
+                "energy_median_j": med(joules), "energy_psys_median_j": med(psys),
                 "energy_above_idle_j": (med(joules) - idle_w * med(wall_inner)) if (joules and idle_w and wall_inner) else None,
                 "nonzero_exits": len(bad),
                 "artifact_bytes": s.get("artifact_bytes"), "stripped_bytes": s.get("stripped_bytes"), "loc": s.get("loc"),

@@ -20,7 +20,9 @@ sh "$here/harness/thermal-log.sh" "$out/thermal.csv" & tpid=$!
 trap 'kill $tpid 2>/dev/null; sh "$here/harness/host-setup.sh" restore >> "$out/host-setup.txt"' EXIT INT TERM
 
 run_in() {
-    docker run --rm --privileged --network none -v "$here:/bench" -e LB_RESULTS=/bench/results/raw "$IMG" sh -c "$1"
+    # (re)build the measure wrapper from this checkout so the image and the repo can't disagree
+    docker run --rm --privileged --network none -v "$here:/bench" -e LB_RESULTS=/bench/results/raw "$IMG" \
+        sh -c "gcc -O2 -o /usr/local/bin/measure /bench/docker/measure.c && $1"
 }
 sh "$here/harness/container-overhead.sh" "$out" > "$out/container-overhead.txt" 2>&1
 # idle power baseline: 3 x 20 s of sleep through the same wrapper

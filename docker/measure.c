@@ -1,7 +1,8 @@
 /* measure: run a command once and append one CSV line with
- *   tag,wall_s,user_s,sys_s,maxrss_kb,energy_pkg_j,exit
- * Energy comes from the RAPL "package" domains in /sys/class/powercap
- * (intel-rapl:N, the top-level ones), read before and after the run.
+ *   tag,wall_s,user_s,sys_s,maxrss_kb,energy_pkg_j,exit,energy_psys_j
+ * Energy comes from the RAPL domains in /sys/class/powercap, read before and after the run:
+ * energy_pkg_j sums the top-level "package-N" domains (the CPU package), energy_psys_j is the
+ * "psys" (platform) domain where the CPU has one, else -1.
  * Usage: measure -o out.csv -t tag -- cmd [args...]
  * The child's stdout/stderr are passed through unchanged.
  * MIT licence. */
@@ -20,6 +21,7 @@
 #define MAXDOM 8
 static char dom[MAXDOM][128];
 static double range[MAXDOM];
+static int ispsys[MAXDOM];
 static int ndom;
 
 static int read_u64(const char *path, unsigned long long *v) {
@@ -37,6 +39,12 @@ static void find_domains(void) {
         snprintf(p, sizeof p, "/sys/class/powercap/intel-rapl:%d/energy_uj", i);
         if (read_u64(p, &v) != 0) continue;
         snprintf(dom[ndom], sizeof dom[ndom], "/sys/class/powercap/intel-rapl:%d", i);
+        char nm[64] = "";
+        snprintf(p, sizeof p, "%s/name", dom[ndom]);
+        FILE *nf = fopen(p, "r");
+        if (nf) { if (!fgets(nm, sizeof nm, nf)) nm[0] = 0; fclose(nf); }
+        if (strncmp(nm, "package", 7) != 0 && strncmp(nm, "psys", 4) != 0) continue;
+        ispsys[ndom] = strncmp(nm, "psys", 4) == 0;
         snprintf(p, sizeof p, "%s/max_energy_range_uj", dom[ndom]);
         unsigned long long r = 0;
         read_u64(p, &r);
@@ -81,14 +89,12 @@ int main(int argc, char **argv) {
     if (wait4(pid, &st, 0, &ru) < 0) { perror("wait4"); return 2; }
     clock_gettime(CLOCK_MONOTONIC, &t1);
     energy(e1);
-    double joules = -1;
-    if (ndom) {
-        joules = 0;
-        for (int d = 0; d < ndom; d++) {
-            double de = e1[d] - e0[d];
-            if (de < 0) de += range[d];
-            joules += de / 1e6;
-        }
+    double joules = -1, psys = -1;
+    for (int d = 0; d < ndom; d++) {
+        double de = e1[d] - e0[d];
+        if (de < 0) de += range[d];
+        if (ispsys[d]) psys = (psys < 0 ? 0 : psys) + de / 1e6;
+        else joules = (joules < 0 ? 0 : joules) + de / 1e6;
     }
     double wall = (t1.tv_sec - t0.tv_sec) + (t1.tv_nsec - t0.tv_nsec) / 1e9;
     double user = ru.ru_utime.tv_sec + ru.ru_utime.tv_usec / 1e6;
@@ -97,7 +103,7 @@ int main(int argc, char **argv) {
     if (out) {
         FILE *f = fopen(out, "a");
         if (f) {
-            fprintf(f, "%s,%.6f,%.6f,%.6f,%ld,%.6f,%d\n", tag, wall, user, sys, ru.ru_maxrss, joules, code);
+            fprintf(f, "%s,%.6f,%.6f,%.6f,%ld,%.6f,%d,%.6f\n", tag, wall, user, sys, ru.ru_maxrss, joules, code, psys);
             fclose(f);
         }
     }
