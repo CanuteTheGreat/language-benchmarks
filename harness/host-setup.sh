@@ -42,6 +42,7 @@ restore)
     echo "restored governor=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor) no_turbo=$(cat /sys/devices/system/cpu/intel_pstate/no_turbo 2>/dev/null)"
     ;;
 info)
+    echo "system: $(cat /sys/class/dmi/id/sys_vendor 2>/dev/null) $(cat /sys/class/dmi/id/product_version 2>/dev/null)"
     echo "cpu: $(grep -m1 'model name' /proc/cpuinfo | cut -d: -f2 | sed 's/^ //')"
     echo "logical_cpus: $(nproc)"
     for t in cpu_core cpu_atom; do [ -f /sys/devices/$t/cpus ] && echo "$t: $(cat /sys/devices/$t/cpus)"; done
