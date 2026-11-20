@@ -63,6 +63,9 @@ def pick(v, which):
 def bar(rows, bench, metric, out, log, title=None, which="single"):
     key, xl = METRIC[metric]
     rs = [r for r in rows if r["bench"] == bench and r[key] not in ("", "None") and pick(r["variant"], which)]
+    if not rs:
+        print(f"skip {bench} {metric}: no data")
+        return
     rs.sort(key=lambda r: float(r[key]))
     plt.style.use("dark_background")
     h = 1.2 + 0.42 * len(rs)
@@ -104,6 +107,9 @@ def relative(rows, benches, out, title):
             acc.setdefault(r["variant"], []).append(float(r["wall_median_s"]) / ref[r["bench"]])
     data = sorted(((v, math.exp(sum(map(math.log, xs)) / len(xs)), len(xs)) for v, xs in acc.items() if len(xs) == len(benches)),
                   key=lambda t: t[1])
+    if not data:
+        print("skip relative: no variant has all benchmarks")
+        return []
     plt.style.use("dark_background")
     fig, ax = plt.subplots(figsize=(7.2, 1.2 + 0.42 * len(data)), dpi=150)
     ax.barh(range(len(data)), [d[1] for d in data], color=[color(d[0]) for d in data])
@@ -128,6 +134,9 @@ def speedup(rows, bench, out, title=None):
     """single-thread median wall / multi-thread median wall, per language."""
     by = {r["variant"]: float(r["wall_median_s"]) for r in rows if r["bench"] == bench}
     data = sorted(((v[:-3], by[v[:-3]] / by[v]) for v in by if v.endswith("-mt") and v[:-3] in by), key=lambda t: -t[1])
+    if not data:
+        print(f"skip {bench} speedup: no data")
+        return
     plt.style.use("dark_background")
     fig, ax = plt.subplots(figsize=(7.2, 1.2 + 0.42 * len(data)), dpi=150)
     ax.barh(range(len(data)), [d[1] for d in data], color=[color(d[0]) for d in data])
