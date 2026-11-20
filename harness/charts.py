@@ -148,7 +148,7 @@ def speedup(rows, bench, out, title=None):
     ax.axvline(1.0, color="#868e96", lw=0.8)
     ax.set_xlim(0, max(d[1] for d in data) * 1.2)
     ax.set_xlabel("Speed-up of the multi-threaded version over single-threaded (wall time)", fontsize=10)
-    ax.set_title(title or f"{bench}: multi-thread speed-up", fontsize=13, loc="left")
+    ax.set_title(title or f"{TITLES.get(bench, bench)}: multi-thread speed-up", fontsize=13, loc="left")
     ax.grid(axis="x", alpha=0.2)
     fig.tight_layout()
     fig.savefig(out)
